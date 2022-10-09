@@ -14,12 +14,16 @@ const Navbar = () => {
   return (
     <>
       <Nav>
+        {/* <NavMenu> */}
         <NavLink to="/">
           <img src={logo} alt="logo" style={{ height: "80px" }} />
         </NavLink>
-        <NavLink to="/scores">SCORES</NavLink>
+        <NavLink to="/scores" style={{ fontWeight: "bold" }}>
+          SCORES
+        </NavLink>
         <NavLink to="/rules">RULES</NavLink>
         <NavLink to="/add-pool">ADD POOL</NavLink>
+        {/* </NavMenu> */}
       </Nav>
     </>
   );
