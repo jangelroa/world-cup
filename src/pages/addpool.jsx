@@ -6,6 +6,7 @@ const Contact = () => {
       style={{
         display: "flex",
         justifyContent: "center",
+        background: "#ddd",
         // alignItems: "center",
         // height: "100vh",
       }}
