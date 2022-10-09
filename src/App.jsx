@@ -3,8 +3,8 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/home";
-import About from "./pages/about";
-import Services from "./pages/services";
+import Rules from "./pages/rules";
+import Scores from "./pages/scores";
 import AddPool from "./pages/addpool";
 // import SignUp from "./pages/signup";
 
@@ -16,11 +16,11 @@ function App() {
         <Route path="/" exact>
           <Home />
         </Route>
-        <Route path="/about">
-          <About />
+        <Route path="/scores">
+          <Scores />
         </Route>
-        <Route path="/services">
-          <Services />
+        <Route path="/rules">
+          <Rules />
         </Route>
         <Route path="/add-pool">
           <AddPool />

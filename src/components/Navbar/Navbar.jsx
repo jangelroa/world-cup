@@ -17,8 +17,8 @@ const Navbar = () => {
         <NavLink to="/">
           <img src={logo} alt="logo" style={{ height: "80px" }} />
         </NavLink>
-        <NavLink to="/about">ABOUT</NavLink>
-        <NavLink to="/services">SERVICES</NavLink>
+        <NavLink to="/scores">SCORES</NavLink>
+        <NavLink to="/rules">RULES</NavLink>
         <NavLink to="/add-pool">ADD POOL</NavLink>
       </Nav>
     </>
