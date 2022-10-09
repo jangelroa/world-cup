@@ -2,6 +2,7 @@ import React from "react";
 import { navColor } from "../components/Navbar/NavbarElements";
 import groups from "../images/groups.jpeg";
 import background1 from "../images/background1.png";
+import whiteLogo from "../images/white-logo.svg";
 import qatar from "../images/svg/qa.svg";
 import ecuador from "../images/svg/ec.svg";
 import senegal from "../images/svg/sn.svg";
@@ -10,6 +11,7 @@ import styled from "styled-components";
 
 const Groups = styled.div`
   background-image: url(${background1});
+  padding: 20px;
 `;
 
 const Title = styled.h1`
@@ -91,8 +93,32 @@ const Home = () => {
           <img src={groups} alt="groups" />
         </div>
         <Groups>
-          <Title>WORLD CUP QATAR 2022</Title>
-          <Subtitle>GROUPS</Subtitle>
+          <div
+            style={{
+              display: "flex",
+              margin: "50px",
+            }}
+          >
+            <div
+              style={{
+                background: "#aaa",
+                borderRadius: "24px",
+                // display: "inline-block",
+                padding: "10px",
+                // height: "250px",
+              }}
+            >
+              <img
+                src={whiteLogo}
+                alt="white logo"
+                style={{ height: "150px" }}
+              />
+            </div>
+            <div>
+              <Title>WORLD CUP QATAR 2022</Title>
+              <Subtitle>GROUPS</Subtitle>
+            </div>
+          </div>
           <GroupsContainer>
             <GroupTitle>Group A</GroupTitle>
             <Group>
