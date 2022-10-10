@@ -4,7 +4,8 @@ import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/home";
 import Rules from "./pages/rules";
-import Scores from "./pages/scores";
+import TeamScores from "./pages/teamscores";
+import UserScores from "./pages/userscores";
 import AddPool from "./pages/addpool";
 // import SignUp from "./pages/signup";
 
@@ -16,8 +17,11 @@ function App() {
         <Route path="/" exact>
           <Home />
         </Route>
-        <Route path="/scores">
-          <Scores />
+        <Route path="/team-scores">
+          <TeamScores />
+        </Route>
+        <Route path="/user-scores">
+          <UserScores />
         </Route>
         <Route path="/rules">
           <Rules />
