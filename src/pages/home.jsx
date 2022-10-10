@@ -3,11 +3,10 @@ import { navColor } from "../components/Navbar/NavbarElements";
 import groups from "../images/groups.jpeg";
 import background1 from "../images/background1.png";
 import whiteLogo from "../images/white-logo.svg";
-import qatar from "../images/svg/qa.svg";
-import ecuador from "../images/svg/ec.svg";
-import senegal from "../images/svg/sn.svg";
-import netherlands from "../images/svg/nl.svg";
 import styled from "styled-components";
+
+import { groupA } from "../data/teams";
+import { groupB } from "../data/teams";
 
 const Groups = styled.div`
   background-image: url(${background1});
@@ -27,6 +26,12 @@ const Subtitle = styled.h2`
 
 const GroupsContainer = styled.div`
   padding: 30px;
+  display: flex;
+  gap: 30px;
+`;
+
+const GroupContainer = styled.div`
+  // padding: 30px;
   // display: flex;
 `;
 
@@ -34,7 +39,7 @@ const GroupTitle = styled.div`
   color: white;
 `;
 
-const Group = styled.div`
+const Teams = styled.div`
   width: 250px;
   display: flex;
   flex-direction: column;
@@ -120,25 +125,34 @@ const Home = () => {
             </div>
           </div>
           <GroupsContainer>
-            <GroupTitle>Group A</GroupTitle>
-            <Group>
-              <Team>
-                <Flag src={qatar} alt="qatar flag" />
-                <TeamName>QATAR</TeamName>
-              </Team>
-              <Team>
-                <Flag src={ecuador} alt="ecuador flag" />
-                <TeamName>ECUADOR</TeamName>
-              </Team>
-              <Team>
-                <Flag src={senegal} alt="country flag" />
-                <TeamName>SENEGAL</TeamName>
-              </Team>
-              <Team>
-                <Flag src={netherlands} alt="netherlands flag" />
-                <TeamName>NETHERLANDS</TeamName>
-              </Team>
-            </Group>
+            <GroupContainer>
+              <GroupTitle>Group A</GroupTitle>
+              <Teams>
+                {groupA &&
+                  groupA.map((team, idx) => (
+                    <Team key={team.fifa}>
+                      <Flag src={team.flag} alt={team.flagAlt} />
+                      <TeamName>
+                        {idx + 1}. {team.name.toUpperCase()} ({team.fifa})
+                      </TeamName>
+                    </Team>
+                  ))}
+              </Teams>
+            </GroupContainer>
+            <GroupContainer>
+              <GroupTitle>Group B</GroupTitle>
+              <Teams>
+                {groupB &&
+                  groupB.map((team, idx) => (
+                    <Team key={team.fifa}>
+                      <Flag src={team.flag} alt={team.flagAlt} />
+                      <TeamName>
+                        {idx + 1}. {team.name.toUpperCase()} ({team.fifa})
+                      </TeamName>
+                    </Team>
+                  ))}
+              </Teams>
+            </GroupContainer>
           </GroupsContainer>
         </Groups>
       </div>
