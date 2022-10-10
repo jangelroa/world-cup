@@ -227,6 +227,7 @@ const Home = () => {
                     </div>
                   </div>
                   <div>{match.score}</div>
+                  <div>{match.date}</div>
                   <div
                     style={{
                       display: "flex",

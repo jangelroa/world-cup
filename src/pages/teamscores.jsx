@@ -1,6 +1,6 @@
 import React from "react";
 
-const Scores = () => {
+const TeamScores = () => {
   return (
     <div
       style={{
@@ -11,9 +11,9 @@ const Scores = () => {
         background: "#ddd",
       }}
     >
-      <h1>Scores</h1>
+      <h1>Team Scores</h1>
     </div>
   );
 };
 
-export default Scores;
+export default TeamScores;

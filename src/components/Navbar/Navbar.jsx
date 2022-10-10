@@ -18,8 +18,17 @@ const Navbar = () => {
         <NavLink to="/">
           <img src={logo} alt="logo" style={{ height: "80px" }} />
         </NavLink>
-        <NavLink to="/scores" style={{ fontWeight: "bold" }}>
-          SCORES
+        <NavLink to="/team-scores" style={{ fontWeight: "bold" }}>
+          <div>
+            <div style={{ textAlign: "center" }}>TEAM</div>
+            <div style={{ textAlign: "center" }}>SCORES</div>
+          </div>
+        </NavLink>
+        <NavLink to="/user-scores" style={{ fontWeight: "bold" }}>
+          <div>
+            <div style={{ textAlign: "center" }}>USER</div>
+            <div style={{ textAlign: "center" }}>SCORES</div>
+          </div>
         </NavLink>
         <NavLink to="/rules">RULES</NavLink>
         <NavLink to="/add-pool">ADD POOL</NavLink>
