@@ -1,21 +1,21 @@
 import React from "react";
-import { navColor } from "../components/Navbar/NavbarElements";
-import groups from "../images/groups.jpeg";
-import background1 from "../images/background1.png";
-import whiteLogo from "../images/white-logo.svg";
+import { navColor } from "../Navbar/NavbarElements";
+// import groups from "../../images/groups.jpeg";
+import background1 from "../../images/background1.png";
+import whiteLogo from "../../images/white-logo.svg";
 import styled from "styled-components";
 
-import { groupA } from "../data/teams";
-import { groupB } from "../data/teams";
-import { groupC } from "../data/teams";
-import { groupD } from "../data/teams";
-import { groupE } from "../data/teams";
-import { groupF } from "../data/teams";
-import { groupG } from "../data/teams";
-import { groupH } from "../data/teams";
-import { allTeams } from "../data/teams";
+import { groupA } from "../../data/teams";
+import { groupB } from "../../data/teams";
+import { groupC } from "../../data/teams";
+import { groupD } from "../../data/teams";
+import { groupE } from "../../data/teams";
+import { groupF } from "../../data/teams";
+import { groupG } from "../../data/teams";
+import { groupH } from "../../data/teams";
+import { allTeams } from "../../data/teams";
 
-import { matchday1 } from "../data/matches";
+import { matchday1 } from "../../data/matches";
 
 const allGroups = [
   groupA,
@@ -137,14 +137,6 @@ const getTeamName = (fifaTeam) => {
   });
   return team.name;
 };
-
-// const getTeamFlag = (fifaTeam) => {
-//   const team = allTeams.find((team) => {
-//     // console.log({ count: count++, team: team.fifa, matchday1: fifaTeam });
-//     return team.fifa === fifaTeam;
-//   });
-//   return team.flag;
-// };
 
 const getTeam = (fifaTeam) => {
   const team = allTeams.find((team) => {

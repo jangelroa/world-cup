@@ -1,0 +1,86 @@
+/_ --------------------------------------------------------- _/
+/_ ----- Good video on how to use Vitejs and Surge... ----- _/
+/_ --------------------------------------------------------- _/
+
+    How to build and deploy with Vite JS
+    https://www.youtube.com/watch?v=731woPHHVNU
+
+/_ --------------------------------------------------- _/
+/_ ----- How to start the project with Vitejs... ----- _/
+/_ --------------------------------------------------- _/
+
+VITEJS WEBSITE:
+
+    https://vitejs.dev/guide/
+
+CREATE THE PROJECT WITH VITEJS:
+
+    npm create vite@latest       OR      yarn create vite       OR      pnpm create vite
+
+            Project name: … world-cup
+            Select a framework: › React
+            Select a variant: › JavaScript
+
+            Scaffolding project in /Users/oslolisboa/Documents/PROJECTS/TEST/world-cup...
+
+            Done. Now run:
+
+            cd world-cup
+            yarn
+            yarn dev
+
+START LOCAL DEVELOPMENT WITH VITEJS: (follow last 3 suggestions)
+
+            cd world-cup
+            yarn                OR       npm install
+            yarn dev            OR       npm run dev
+
+BUILD WITH VITEJS:
+
+            yarn build            OR       npm run build
+
+                // this will create a dist folder that we can use
+                // to deploy with Surge
+
+PREVIEW WITH VITEJS:
+
+            yarn preview            OR       npm run preview
+
+                // this will preview the content of the dist folder
+                // in a local development
+
+/_ -------------------------------------- _/
+/_ ----- How to deploy to Surge... ----- _/
+/_ -------------------------------------- _/
+
+SURGE WEBSITE:
+
+    https://surge.sh/
+
+INSTALL SURGE:
+
+    npm install --global surge
+
+MOVE TO FOLDER PROJECT:
+
+    cd '/Users/oslolisboa/Documents/PROJECTS/Roque - World Cup/world-cup'
+    cd dist
+
+DEPLOY WITH SURGE:
+
+    surge
+
+            email: jangelroa@gmail.com
+            password: ***********
+            project path: (/Users/oslolisboa/Documents/PROJECTS/Roque - World Cup/world-cup)
+            size: 3 files. xxx bytes
+            domain: (worldcuppoolsf.surge.sh)
+
+RE-DEPLOY WITH SURGE:
+
+    surge --domain worldcuppoolsf.surge.sh
+
+    OR:
+
+    echo worldcuppoolsf.surge.sh > CNAME // creates a CNAME file with that url (this is only done once)
+    surge
