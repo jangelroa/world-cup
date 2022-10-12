@@ -2,12 +2,11 @@ import { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./pages/home";
-import Rules from "./pages/rules";
-import TeamScores from "./pages/teamscores";
-import UserScores from "./pages/userscores";
-import AddPool from "./pages/addpool";
-// import SignUp from "./pages/signup";
+import Home from "./components/pages/home";
+import Rules from "./components/pages/rules";
+import TeamScores from "./components/pages/teamscores";
+import UserScores from "./components/pages/userscores";
+import AddPool from "./components/pages/addpool";
 
 function App() {
   return (
@@ -29,7 +28,6 @@ function App() {
         <Route path="/add-pool">
           <AddPool />
         </Route>
-        {/* <Route path="/sign-up" component={SignUp} /> */}
       </Switch>
     </Router>
   );

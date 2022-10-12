@@ -1,6 +1,6 @@
 import React from "react";
 
-const Contact = () => {
+const AddPool = () => {
   return (
     <div
       style={{
@@ -26,4 +26,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default AddPool;

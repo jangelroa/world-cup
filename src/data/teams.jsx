@@ -37,11 +37,12 @@ import portugal from "../images/flags/portugal.webp";
 import uruguay from "../images/flags/uruguay.webp";
 import southKorea from "../images/flags/southKorea.webp";
 import ghana from "../images/flags/ghana.webp";
+import { allMatches } from "./matches";
 
 export const rankingFifa =
   "https://www.fifa.com/fifa-world-ranking/men?dateId=id13792";
 
-export const groupA = [
+export const teamsGroupA = [
   {
     fifa: 8,
     name: "Netherlands",
@@ -76,7 +77,7 @@ export const groupA = [
   },
 ];
 
-export const groupB = [
+export const teamsGroupB = [
   {
     fifa: 5,
     name: "England",
@@ -111,7 +112,7 @@ export const groupB = [
   },
 ];
 
-export const groupC = [
+export const teamsGroupC = [
   {
     fifa: 3,
     name: "Argentina",
@@ -146,7 +147,7 @@ export const groupC = [
   },
 ];
 
-export const groupD = [
+export const teamsGroupD = [
   {
     fifa: 4,
     name: "France",
@@ -181,7 +182,7 @@ export const groupD = [
   },
 ];
 
-export const groupE = [
+export const teamsGroupE = [
   {
     fifa: 7,
     name: "Spain",
@@ -216,7 +217,7 @@ export const groupE = [
   },
 ];
 
-export const groupF = [
+export const teamsGroupF = [
   {
     fifa: 2,
     name: "Belgium",
@@ -251,7 +252,7 @@ export const groupF = [
   },
 ];
 
-export const groupG = [
+export const teamsGroupG = [
   {
     fifa: 1,
     name: "Brazil",
@@ -286,7 +287,7 @@ export const groupG = [
   },
 ];
 
-export const groupH = [
+export const teamsGroupH = [
   {
     fifa: 9,
     name: "Portugal",
@@ -322,12 +323,77 @@ export const groupH = [
 ];
 
 export const allTeams = [
-  ...groupA,
-  ...groupB,
-  ...groupC,
-  ...groupD,
-  ...groupE,
-  ...groupF,
-  ...groupG,
-  ...groupH,
+  ...teamsGroupA,
+  ...teamsGroupB,
+  ...teamsGroupC,
+  ...teamsGroupD,
+  ...teamsGroupE,
+  ...teamsGroupF,
+  ...teamsGroupG,
+  ...teamsGroupH,
 ];
+
+export const calculateTeamScores = (team) => {
+  let points = 0;
+  let scoringTeam;
+  let rivalTeam;
+  // loop through the matches
+
+  for (let game = 0; game < allMatches.length; game++) {
+    const match = allMatches[game];
+    if (match.team1.score === null) {
+      break;
+    }
+    if (team.fifa === match.team1.fifa) {
+      scoringTeam = match.team1;
+      rivalTeam = match.team2;
+    } else if (team.fifa === match.team2.fifa) {
+      scoringTeam = match.team2;
+      rivalTeam = match.team1;
+    } else {
+      // team is not in the match
+      continue;
+    }
+    // if the team is in the match add a point for each goal
+    points += scoringTeam.score;
+
+    if (scoringTeam.penalties !== null) {
+      // add a point for each penalty
+      points += scoringTeam.penalties;
+    }
+
+    if (scoringTeam.score > rivalTeam.score) {
+      console.log("VICTORY");
+      // add 3 points for victory
+      points += 3;
+    }
+
+    if (scoringTeam.score === rivalTeam.score) {
+      // console.log("TIED");
+      if (!scoringTeam.penalties) {
+        // console.log("TIED WITH NOOOOOOOO PENALTIES");
+        // tied match and no penalties (matchday1, 2 or 3)
+        // add 1 point for tied
+        points += 1;
+      }
+      if (
+        scoringTeam.penalties &&
+        scoringTeam.penalties > rivalTeam.penalties
+      ) {
+        // tied match and penalties
+        // console.log("TIED WITH PENALTIES");
+        // add 3 points for victory,
+        //  added 2 because alredy added 1 for tied
+        points += 3;
+        continue;
+      }
+    }
+  }
+  // return the points
+  return points;
+};
+
+console.log({
+  qatar: calculateTeamScores(teamsGroupA[3]),
+  ecuador: calculateTeamScores(teamsGroupA[2]),
+});

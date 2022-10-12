@@ -1,31 +1,31 @@
 import React from "react";
-import { navColor } from "../components/Navbar/NavbarElements";
-import groups from "../images/groups.jpeg";
-import background1 from "../images/background1.png";
-import whiteLogo from "../images/white-logo.svg";
+// import { navColor } from "../Navbar/NavbarElements";
+// import groups from "../../images/groups.jpeg";
+import background1 from "../../images/background1.png";
+import whiteLogo from "../../images/white-logo.svg";
 import styled from "styled-components";
 
-import { groupA } from "../data/teams";
-import { groupB } from "../data/teams";
-import { groupC } from "../data/teams";
-import { groupD } from "../data/teams";
-import { groupE } from "../data/teams";
-import { groupF } from "../data/teams";
-import { groupG } from "../data/teams";
-import { groupH } from "../data/teams";
-import { allTeams } from "../data/teams";
+import { teamsGroupA } from "../../data/teams";
+import { teamsGroupB } from "../../data/teams";
+import { teamsGroupC } from "../../data/teams";
+import { teamsGroupD } from "../../data/teams";
+import { teamsGroupE } from "../../data/teams";
+import { teamsGroupF } from "../../data/teams";
+import { teamsGroupG } from "../../data/teams";
+import { teamsGroupH } from "../../data/teams";
+import { allTeams } from "../../data/teams";
 
-import { matchday1 } from "../data/matches";
+import { matchday1 } from "../../data/matches";
 
 const allGroups = [
-  groupA,
-  groupB,
-  groupC,
-  groupD,
-  groupE,
-  groupF,
-  groupG,
-  groupH,
+  teamsGroupA,
+  teamsGroupB,
+  teamsGroupC,
+  teamsGroupD,
+  teamsGroupE,
+  teamsGroupF,
+  teamsGroupG,
+  teamsGroupH,
 ];
 
 const Quadrant = styled.div`
@@ -132,26 +132,45 @@ let count = 0;
 
 const getTeamName = (fifaTeam) => {
   const team = allTeams.find((team) => {
-    // console.log({ count: count++, team: team.fifa, matchday1: fifaTeam });
     return team.fifa === fifaTeam;
   });
   return team.name;
 };
 
-// const getTeamFlag = (fifaTeam) => {
-//   const team = allTeams.find((team) => {
-//     // console.log({ count: count++, team: team.fifa, matchday1: fifaTeam });
-//     return team.fifa === fifaTeam;
-//   });
-//   return team.flag;
-// };
-
 const getTeam = (fifaTeam) => {
   const team = allTeams.find((team) => {
-    // console.log({ count: count++, team: team.fifa, matchday1: fifaTeam });
     return team.fifa === fifaTeam;
   });
   return team;
+};
+
+const MatchScore = ({ match }) => (
+  <div>
+    {match.team1.score}-{match.team2.score}
+  </div>
+);
+const PenaltiesScore = ({ match }) => {
+  if (!match.team1.penalties) {
+    return;
+  }
+  return (
+    <div>
+      ({match.team1.penalties}-{match.team2.penalties})
+    </div>
+  );
+};
+
+const getScore = (match) => {
+  if (!match.team1.score) {
+    return match.date;
+  }
+
+  return (
+    <div style={{ display: "flex", gap: "5px", flexWrap: "wrap" }}>
+      <MatchScore match={match} />
+      <PenaltiesScore match={match} />
+    </div>
+  );
 };
 
 const Home = () => {
@@ -175,7 +194,7 @@ const Home = () => {
         >
           <div
             style={{
-              background: "#aaa",
+              background: "#ccc",
               borderRadius: "24px",
               // display: "inline-block",
               padding: "10px",
@@ -204,8 +223,8 @@ const Home = () => {
         <ThickLine />
         <div>
           {matchday1.map((match, i) => {
-            const team1 = getTeam(match.team1);
-            const team2 = getTeam(match.team2);
+            const team1 = getTeam(match.team1.fifa);
+            const team2 = getTeam(match.team2.fifa);
             return (
               <div key={i}>
                 <div
@@ -220,14 +239,19 @@ const Home = () => {
                   <div style={{ display: "flex", width: "40%" }}>
                     <Flag src={team1.flag} alt={team1.flagAlt} />
                     <div style={{ marginLeft: "10px" }}>
-                      {getTeamName(match.team1)}
-                    </div>
-                    <div style={{ marginLeft: "30px", color: "#555" }}>
-                      10 pts
+                      {getTeamName(match.team1.fifa)}
                     </div>
                   </div>
-                  <div>{match.score}</div>
-                  <div>{match.date}</div>
+                  <div>
+                    {/* {match.team1.score
+                      ? `${match.team1.score}-${match.team2.score} `
+                      : match.date}
+                    {match.team1.penalties
+                      ? `(${match.team1.penalties}-${match.team2.penalties})`
+                      : ""} */}
+                    {getScore(match)}
+                  </div>
+                  {/* <div>{match.team1.score && match.date}</div> */}
                   <div
                     style={{
                       display: "flex",
@@ -236,7 +260,7 @@ const Home = () => {
                     }}
                   >
                     <div style={{ marginRight: "10px" }}>
-                      {getTeamName(match.team2)}
+                      {getTeamName(match.team2.fifa)}
                     </div>
                     <Flag src={team2.flag} alt={team2.flagAlt} />
                   </div>
