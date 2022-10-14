@@ -363,7 +363,7 @@ export const calculateTeamScores = (team) => {
     }
 
     if (scoringTeam.score > rivalTeam.score) {
-      console.log("VICTORY");
+      // console.log("VICTORY");
       // add 3 points for victory
       points += 3;
     }
@@ -393,7 +393,26 @@ export const calculateTeamScores = (team) => {
   return points;
 };
 
-console.log({
-  qatar: calculateTeamScores(teamsGroupA[3]),
-  ecuador: calculateTeamScores(teamsGroupA[2]),
-});
+// console.log({
+//   qatar: calculateTeamScores(teamsGroupA[3]),
+//   ecuador: calculateTeamScores(teamsGroupA[2]),
+// });
+
+const teamScoresList = () => {
+  // loop throught the teams
+  // for every team call calculateTeamScores
+  // return a list of teams with the scores on it
+  return allTeams.map((team) => {
+    const teamScore = calculateTeamScores(team);
+    if (teamScore !== 0) {
+      console.log({ fifa: team.fifa, team: team.name, points: teamScore });
+    }
+    return { ...team, points: teamScore };
+  });
+};
+
+// console.log({
+//   teamScoresList: teamScoresList(),
+// });
+
+teamScoresList();

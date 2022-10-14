@@ -9,7 +9,7 @@ export const matchday1 = [
     team2: {
       fifa: 44,
       name: "Ecuador",
-      score: 5,
+      score: 0,
       penalties: null,
     },
     date: "11/20",
@@ -19,14 +19,14 @@ export const matchday1 = [
     team1: {
       fifa: 5,
       name: "England",
-      score: 2,
-      penalties: 4,
+      score: 4,
+      penalties: null,
     },
     team2: {
       fifa: 20,
       name: "Iran",
-      score: 2,
-      penalties: 1,
+      score: 4,
+      penalties: null,
     },
     date: "11/21",
     time: "",

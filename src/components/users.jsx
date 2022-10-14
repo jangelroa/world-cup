@@ -18,3 +18,6 @@ const users = [
 ];
 
 const calculateUserScores = (user) => {};
+
+const paraElFormularioEnIngles =
+  "Before submitting the form, make sure you selected 4 teams with number 1, 4 teams with number 2,  4 teams with number 3 and 4 teams with number 4.";
