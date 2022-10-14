@@ -7,6 +7,11 @@ console.log({
   teamScoresList: teamScoresList(),
 });
 
+const Flag = styled.img`
+  height: 20px;
+  width: 25px;
+`;
+
 const TeamList = styled.div`
   padding: 60px;
   max-width: 1000px;
@@ -24,7 +29,7 @@ const TeamScores = () => {
             background: "yellow",
           }}
         >
-          (testing points)
+          (test points)
         </span>
         <ThickLine />
         <div>
@@ -32,9 +37,8 @@ const TeamScores = () => {
             .sort((a, b) => b.points - a.points)
             .map((team, index) => {
               return (
-                <>
+                <div key={index}>
                   <div
-                    key={index}
                     style={{
                       display: "flex",
                       justifyContent: "space-between",
@@ -42,23 +46,42 @@ const TeamScores = () => {
                       height: "50px",
                     }}
                   >
-                    <div>{team.name}</div>
-                    <div>{team.points}</div>
+                    <div
+                      style={{
+                        display: "flex",
+                        // justifyContent: "space-between",
+                        alignItems: "center",
+                        height: "50px",
+                        gap: "15px",
+                      }}
+                    >
+                      <div>{index + 1}.</div>
+                      <div>
+                        <Flag src={team.flag} alt={team.flagAlt} />
+                      </div>
+                      <div>{team.name}</div>
+                    </div>
+                    <div>
+                      {team.points}{" "}
+                      <span
+                        style={{
+                          color: "#666",
+                          fontSize: ".8rem",
+                        }}
+                      >
+                        puntos
+                      </span>
+                    </div>
                   </div>
                   <ThinLine />
-                </>
+                </div>
               );
             })}
         </div>
       </TeamList>
+      <br />
     </>
   );
 };
 
 export default TeamScores;
-
-/*
-https://us04web.zoom.us/j/74894271845?pwd=cuUAc4PzkWiHDUbaTxWf2ZAbALvvUr.1
-
-
-*/

@@ -211,6 +211,14 @@ const Home = () => {
       </div> */}
       <Partidos>
         <h2>Primeros Partidos</h2>
+        <span
+          style={{
+            color: "red",
+            background: "yellow",
+          }}
+        >
+          (test scores)
+        </span>
         <ThickLine />
         <div>
           {matchday1.map((match, i) => {

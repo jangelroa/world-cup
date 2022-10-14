@@ -37,6 +37,16 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+
+.rules-list {
+  /* not applying, take a look at adding bolder fonts */
+  font-weight: bolder;
+}
+
+.rules-list li{
+  margin: 10px 20px;
+}
+
 /* 
 button {
   border-radius: 8px;
