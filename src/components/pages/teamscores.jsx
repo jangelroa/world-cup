@@ -1,29 +1,50 @@
 import React from "react";
 import styled from "styled-components";
+import { ThickLine, ThinLine } from "./home";
+import { teamScoresList } from "../../data/teams";
+
+console.log({
+  teamScoresList: teamScoresList(),
+});
 
 const TeamList = styled.div`
   padding: 60px;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 `;
 
 const TeamScores = () => {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "90vh",
-        background: "#ddd",
-      }}
-    >
-      <h1>Team Scores</h1>
-      {/* <TeamList>
-        <h2>Primeros Partidos</h2>
+    <>
+      <TeamList>
+        <h2>Puntuación Equipos</h2>
+        (testing data)
         <ThickLine />
-      </TeamList> */}
-    </div>
+        <div>
+          {teamScoresList()
+            .sort((a, b) => b.points - a.points)
+            .map((team, index) => {
+              return (
+                <>
+                  <div
+                    key={index}
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                      height: "50px",
+                    }}
+                  >
+                    <div>{team.name}</div>
+                    <div>{team.points}</div>
+                  </div>
+                  <ThinLine />
+                </>
+              );
+            })}
+        </div>
+      </TeamList>
+    </>
   );
 };
 

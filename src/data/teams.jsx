@@ -398,15 +398,15 @@ export const calculateTeamScores = (team) => {
 //   ecuador: calculateTeamScores(teamsGroupA[2]),
 // });
 
-const teamScoresList = () => {
+export const teamScoresList = () => {
   // loop throught the teams
   // for every team call calculateTeamScores
   // return a list of teams with the scores on it
   return allTeams.map((team) => {
     const teamScore = calculateTeamScores(team);
-    if (teamScore !== 0) {
-      console.log({ fifa: team.fifa, team: team.name, points: teamScore });
-    }
+    // if (teamScore !== 0) {
+    //   console.log({ fifa: team.fifa, team: team.name, points: teamScore });
+    // }
     return { ...team, points: teamScore };
   });
 };
@@ -415,4 +415,4 @@ const teamScoresList = () => {
 //   teamScoresList: teamScoresList(),
 // });
 
-teamScoresList();
+// teamScoresList();
