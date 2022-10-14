@@ -18,7 +18,14 @@ const TeamScores = () => {
     <>
       <TeamList>
         <h2>Puntuación Equipos</h2>
-        (testing data)
+        <span
+          style={{
+            color: "red",
+            background: "yellow",
+          }}
+        >
+          (testing points)
+        </span>
         <ThickLine />
         <div>
           {teamScoresList()
