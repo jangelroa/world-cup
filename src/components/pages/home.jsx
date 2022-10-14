@@ -95,13 +95,13 @@ const Partidos = styled.div`
   margin: 0 auto;
 `;
 
-const ThickLine = styled.hr`
+export const ThickLine = styled.hr`
   border: 0;
   height: 2px;
   background: #000;
 `;
 
-const ThinLine = styled.hr`
+export const ThinLine = styled.hr`
   border: 0;
   height: 1px;
   background: #000;
@@ -175,16 +175,7 @@ const getScore = (match) => {
 
 const Home = () => {
   return (
-    <div
-      style={{
-        // display: "flex",
-        background: "#ddd",
-        // justifyContent: "center",
-        // alignItems: "center",
-        // marginTop: "50px",
-        // height: "90vh",
-      }}
-    >
+    <>
       <Quadrant>
         <div
           style={{
@@ -228,7 +219,7 @@ const Home = () => {
             return (
               <div key={i}>
                 <div
-                  key={i}
+                  // key={i}
                   style={{
                     display: "flex",
                     justifyContent: "space-between",
@@ -242,16 +233,7 @@ const Home = () => {
                       {getTeamName(match.team1.fifa)}
                     </div>
                   </div>
-                  <div>
-                    {/* {match.team1.score
-                      ? `${match.team1.score}-${match.team2.score} `
-                      : match.date}
-                    {match.team1.penalties
-                      ? `(${match.team1.penalties}-${match.team2.penalties})`
-                      : ""} */}
-                    {getScore(match)}
-                  </div>
-                  {/* <div>{match.team1.score && match.date}</div> */}
+                  <div>{getScore(match)}</div>
                   <div
                     style={{
                       display: "flex",
@@ -271,7 +253,7 @@ const Home = () => {
           })}
         </div>
       </Partidos>
-    </div>
+    </>
   );
 };
 
