@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/pages/Home";
 import MatchesList from "./components/MatchesList";
 import TeamScores from "./components/Teamscores";
-import UserScores from "./components/pages/userscores";
+import UserScores from "./components/pages/UserScores";
 import AddPool from "./components/pages/addpool";
 
 function App() {

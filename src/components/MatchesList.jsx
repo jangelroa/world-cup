@@ -1,27 +1,18 @@
 import styled from "styled-components";
 import { matchday1 } from "../data/matches";
-import { ThickLine, ThinLine, Flag } from "./smallComponents";
-import { allTeams } from "../data/teams";
+import {
+  ThickLine,
+  ThinLine,
+  Flag,
+  getTeam,
+  getTeamName,
+} from "./smallComponents";
 
 const Partidos = styled.div`
   padding: 60px;
   max-width: 1200px;
   margin: 0 auto;
 `;
-
-const getTeam = (fifaTeam) => {
-  const team = allTeams.find((team) => {
-    return team.fifa === fifaTeam;
-  });
-  return team;
-};
-
-const getTeamName = (fifaTeam) => {
-  const team = allTeams.find((team) => {
-    return team.fifa === fifaTeam;
-  });
-  return team.name;
-};
 
 const MatchScore = ({ match }) => (
   <div>

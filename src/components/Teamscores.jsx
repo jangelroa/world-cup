@@ -15,7 +15,7 @@ const Flag = styled.img`
 
 const TeamList = styled.div`
   padding: 60px;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 `;
 
