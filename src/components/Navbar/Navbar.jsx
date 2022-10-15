@@ -18,6 +18,7 @@ const Navbar = () => {
         <NavLink to="/">
           <img src={logo} alt="logo" style={{ height: "80px" }} />
         </NavLink>
+        <NavLink to="/matches">GAMES</NavLink>
         <NavLink to="/team-scores" style={{ fontWeight: "bold" }}>
           <div>
             <div style={{ textAlign: "center" }}>TEAM</div>
@@ -30,7 +31,6 @@ const Navbar = () => {
             <div style={{ textAlign: "center" }}>SCORES</div>
           </div>
         </NavLink>
-        <NavLink to="/rules">RULES</NavLink>
         <NavLink to="/add-pool">ADD POOL</NavLink>
         {/* </NavMenu> */}
       </Nav>

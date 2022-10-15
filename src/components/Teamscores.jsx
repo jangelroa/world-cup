@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { ThickLine, ThinLine } from "./smallComponents";
+import { ThickLine } from "./smallComponents";
+import { ThinLine } from "./smallComponents";
 import { teamScoresList } from "../data/teams";
 
 console.log({
@@ -13,20 +14,28 @@ const Flag = styled.img`
 `;
 
 const TeamList = styled.div`
-  padding: 0 60px 60px 60px;
-  max-width: 400px;
+  padding: 60px;
+  max-width: 1000px;
   margin: 0 auto;
 `;
 
-const RankingFifa = () => {
+const TeamScores = () => {
   return (
     <>
       <TeamList>
-        <h2>Ranking Fifa</h2>
+        <h2>Puntuación Equipos</h2>
+        <span
+          style={{
+            color: "red",
+            background: "yellow",
+          }}
+        >
+          (test points)
+        </span>
         <ThickLine />
         <div>
           {teamScoresList()
-            .sort((a, b) => a.fifa - b.fifa)
+            .sort((a, b) => b.points - a.points)
             .map((team, index) => {
               return (
                 <div key={index}>
@@ -36,7 +45,6 @@ const RankingFifa = () => {
                       justifyContent: "space-between",
                       alignItems: "center",
                       height: "50px",
-                      gap: "15px",
                     }}
                   >
                     <div
@@ -48,10 +56,23 @@ const RankingFifa = () => {
                         gap: "15px",
                       }}
                     >
-                      <Flag src={team.flag} alt={team.flagAlt} />
+                      <div>{index + 1}.</div>
+                      <div>
+                        <Flag src={team.flag} alt={team.flagAlt} />
+                      </div>
                       <div>{team.name}</div>
                     </div>
-                    <div>({team.fifa})</div>
+                    <div>
+                      {team.points}{" "}
+                      <span
+                        style={{
+                          color: "#666",
+                          fontSize: ".8rem",
+                        }}
+                      >
+                        puntos
+                      </span>
+                    </div>
                   </div>
                   <ThinLine />
                 </div>
@@ -59,8 +80,9 @@ const RankingFifa = () => {
             })}
         </div>
       </TeamList>
+      <br />
     </>
   );
 };
 
-export default RankingFifa;
+export default TeamScores;

@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { ThickLine, ThinLine } from "./home";
-import RankingFifa from "../rankingFifa";
+import { ThickLine, ThinLine } from "./smallComponents";
 
 const RulesContainer = styled.div`
   padding: 60px;
@@ -88,7 +87,6 @@ const Rules = () => {
         <br />
         <ThinLine />
       </RulesContainer>
-      <RankingFifa />
     </>
   );
 };
