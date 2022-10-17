@@ -7,19 +7,12 @@ import {
   Flag,
   truncate,
 } from "../smallComponents";
-import { users } from "../../data/users";
 import { UserScoresList } from "../../data/users";
-
-const UsersList = styled.div`
-  padding: 60px;
-  max-width: 1200px;
-  margin: 0 auto;
-`;
 
 const UserScores = () => {
   return (
     <>
-      <UsersList>
+      <div className="user-list">
         <div style={{ display: "flex", justifyContent: "space-between" }}>
           <h2>User Scores</h2>
           <h5 style={{ textAlign: "right" }}>(click in a row for details)</h5>
@@ -36,7 +29,7 @@ const UserScores = () => {
               );
             })}
         </div>
-      </UsersList>
+      </div>
     </>
   );
 };

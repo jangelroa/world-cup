@@ -6,7 +6,7 @@ import Home from "./components/pages/Home";
 import MatchesList from "./components/MatchesList";
 import TeamScores from "./components/Teamscores";
 import UserScores from "./components/pages/UserScores";
-import AddPool from "./components/pages/addpool";
+import AddPool from "./components/pages/AddPool";
 
 function App() {
   return (

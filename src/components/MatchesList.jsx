@@ -8,12 +8,6 @@ import {
   getTeamName,
 } from "./smallComponents";
 
-const Partidos = styled.div`
-  padding: 60px;
-  max-width: 1200px;
-  margin: 0 auto;
-`;
-
 const MatchScore = ({ match }) => (
   <div>
     {match.team1.score}-{match.team2.score}
@@ -45,7 +39,7 @@ const getScore = (match) => {
 
 const MatchesList = () => {
   return (
-    <Partidos>
+    <div className="partidos">
       <h2>Primeros Partidos</h2>
       <span
         style={{
@@ -96,7 +90,7 @@ const MatchesList = () => {
           );
         })}
       </div>
-    </Partidos>
+    </div>
   );
 };
 

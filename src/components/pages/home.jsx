@@ -1,6 +1,4 @@
 import React from "react";
-// import { navColor } from "../Navbar/NavbarElements";
-// import groups from "../../images/groups.jpeg";
 import background1 from "../../images/background1.png";
 import whiteLogo from "../../images/white-logo.svg";
 import styled from "styled-components";
@@ -15,12 +13,6 @@ const Quadrant = styled.div`
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
-`;
-
-const Title = styled.h1`
-  color: white;
-  text-align: center;
-  padding: 30px;
 `;
 
 const Subtitle = styled.h2`
@@ -50,6 +42,7 @@ const Teams = styled.div`
   display: flex;
   flex-direction: column;
   gap: 7px;
+  // width: 100%;
 `;
 
 const Team = styled.div`
@@ -100,16 +93,14 @@ const Home = () => {
             style={{
               background: "#ccc",
               borderRadius: "24px",
-              // display: "inline-block",
               padding: "10px",
-              // height: "250px",
             }}
           >
             <img src={whiteLogo} alt="white logo" style={{ height: "150px" }} />
           </div>
           <div>
-            <Title>WORLD CUP QATAR 2022</Title>
-            <Subtitle>GROUPS</Subtitle>
+            <h1 className="home-title">WORLD CUP QATAR 2022</h1>
+            <h2 className="home-subtitle">GROUPS</h2>
           </div>
         </div>
         <GroupsContainer>
@@ -119,9 +110,6 @@ const Home = () => {
             ))}
         </GroupsContainer>
       </Quadrant>
-      {/* <div>
-        <img style={{ width: "800px" }} src={groups} alt="groups" />
-      </div> */}
       <Rules />
       <RankingFifa />
     </>

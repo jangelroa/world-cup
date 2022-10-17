@@ -13,16 +13,10 @@ const Flag = styled.img`
   width: 25px;
 `;
 
-const TeamList = styled.div`
-  padding: 60px;
-  max-width: 1200px;
-  margin: 0 auto;
-`;
-
 const TeamScores = () => {
   return (
     <>
-      <TeamList>
+      <div className="team-list">
         <h2>Puntuación Equipos</h2>
         <span
           style={{
@@ -79,7 +73,7 @@ const TeamScores = () => {
               );
             })}
         </div>
-      </TeamList>
+      </div>
       <br />
     </>
   );
