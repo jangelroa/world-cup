@@ -47,6 +47,54 @@ h1 {
   margin: 10px 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .nav-drop-down-list {
+    display: none;
+  }
+}
+
+.nav-drop-down-list {
+  background: #6E0434;
+  /* border-top: 1px solid black; */
+  text-align: right;
+}
+
+.nav-drop-down-list li a {
+  height: 50px;
+  text-align: right;
+}
+
+.home-title {
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+.home-subtitle {
+  color: white;
+  text-align: center;
+}
+
+.partidos, .team-list, .user-list {
+  padding: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .home-title {
+    display: none;
+  }
+  .home-subtitle {
+    display: none;
+  }
+  .partidos, .team-list, .user-list {
+    padding: 60px 5px;
+  }
+}
+
+
+
 /* 
 button {
   border-radius: 8px;
