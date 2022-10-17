@@ -12,16 +12,10 @@ const Flag = styled.img`
   width: 25px;
 `;
 
-const TeamList = styled.div`
-  padding: 0 60px 60px 60px;
-  max-width: 400px;
-  margin: 0 auto;
-`;
-
 const RankingFifa = () => {
   return (
     <>
-      <TeamList>
+      <div className="ranking-list">
         <h2>Ranking Fifa</h2>
         <ThickLine />
         <div>
@@ -58,7 +52,7 @@ const RankingFifa = () => {
               );
             })}
         </div>
-      </TeamList>
+      </div>
     </>
   );
 };

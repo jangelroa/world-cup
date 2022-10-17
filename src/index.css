@@ -75,7 +75,7 @@ h1 {
   text-align: center;
 }
 
-.partidos, .team-list, .user-list {
+.partidos, .team-list, .user-list, .ranking-list {
   padding: 60px;
   max-width: 1200px;
   margin: 0 auto;
@@ -88,7 +88,7 @@ h1 {
   .home-subtitle {
     display: none;
   }
-  .partidos, .team-list, .user-list {
+  .partidos, .team-list, .user-list, .ranking-list {
     padding: 60px 5px;
   }
 }

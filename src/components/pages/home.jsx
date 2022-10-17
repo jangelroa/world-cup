@@ -6,7 +6,7 @@ import { Flag } from "../smallComponents";
 
 import { allGroups } from "../../data/teams";
 import Rules from "../Rules";
-import RankingFifa from "../rankingFifa";
+import RankingFifa from "../RankingFifa";
 
 const Quadrant = styled.div`
   background-image: url(${background1});
