@@ -78,6 +78,9 @@ DEPLOY WITH SURGE:
 
 RE-DEPLOY WITH SURGE:
 
+    cp index.html 200.html   // to avoid PAGE NOT FOUND
+                             // after YARN BUILD
+
     surge --domain worldcuppoolsf.surge.sh
 
     OR:
