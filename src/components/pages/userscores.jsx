@@ -21,6 +21,7 @@ const UserScores = () => {
         <div>
           {UserScoresList()
             .sort((a, b) => b.totalPoint - a.totalPoint)
+            .filter((user) => user) // ALL USERS
             .map((user, index) => {
               return (
                 <div key={index}>
