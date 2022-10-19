@@ -8,7 +8,7 @@ import { Flag } from "../smallComponents";
 import { allGroups } from "../../data/teams";
 import Rules from "../Rules";
 import RankingFifa from "../RankingFifa";
-import { ThinLine } from "../smallComponents";
+import { ShortThinLine } from "../smallComponents";
 
 const Quadrant = styled.div`
   background-image: url(${background1});
@@ -106,7 +106,7 @@ const Home = () => {
         </GroupsContainer>
       </Quadrant>
       <Rules />
-      <ThinLine />
+      <ShortThinLine />
       <RankingFifa />
     </>
   );

@@ -13,6 +13,11 @@ export const ThinLine = styled.hr`
   background: #000;
 `;
 
+export const ShortThinLine = styled(ThinLine)`
+  width: 30%;
+  margin: 0 auto;
+`;
+
 export const Flag = styled.img`
   height: 20px;
   width: 25px;
