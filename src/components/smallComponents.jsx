@@ -16,6 +16,7 @@ export const ThinLine = styled.hr`
 export const Flag = styled.img`
   height: 20px;
   width: 25px;
+  border-radius: 10%;
 `;
 
 export const getTeam = (fifaTeam) => {

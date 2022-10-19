@@ -1,6 +1,7 @@
 import React from "react";
 import background1 from "../../images/background1.png";
-import whiteLogo from "../../images/white-logo.svg";
+// import whiteLogo from "../../images/white-logo.svg";
+import logo from "../../images/qatar-logo.jpg";
 import styled from "styled-components";
 import { Flag } from "../smallComponents";
 
@@ -91,12 +92,12 @@ const Home = () => {
         >
           <div
             style={{
-              background: "#ccc",
-              borderRadius: "24px",
+              // background: "#ccc",
+              // borderRadius: "24px",
               padding: "10px",
             }}
           >
-            <img src={whiteLogo} alt="white logo" style={{ height: "150px" }} />
+            <img src={logo} alt="white logo" style={{ height: "150px" }} />
           </div>
           <div>
             <h1 className="home-title">WORLD CUP QATAR 2022</h1>
