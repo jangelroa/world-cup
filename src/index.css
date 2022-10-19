@@ -47,7 +47,7 @@ h1 {
   margin: 0 5px 0 30px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
   .nav-drop-down-list {
     display: none;
   }
@@ -88,7 +88,7 @@ h1 {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .home-header {
     display: none;
   }

@@ -13,6 +13,10 @@ export const ThinLine = styled.hr`
   background: #000;
 `;
 
+export const MobileThinLine = styled(ThinLine)`
+  background-color: #888;
+`;
+
 export const ShortThinLine = styled(ThinLine)`
   width: 30%;
   margin: 0 auto;

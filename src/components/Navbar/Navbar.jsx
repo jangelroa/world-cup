@@ -9,7 +9,7 @@ import {
   NavBtnLink,
   NavDropDownList,
 } from "./NavbarElements";
-import { ThickLine, ThinLine } from "../smallComponents";
+import { ThinLine, MobileThinLine } from "../smallComponents";
 import logo from "../../images/qatar-logo.jpg";
 import { Link } from "react-router-dom";
 
@@ -49,28 +49,15 @@ const Navbar = () => {
         </NavLink>
         <Bars onClick={() => setShowMobileMenu((show) => !show)} />
         <NavMenu>
-          <div>
-            <NavLink to="/matches">GAMES</NavLink>
-          </div>
-          <div>
-            <NavLink to="/team-scores" style={{ fontWeight: "bold" }}>
-              <div>
-                <div style={{ textAlign: "center" }}>TEAM</div>
-                <div style={{ textAlign: "center" }}>SCORES</div>
-              </div>
-            </NavLink>
-          </div>
-          <div>
-            <NavLink to="/user-scores" style={{ fontWeight: "bold" }}>
-              <div>
-                <div style={{ textAlign: "center" }}>PARTICIPANTS</div>
-                <div style={{ textAlign: "center" }}>SCORES</div>
-              </div>
-            </NavLink>
-          </div>
-          <div>
-            <NavLink to="/add-pool">ADD POOL</NavLink>
-          </div>
+          <NavLink to="/">HOME</NavLink>
+          <NavLink to="/matches">GAMES</NavLink>
+          <NavLink to="/team-scores" style={{ fontWeight: "bold" }}>
+            TEAMS
+          </NavLink>
+          <NavLink to="/user-scores" style={{ fontWeight: "bold" }}>
+            PARTICIPANTS
+          </NavLink>
+          <NavLink to="/add-pool">ADD POOL</NavLink>
         </NavMenu>
       </Nav>
       <NavDropDown
@@ -89,26 +76,31 @@ const NavDropDown = ({ showMobileMenu, setShowMobileMenu }) =>
       className="nav-drop-down-list"
       onClick={() => setShowMobileMenu(false)}
     >
-      <ThinLine />
+      <MobileThinLine />
       <ul>
         <li>
           <MobileNavLink to="/">HOME</MobileNavLink>
+          <MobileThinLine />
         </li>
         <li>
           <MobileNavLink to="/matches">GAMES</MobileNavLink>
+          <MobileThinLine />
         </li>
         <li>
           <MobileNavLink to="/team-scores" style={{ fontWeight: "bold" }}>
-            TEAM SCORES
+            TEAMS
           </MobileNavLink>
+          <MobileThinLine />
         </li>
         <li>
           <MobileNavLink to="/user-scores" style={{ fontWeight: "bold" }}>
-            PARTICIPANTS SCORES
+            PARTICIPANTS
           </MobileNavLink>
+          <MobileThinLine />
         </li>
         <li>
           <MobileNavLink to="/add-pool">ADD POOL</MobileNavLink>
+          <MobileThinLine />
         </li>
       </ul>
     </div>

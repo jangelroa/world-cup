@@ -11,11 +11,14 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1000px) / 2);
-  z-index: 10;
-  // position: sticky;
+  z-index: 1000;
   width: 100%;
   /* Third Nav */
   // justify-content: flex-start;
+  position: sticky;
+  // position: fixed;
+  top: 0;
+  left: 0;
 `;
 
 export const NavLink = styled(Link)`
@@ -41,7 +44,7 @@ export const MobileNavLink = styled(NavLink)`
 export const Bars = styled(FaBars)`
   display: none;
   color: #fff;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     display: block;
     position: absolute;
     top: 0;
@@ -63,7 +66,7 @@ export const NavMenu = styled.div`
   /* Third Nav */
   width: 100vw;
   white-space: nowrap;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     display: none;
   }
 `;
@@ -75,7 +78,7 @@ export const NavBtn = styled.nav`
   /* Third Nav */
   /* justify-content: flex-end;
   width: 100vw; */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     display: none;
   }
 `;
@@ -101,7 +104,7 @@ export const NavBtnLink = styled(Link)`
 
 export const NavDropDownList = styled.div`
   background: red;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 900px) {
     display: flex;
   }
 `;
