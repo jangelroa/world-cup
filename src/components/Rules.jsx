@@ -2,17 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { ThickLine, ThinLine } from "./smallComponents";
 
-const RulesContainer = styled.div`
-  padding: 60px;
-  max-width: 1200px;
-  margin: 0 auto;
-`;
-
 const Rules = () => {
   return (
     <>
       <div className="rules-container">
-        {/* <RulesContainer> */}
         <h2>Rules</h2>
         <ThickLine />
         <div className="rules-list">
@@ -85,8 +78,6 @@ const Rules = () => {
           <br />
           <div>Buena Suerte...</div>
         </div>
-        <br />
-        {/* </RulesContainer> */}
       </div>
     </>
   );

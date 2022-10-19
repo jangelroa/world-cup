@@ -44,7 +44,7 @@ h1 {
 }
 
 .rules-list li{
-  margin: 10px 20px;
+  margin: 0 5px 0 30px;
 }
 
 @media screen and (min-width: 768px) {
