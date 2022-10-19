@@ -11,7 +11,8 @@ const RulesContainer = styled.div`
 const Rules = () => {
   return (
     <>
-      <RulesContainer>
+      <div className="rules-container">
+        {/* <RulesContainer> */}
         <h2>Rules</h2>
         <ThickLine />
         <div className="rules-list">
@@ -85,8 +86,8 @@ const Rules = () => {
           <div>Buena Suerte...</div>
         </div>
         <br />
-        <ThinLine />
-      </RulesContainer>
+        {/* </RulesContainer> */}
+      </div>
     </>
   );
 };
