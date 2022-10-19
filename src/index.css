@@ -44,7 +44,7 @@ h1 {
 }
 
 .rules-list li{
-  margin: 10px 20px;
+  margin: 0 5px 0 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -56,7 +56,7 @@ h1 {
 .nav-drop-down-list {
   background: #6E0434;
   /* border-top: 1px solid black; */
-  text-align: right;
+  /* text-align: right; */
 }
 
 .nav-drop-down-list li a {
@@ -75,20 +75,31 @@ h1 {
   text-align: center;
 }
 
-.partidos, .team-list, .user-list, .ranking-list {
+.partidos, .team-list, .user-list, .ranking-list, .rules-container {
   padding: 60px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
+.home-header {
+  display: flex;
+  margin: 50px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 768px) {
+  .home-header {
+    display: none;
+  }
   .home-title {
     display: none;
   }
   .home-subtitle {
     display: none;
   }
-  .partidos, .team-list, .user-list, .ranking-list {
+
+  .partidos, .team-list, .user-list, .ranking-list, .rules-container {
     padding: 60px 5px;
   }
 }
@@ -96,6 +107,7 @@ h1 {
 .language img {
   border-radius: 50%;
 }
+
 
 
 

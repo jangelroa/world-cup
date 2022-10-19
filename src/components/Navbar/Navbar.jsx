@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import {
   Nav,
   NavLink,
+  MobileNavLink,
   Bars,
   NavMenu,
   NavBtn,
@@ -91,23 +92,23 @@ const NavDropDown = ({ showMobileMenu, setShowMobileMenu }) =>
       <ThinLine />
       <ul>
         <li>
-          <NavLink to="/">HOME</NavLink>
+          <MobileNavLink to="/">HOME</MobileNavLink>
         </li>
         <li>
-          <NavLink to="/matches">GAMES</NavLink>
+          <MobileNavLink to="/matches">GAMES</MobileNavLink>
         </li>
         <li>
-          <NavLink to="/team-scores" style={{ fontWeight: "bold" }}>
+          <MobileNavLink to="/team-scores" style={{ fontWeight: "bold" }}>
             TEAM SCORES
-          </NavLink>
+          </MobileNavLink>
         </li>
         <li>
-          <NavLink to="/user-scores" style={{ fontWeight: "bold" }}>
+          <MobileNavLink to="/user-scores" style={{ fontWeight: "bold" }}>
             PARTICIPANTS SCORES
-          </NavLink>
+          </MobileNavLink>
         </li>
         <li>
-          <NavLink to="/add-pool">ADD POOL</NavLink>
+          <MobileNavLink to="/add-pool">ADD POOL</MobileNavLink>
         </li>
       </ul>
     </div>

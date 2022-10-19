@@ -8,6 +8,7 @@ import { Flag } from "../smallComponents";
 import { allGroups } from "../../data/teams";
 import Rules from "../Rules";
 import RankingFifa from "../RankingFifa";
+import { ThinLine } from "../smallComponents";
 
 const Quadrant = styled.div`
   background-image: url(${background1});
@@ -84,16 +85,9 @@ const Home = () => {
   return (
     <>
       <Quadrant>
-        <div
-          style={{
-            display: "flex",
-            margin: "50px",
-          }}
-        >
+        <div className="home-header">
           <div
             style={{
-              // background: "#ccc",
-              // borderRadius: "24px",
               padding: "10px",
             }}
           >
@@ -112,6 +106,7 @@ const Home = () => {
         </GroupsContainer>
       </Quadrant>
       <Rules />
+      <ThinLine />
       <RankingFifa />
     </>
   );

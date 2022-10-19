@@ -34,6 +34,10 @@ export const NavLink = styled(Link)`
   }
 `;
 
+export const MobileNavLink = styled(NavLink)`
+  justify-content: center;
+`;
+
 export const Bars = styled(FaBars)`
   display: none;
   color: #fff;
