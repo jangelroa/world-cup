@@ -53,14 +53,14 @@ const MatchesDay = ({ matchesday, title }) => {
   return (
     <div className="partidos">
       <h2>{title}</h2>
-      <span
+      {/* <span
         style={{
           color: "red",
           background: "yellow",
         }}
       >
         (test scores)
-      </span>
+      </span> */}
       <ThickLine />
       <div>
         {matchesday.map((match, i) => {
