@@ -17,15 +17,15 @@ const TeamScores = () => {
   return (
     <>
       <div className="team-list">
-        <h2>Puntuación Equipos</h2>
-        <span
+        <h2>Team Scores</h2>
+        {/* <span
           style={{
             color: "red",
             background: "yellow",
           }}
         >
           (test points)
-        </span>
+        </span> */}
         <ThickLine />
         <div>
           {teamScoresList()

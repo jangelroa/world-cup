@@ -14,7 +14,7 @@ const UserScores = () => {
     <>
       <div className="user-list">
         <div style={{ display: "flex", justifyContent: "space-between" }}>
-          <h2>User Scores</h2>
+          <h2>Participant Scores</h2>
           <h5 style={{ textAlign: "right" }}>(click in a row for details)</h5>
         </div>
         <ThickLine />

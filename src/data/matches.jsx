@@ -1,15 +1,17 @@
-export const matchday1 = [
+export const matchesday1 = [
   {
     team1: {
       fifa: 50,
       name: "Qatar",
-      score: 1,
+      spanishName: "Qatar",
+      score: null,
       penalties: null,
     },
     team2: {
       fifa: 44,
       name: "Ecuador",
-      score: 5,
+      spanishName: "Ecuador",
+      score: null,
       penalties: null,
     },
     date: "11/20",
@@ -19,14 +21,16 @@ export const matchday1 = [
     team1: {
       fifa: 5,
       name: "England",
-      score: 2,
-      penalties: 4,
+      spanishName: "Inglaterra",
+      score: null,
+      penalties: null,
     },
     team2: {
       fifa: 20,
       name: "Iran",
-      score: 2,
-      penalties: 1,
+      spanishName: "Iran",
+      score: null,
+      penalties: null,
     },
     date: "11/21",
     time: "",
@@ -35,13 +39,15 @@ export const matchday1 = [
     team1: {
       fifa: 18,
       name: "Senegal",
-      score: 2,
+      spanishName: "Senegal",
+      score: null,
       penalties: null,
     },
     team2: {
       fifa: 8,
       name: "Netherlands",
-      score: 4,
+      spanishName: "Holanda",
+      score: null,
       penalties: null,
     },
     date: "11/21",
@@ -51,13 +57,15 @@ export const matchday1 = [
     team1: {
       fifa: 16,
       name: "USA",
-      score: 2,
+      spanishName: "USA",
+      score: null,
       penalties: null,
     },
     team2: {
       fifa: 19,
       name: "Wales",
-      score: 6,
+      spanishName: "Gales",
+      score: null,
       penalties: null,
     },
     date: "11/21",
@@ -67,13 +75,15 @@ export const matchday1 = [
     team1: {
       fifa: 3,
       name: "Argentina",
-      score: 7,
+      spanishName: "Argentina",
+      score: null,
       penalties: null,
     },
     team2: {
       fifa: 51,
       name: "Saudi Arabia",
-      score: 2,
+      spanishName: "Arabia Saudi",
+      score: null,
       penalties: null,
     },
     date: "11/22",
@@ -83,12 +93,14 @@ export const matchday1 = [
     team1: {
       fifa: 10,
       name: "Denmark",
+      spanishName: "Dinamarca",
       score: null,
       penalties: null,
     },
     team2: {
       fifa: 30,
       name: "Tunisia",
+      spanishName: "Túnez",
       score: null,
       penalties: null,
     },
@@ -99,12 +111,14 @@ export const matchday1 = [
     team1: {
       fifa: 13,
       name: "Mexico",
+      spanishName: "Mexico",
       score: null,
       penalties: null,
     },
     team2: {
       fifa: 26,
       name: "Poland",
+      spanishName: "Polonia",
       score: null,
       penalties: null,
     },
@@ -115,12 +129,14 @@ export const matchday1 = [
     team1: {
       fifa: 4,
       name: "France",
+      spanishName: "Francia",
       score: null,
       penalties: null,
     },
     team2: {
       fifa: 38,
       name: "Australia",
+      spanishName: "Australia",
       score: null,
       penalties: null,
     },
@@ -131,12 +147,14 @@ export const matchday1 = [
     team1: {
       fifa: 22,
       name: "Morocco",
+      spanishName: "Marruecos",
       score: null,
       penalties: null,
     },
     team2: {
       fifa: 12,
       name: "Croatia",
+      spanishName: "Croacia",
       score: null,
       penalties: null,
     },
@@ -147,12 +165,14 @@ export const matchday1 = [
     team1: {
       fifa: 11,
       name: "Germany",
+      spanishName: "Alemania",
       score: null,
       penalties: null,
     },
     team2: {
       fifa: 24,
       name: "Japan",
+      spanishName: "Japón",
       score: null,
       penalties: null,
     },
@@ -163,12 +183,14 @@ export const matchday1 = [
     team1: {
       fifa: 7,
       name: "Spain",
+      spanishName: "España",
       score: null,
       penalties: null,
     },
     team2: {
       fifa: 31,
       name: "Costa Rica",
+      spanishName: "Costa Rica",
       score: null,
       penalties: null,
     },
@@ -179,12 +201,14 @@ export const matchday1 = [
     team1: {
       fifa: 2,
       name: "Belgium",
+      spanishName: "Belgica",
       score: null,
       penalties: null,
     },
     team2: {
       fifa: 41,
       name: "Canada",
+      spanishName: "Canada",
       score: null,
       penalties: null,
     },
@@ -195,12 +219,14 @@ export const matchday1 = [
     team1: {
       fifa: 15,
       name: "Switzerland",
+      spanishName: "Suiza",
       score: null,
       penalties: null,
     },
     team2: {
       fifa: 43,
       name: "Cameroon",
+      spanishName: "Camerún",
       score: null,
       penalties: null,
     },
@@ -211,12 +237,14 @@ export const matchday1 = [
     team1: {
       fifa: 14,
       name: "Uruguay",
+      spanishName: "Uruguay",
       score: null,
       penalties: null,
     },
     team2: {
       fifa: 28,
       name: "South Korea",
+      spanishName: "Korea Sur",
       score: null,
       penalties: null,
     },
@@ -227,12 +255,14 @@ export const matchday1 = [
     team1: {
       fifa: 9,
       name: "Portugal",
+      spanishName: "Portugal",
       score: null,
       penalties: null,
     },
     team2: {
       fifa: 61,
       name: "Ghana",
+      spanishName: "Ghana",
       score: null,
       penalties: null,
     },
@@ -243,12 +273,14 @@ export const matchday1 = [
     team1: {
       fifa: 1,
       name: "Brazil",
+      spanishName: "Brasil",
       score: null,
       penalties: null,
     },
     team2: {
       fifa: 21,
       name: "Serbia",
+      spanishName: "Serbia",
       score: null,
       penalties: null,
     },
@@ -257,27 +289,316 @@ export const matchday1 = [
   },
 ];
 
-export const matchday2 = [];
+export const matchesday2 = [
+  {
+    team1: {
+      fifa: 19,
+      name: "Wales",
+      spanishName: "Gales",
+      score: null,
+      penalties: null,
+    },
+    team2: {
+      fifa: 20,
+      name: "Iran",
+      spanishName: "Iran",
+      score: null,
+      penalties: null,
+    },
+    date: "11/25",
+    time: "",
+  },
+  {
+    team1: {
+      fifa: 50,
+      name: "Qatar",
+      spanishName: "Qatar",
+      score: null,
+      penalties: null,
+    },
+    team2: {
+      fifa: 18,
+      name: "Senegal",
+      spanishName: "Senegal",
+      score: null,
+      penalties: null,
+    },
+    date: "11/25",
+    time: "",
+  },
+  {
+    team1: {
+      fifa: 8,
+      name: "Netherlands",
+      spanishName: "Holanda",
+      score: null,
+      penalties: null,
+    },
+    team2: {
+      fifa: 44,
+      name: "Ecuador",
+      spanishName: "Ecuador",
+      score: null,
+      penalties: null,
+    },
+    date: "11/25",
+    time: "",
+  },
+  {
+    team1: {
+      fifa: 5,
+      name: "England",
+      spanishName: "Inglaterra",
+      score: null,
+      penalties: null,
+    },
+    team2: {
+      fifa: 16,
+      name: "USA",
+      spanishName: "USA",
+      score: null,
+      penalties: null,
+    },
+    date: "11/25",
+    time: "",
+  },
+  {
+    team1: {
+      fifa: 30,
+      name: "Tunisia",
+      spanishName: "Túnez",
+      score: null,
+      penalties: null,
+    },
+    team2: {
+      fifa: 38,
+      name: "Australia",
+      spanishName: "Australia",
+      score: null,
+      penalties: null,
+    },
+    date: "11/26",
+    time: "",
+  },
+  {
+    team1: {
+      fifa: 26,
+      name: "Poland",
+      spanishName: "Polonia",
+      score: null,
+      penalties: null,
+    },
+    team2: {
+      fifa: 51,
+      name: "Saudi Arabia",
+      spanishName: "Arabia Saudi",
+      score: null,
+      penalties: null,
+    },
+    date: "11/26",
+    time: "",
+  },
+  {
+    team1: {
+      fifa: 4,
+      name: "France",
+      spanishName: "Francia",
+      score: null,
+      penalties: null,
+    },
+    team2: {
+      fifa: 10,
+      name: "Denmark",
+      spanishName: "Dinamarca",
+      score: null,
+      penalties: null,
+    },
+    date: "11/26",
+    time: "",
+  },
+  {
+    team1: {
+      fifa: 3,
+      name: "Argentina",
+      spanishName: "Argentina",
+      score: null,
+      penalties: null,
+    },
+    team2: {
+      fifa: 13,
+      name: "Mexico",
+      spanishName: "Mexico",
+      score: null,
+      penalties: null,
+    },
+    date: "11/26",
+    time: "",
+  },
+  {
+    team1: {
+      fifa: 24,
+      name: "Japan",
+      spanishName: "Japón",
+      score: null,
+      penalties: null,
+    },
+    team2: {
+      fifa: 31,
+      name: "Costa Rica",
+      spanishName: "Costa Rica",
+      score: null,
+      penalties: null,
+    },
+    date: "11/27",
+    time: "",
+  },
+  {
+    team1: {
+      fifa: 2,
+      name: "Belgium",
+      spanishName: "Belgica",
+      score: null,
+      penalties: null,
+    },
+    team2: {
+      fifa: 22,
+      name: "Morocco",
+      spanishName: "Marruecos",
+      score: null,
+      penalties: null,
+    },
+    date: "11/27",
+    time: "",
+  },
+  {
+    team1: {
+      fifa: 12,
+      name: "Croatia",
+      spanishName: "Croacia",
+      score: null,
+      penalties: null,
+    },
+    team2: {
+      fifa: 41,
+      name: "Canada",
+      spanishName: "Canada",
+      score: null,
+      penalties: null,
+    },
+    date: "11/27",
+    time: "",
+  },
+  {
+    team1: {
+      fifa: 7,
+      name: "Spain",
+      spanishName: "España",
+      score: null,
+      penalties: null,
+    },
+    team2: {
+      fifa: 11,
+      name: "Germany",
+      spanishName: "Alemania",
+      score: null,
+      penalties: null,
+    },
+    date: "11/27",
+    time: "",
+  },
+  {
+    team1: {
+      fifa: 43,
+      name: "Cameroon",
+      spanishName: "Camerún",
+      score: null,
+      penalties: null,
+    },
+    team2: {
+      fifa: 21,
+      name: "Serbia",
+      spanishName: "Serbia",
+      score: null,
+      penalties: null,
+    },
+    date: "11/28",
+    time: "",
+  },
+  {
+    team1: {
+      fifa: 28,
+      name: "South Korea",
+      spanishName: "Korea Sur",
+      score: null,
+      penalties: null,
+    },
+    team2: {
+      fifa: 61,
+      name: "Ghana",
+      spanishName: "Ghana",
+      score: null,
+      penalties: null,
+    },
+    date: "11/28",
+    time: "",
+  },
+  {
+    team1: {
+      fifa: 1,
+      name: "Brazil",
+      spanishName: "Brasil",
+      score: null,
+      penalties: null,
+    },
+    team2: {
+      fifa: 15,
+      name: "Switzerland",
+      spanishName: "Suiza",
+      score: null,
+      penalties: null,
+    },
+    date: "11/28",
+    time: "",
+  },
+  {
+    team1: {
+      fifa: 9,
+      name: "Portugal",
+      spanishName: "Portugal",
+      score: null,
+      penalties: null,
+    },
+    team2: {
+      fifa: 14,
+      name: "Uruguay",
+      spanishName: "Uruguay",
+      score: null,
+      penalties: null,
+    },
+    date: "11/28",
+    time: "",
+  },
+];
 
-export const matchday3 = [];
+export const matchesday3 = [];
 
-export const matchday4 = [];
+export const matchesday4 = [];
 
-export const matchday5 = [];
+export const matchesday5 = [];
 
-export const matchday6 = [];
+export const matchesday6 = [];
 
-export const matchday7 = [];
+export const matchesday7 = [];
 
-export const matchday8 = [];
+export const matchesday8 = [];
 
 export const allMatches = [
-  ...matchday1,
-  ...matchday2,
-  ...matchday3,
-  ...matchday4,
-  ...matchday5,
-  ...matchday6,
-  ...matchday7,
-  ...matchday8,
+  ...matchesday1,
+  ...matchesday2,
+  ...matchesday3,
+  ...matchesday4,
+  ...matchesday5,
+  ...matchesday6,
+  ...matchesday7,
+  ...matchesday8,
 ];

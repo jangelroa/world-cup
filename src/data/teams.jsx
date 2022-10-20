@@ -374,16 +374,13 @@ export const calculateTeamScores = (team) => {
     }
 
     if (scoringTeam.score > rivalTeam.score) {
-      // console.log("VICTORY");
       // add 3 points for victory
       points += 3;
     }
 
     if (scoringTeam.score === rivalTeam.score) {
-      // console.log("TIED");
       if (!scoringTeam.penalties) {
-        // console.log("TIED WITH NOOOOOOOO PENALTIES");
-        // tied match and no penalties (matchday1, 2 or 3)
+        // tied match and no penalties (matchesday1, 2 or 3)
         // add 1 point for tied
         points += 1;
       }
@@ -392,7 +389,6 @@ export const calculateTeamScores = (team) => {
         scoringTeam.penalties > rivalTeam.penalties
       ) {
         // tied match and penalties
-        // console.log("TIED WITH PENALTIES");
         // add 3 points for victory,
         //  added 2 because alredy added 1 for tied
         points += 3;

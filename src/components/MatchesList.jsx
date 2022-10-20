@@ -1,5 +1,7 @@
 import styled from "styled-components";
-import { matchday1 } from "../data/matches";
+import { matchesday1 } from "../data/matches";
+import { matchesday2 } from "../data/matches";
+import { matchesday3 } from "../data/matches";
 import {
   ThickLine,
   ThinLine,
@@ -39,19 +41,29 @@ const getScore = (match) => {
 
 const MatchesList = () => {
   return (
+    <>
+      <MatchesDay matchesday={matchesday1} title="Match day 1" />
+      <MatchesDay matchesday={matchesday2} title="Match day 2" />
+      <MatchesDay matchesday={matchesday3} title="Match day 3" />
+    </>
+  );
+};
+
+const MatchesDay = ({ matchesday, title }) => {
+  return (
     <div className="partidos">
-      <h2>Primeros Partidos</h2>
-      <span
+      <h2>{title}</h2>
+      {/* <span
         style={{
           color: "red",
           background: "yellow",
         }}
       >
         (test scores)
-      </span>
+      </span> */}
       <ThickLine />
       <div>
-        {matchday1.map((match, i) => {
+        {matchesday.map((match, i) => {
           const team1 = getTeam(match.team1.fifa);
           const team2 = getTeam(match.team2.fifa);
           return (
