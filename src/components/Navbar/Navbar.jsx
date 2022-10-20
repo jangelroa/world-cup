@@ -57,7 +57,7 @@ const Navbar = () => {
           <NavLink to="/user-scores" style={{ fontWeight: "bold" }}>
             PARTICIPANTS
           </NavLink>
-          <NavLink to="/add-pool">ADD POOL</NavLink>
+          <NavLink to="/add-pool">ADD-POOL</NavLink>
         </NavMenu>
       </Nav>
       <NavDropDown
@@ -99,7 +99,7 @@ const NavDropDown = ({ showMobileMenu, setShowMobileMenu }) =>
           <MobileThinLine />
         </li>
         <li>
-          <MobileNavLink to="/add-pool">ADD POOL</MobileNavLink>
+          <MobileNavLink to="/add-pool">ADD-POOL</MobileNavLink>
           <MobileThinLine />
         </li>
       </ul>

@@ -17,7 +17,7 @@ const TeamScores = () => {
   return (
     <>
       <div className="team-list">
-        <h2>Puntuación Equipos</h2>
+        <h2>Team Scores</h2>
         <span
           style={{
             color: "red",

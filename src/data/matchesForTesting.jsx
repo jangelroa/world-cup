@@ -1,4 +1,4 @@
-export const matchday1 = [
+export const matchesday1 = [
   {
     team1: {
       fifa: 50,
@@ -257,27 +257,27 @@ export const matchday1 = [
   },
 ];
 
-export const matchday2 = [];
+export const matchesday2 = [];
 
-export const matchday3 = [];
+export const matchesday3 = [];
 
-export const matchday4 = [];
+export const matchesday4 = [];
 
-export const matchday5 = [];
+export const matchesday5 = [];
 
-export const matchday6 = [];
+export const matchesday6 = [];
 
-export const matchday7 = [];
+export const matchesday7 = [];
 
-export const matchday8 = [];
+export const matchesday8 = [];
 
 export const allMatches = [
-  ...matchday1,
-  ...matchday2,
-  ...matchday3,
-  ...matchday4,
-  ...matchday5,
-  ...matchday6,
-  ...matchday7,
-  ...matchday8,
+  ...matchesday1,
+  ...matchesday2,
+  ...matchesday3,
+  ...matchesday4,
+  ...matchesday5,
+  ...matchesday6,
+  ...matchesday7,
+  ...matchesday8,
 ];

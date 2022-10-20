@@ -11,6 +11,109 @@ const Rules = () => {
         <div className="rules-list">
           <ol>
             <li>
+              Select a total of 16 countries from the 32 countries participating
+              in the World Cup. Each participant/entry must choose:
+              <ul>
+                <li>
+                  4 teams that are ranked #1 e.g. Brazil (1), Belgium (2),
+                  Argentina (3),...
+                </li>
+                <li>
+                  4 teams that are ranked #2 e.g. Denmark (10), Germany (11),
+                  Croatia (12),...
+                </li>
+                <li>
+                  4 teams that are ranked #3 e.g. Wales (19), Serbia (21),
+                  Morocco (22),...
+                </li>
+                <li>
+                  4 teams that are ranked #4 e.g. Iran (20), Costa Rica (31),
+                  Australia (38),...
+                </li>
+                <li>
+                  Note: The number in the parentheses is the FIFA global
+                  ranking.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Select the Winner of the final match and Number of Goals scored in
+              the final match. (e.g. a 3-2 score = 5) All goals will count
+              (goals in regulation time, goals in possible extra time, and goals
+              in possible penalty shootout after extra time MUST be factored
+              into your entry).
+            </li>
+            <li>
+              Note: You can make as many entries as you want using the same
+              email BUT each entry must be entered separately. Please remember
+              to change the name on the form for each separate entry you submit
+              with the same email to indicate that it is a new entry and not a
+              change to an existing entry. Example:
+              <div style={{ marginLeft: "30px" }}>
+                entry1 -{">"} Email: Antonio@gmail.com, Nombre: Antonio
+              </div>
+              <div style={{ marginLeft: "30px" }}>
+                entry2 -&gt; Email: Antonio@gmail.com, Nombre: Antonio2
+              </div>
+            </li>
+            <li>
+              Each selected country receives 3 points for each win, 1 point for
+              each draw, and 1 point for each goal*** scored.
+            </li>
+            <li>
+              All entries can be edited (make changes to selections) until{" "}
+              <span style={{ color: "red" }}>
+                Saturday November 19th, 8 pm PST
+              </span>
+              . This is also the deadline for the acceptance of new entries.
+            </li>
+            <li>
+              The winner is the entry that accumulates the most points at the
+              end of the Tournament.
+            </li>
+            <li>
+              Tie Breaker: If there is a tie, the winner will be whoever chooses
+              the winner of the final game. If there is still a tie, the winner
+              will be the entry that correctly chose the number of goals***
+              scored in the final match (or the entry that comes closest to the
+              number of goals).
+            </li>
+            <li>
+              ***All goals will count (goals in regulation time, goals in
+              possible extra time, and goals in possible penalty shootouts after
+              extra time).
+            </li>
+            <li>
+              All entries and changes must be submitted no later than{" "}
+              <span style={{ color: "red" }}>
+                Saturday November 19th, 8 pm PST
+              </span>{" "}
+              (the day before the first World Cup match).
+            </li>
+            <li>
+              After submitting your entry, you will receive a confirmation email
+              from the commissioner with a link allowing you to edit/change your
+              selections until the deadline.
+            </li>
+            <li>Follow the pool and World Cup results here in our website.</li>
+          </ol>
+          <br />
+          <div>Good luck.</div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+const OLDSPANISHRules = () => {
+  return (
+    <>
+      <div className="rules-container">
+        <h2>Rules</h2>
+        <ThickLine />
+        <div className="rules-list">
+          <ol>
+            <li>
               Seleccione 16 países de los 32 países participando en la Copa
               Mundial.
             </li>
@@ -76,7 +179,7 @@ const Rules = () => {
             tanda de penalties después de la prorroga).
           </div>
           <br />
-          <div>Buena Suerte...</div>
+          <div>Buena Suerte.</div>
         </div>
       </div>
     </>

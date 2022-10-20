@@ -41,22 +41,25 @@ h1 {
 .rules-list {
   /* not applying, take a look at adding bolder fonts */
   font-weight: bolder;
+  margin-top: 20px;
 }
 
 .rules-list li{
   margin: 0 5px 0 30px;
 }
 
-@media screen and (min-width: 900px) {
-  .nav-drop-down-list {
-    display: none;
-  }
-}
-
 .nav-drop-down-list {
   background: #6E0434;
   /* border-top: 1px solid black; */
   /* text-align: right; */
+  position: sticky;
+  top: 80px;
+}
+
+@media screen and (min-width: 900px) {
+  .nav-drop-down-list {
+    display: none;
+  }
 }
 
 .nav-drop-down-list li a {

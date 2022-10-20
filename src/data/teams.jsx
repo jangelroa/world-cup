@@ -380,7 +380,7 @@ export const calculateTeamScores = (team) => {
 
     if (scoringTeam.score === rivalTeam.score) {
       if (!scoringTeam.penalties) {
-        // tied match and no penalties (matchday1, 2 or 3)
+        // tied match and no penalties (matchesday1, 2 or 3)
         // add 1 point for tied
         points += 1;
       }
