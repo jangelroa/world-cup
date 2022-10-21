@@ -46,6 +46,7 @@ export const teamsGroupA = [
   {
     fifa: 8,
     name: "Netherlands",
+    spanishName: "Holanda",
     flag: netherlands,
     points: 0,
     group: "A",
@@ -55,6 +56,7 @@ export const teamsGroupA = [
     fifa: 18,
     name: "Senegal",
     flag: senegal,
+    spanishName: "Senegal",
     points: 0,
     group: "A",
     flagAlt: "Senegal flag",
@@ -63,6 +65,7 @@ export const teamsGroupA = [
     fifa: 44,
     name: "Ecuador",
     flag: ecuador,
+    spanishName: "Ecuador",
     points: 0,
     group: "A",
     flagAlt: "Ecuador flag",
@@ -70,6 +73,7 @@ export const teamsGroupA = [
   {
     fifa: 50,
     name: "Qatar",
+    spanishName: "Qatar",
     flag: qatar,
     points: 0,
     group: "A",
@@ -81,6 +85,7 @@ export const teamsGroupB = [
   {
     fifa: 5,
     name: "England",
+    spanishName: "Inglaterra",
     flag: england,
     points: 0,
     group: "B",
@@ -89,6 +94,7 @@ export const teamsGroupB = [
   {
     fifa: 16,
     name: "USA",
+    spanishName: "USA",
     flag: usa,
     points: 0,
     group: "B",
@@ -97,6 +103,7 @@ export const teamsGroupB = [
   {
     fifa: 19,
     name: "Wales",
+    spanishName: "Gales",
     flag: wales,
     points: 0,
     group: "B",
@@ -105,6 +112,7 @@ export const teamsGroupB = [
   {
     fifa: 20,
     name: "Iran",
+    spanishName: "Iran",
     flag: iran,
     points: 0,
     group: "B",
@@ -116,6 +124,7 @@ export const teamsGroupC = [
   {
     fifa: 3,
     name: "Argentina",
+    spanishName: "Argentina",
     flag: argentina,
     points: 0,
     group: "C",
@@ -124,6 +133,7 @@ export const teamsGroupC = [
   {
     fifa: 13,
     name: "Mexico",
+    spanishName: "Mexico",
     flag: mexico,
     points: 0,
     group: "C",
@@ -132,6 +142,7 @@ export const teamsGroupC = [
   {
     fifa: 26,
     name: "Poland",
+    spanishName: "Polonia",
     flag: poland,
     points: 0,
     group: "C",
@@ -140,6 +151,7 @@ export const teamsGroupC = [
   {
     fifa: 51,
     name: "Saudi Arabia",
+    spanishName: "Arabia Saudi",
     flag: saudiArabia,
     points: 0,
     group: "C",
@@ -151,6 +163,7 @@ export const teamsGroupD = [
   {
     fifa: 4,
     name: "France",
+    spanishName: "Francia",
     flag: france,
     points: 0,
     group: "D",
@@ -159,6 +172,7 @@ export const teamsGroupD = [
   {
     fifa: 10,
     name: "Denmark",
+    spanishName: "Dinamarca",
     flag: denmark,
     points: 0,
     group: "D",
@@ -167,6 +181,7 @@ export const teamsGroupD = [
   {
     fifa: 30,
     name: "Tunisia",
+    spanishName: "Túnez",
     flag: tunisia,
     points: 0,
     group: "D",
@@ -175,6 +190,7 @@ export const teamsGroupD = [
   {
     fifa: 38,
     name: "Australia",
+    spanishName: "Australia",
     flag: australia,
     points: 0,
     group: "D",
@@ -186,6 +202,7 @@ export const teamsGroupE = [
   {
     fifa: 7,
     name: "Spain",
+    spanishName: "España",
     flag: spain,
     points: 0,
     group: "E",
@@ -194,6 +211,7 @@ export const teamsGroupE = [
   {
     fifa: 11,
     name: "Germany",
+    spanishName: "Alemania",
     flag: germany,
     points: 0,
     group: "E",
@@ -202,6 +220,7 @@ export const teamsGroupE = [
   {
     fifa: 24,
     name: "Japan",
+    spanishName: "Japón",
     flag: japan,
     points: 0,
     group: "E",
@@ -210,6 +229,7 @@ export const teamsGroupE = [
   {
     fifa: 31,
     name: "Costa Rica",
+    spanishName: "Costa Rica",
     flag: costaRica,
     points: 0,
     group: "E",
@@ -221,6 +241,7 @@ export const teamsGroupF = [
   {
     fifa: 2,
     name: "Belgium",
+    spanishName: "Bélgica",
     flag: belgium,
     points: 0,
     group: "F",
@@ -229,6 +250,7 @@ export const teamsGroupF = [
   {
     fifa: 12,
     name: "Croatia",
+    spanishName: "Croacia",
     flag: croatia,
     points: 0,
     group: "F",
@@ -237,6 +259,7 @@ export const teamsGroupF = [
   {
     fifa: 22,
     name: "Morocco",
+    spanishName: "Marruecos",
     flag: morocco,
     points: 0,
     group: "F",
@@ -245,6 +268,7 @@ export const teamsGroupF = [
   {
     fifa: 41,
     name: "Canada",
+    spanishName: "Canada",
     flag: canada,
     points: 0,
     group: "F",
@@ -256,6 +280,7 @@ export const teamsGroupG = [
   {
     fifa: 1,
     name: "Brazil",
+    spanishName: "Brasil",
     flag: brazil,
     points: 0,
     group: "G",
@@ -264,6 +289,7 @@ export const teamsGroupG = [
   {
     fifa: 15,
     name: "Switzerland",
+    spanishName: "Suiza",
     flag: switzerland,
     points: 0,
     group: "G",
@@ -272,6 +298,7 @@ export const teamsGroupG = [
   {
     fifa: 21,
     name: "Serbia",
+    spanishName: "Serbia",
     flag: serbia,
     points: 0,
     group: "G",
@@ -280,6 +307,7 @@ export const teamsGroupG = [
   {
     fifa: 43,
     name: "Cameroon",
+    spanishName: "Camerún",
     flag: cameroon,
     points: 0,
     group: "G",
@@ -291,6 +319,7 @@ export const teamsGroupH = [
   {
     fifa: 9,
     name: "Portugal",
+    spanishName: "Portugal",
     flag: portugal,
     points: 0,
     group: "H",
@@ -299,6 +328,7 @@ export const teamsGroupH = [
   {
     fifa: 14,
     name: "Uruguay",
+    spanishName: "Uruguay",
     flag: uruguay,
     points: 0,
     group: "H",
@@ -307,6 +337,7 @@ export const teamsGroupH = [
   {
     fifa: 28,
     name: "South Korea",
+    spanishName: "Korea Sur",
     flag: southKorea,
     points: 0,
     group: "H",
@@ -315,6 +346,7 @@ export const teamsGroupH = [
   {
     fifa: 61,
     name: "Ghana",
+    spanishName: "Ghana",
     flag: ghana,
     points: 0,
     group: "H",

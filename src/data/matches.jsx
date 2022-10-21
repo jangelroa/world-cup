@@ -201,7 +201,7 @@ export const matchesday1 = [
     team1: {
       fifa: 2,
       name: "Belgium",
-      spanishName: "Belgica",
+      spanishName: "Bélgica",
       score: null,
       penalties: null,
     },
@@ -456,7 +456,7 @@ export const matchesday2 = [
     team1: {
       fifa: 2,
       name: "Belgium",
-      spanishName: "Belgica",
+      spanishName: "Bélgica",
       score: null,
       penalties: null,
     },

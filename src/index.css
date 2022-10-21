@@ -44,8 +44,12 @@ h1 {
   margin-top: 20px;
 }
 
-.rules-list li{
-  margin: 0 5px 0 30px;
+.rules-list > ol > li {
+  margin: 0 5px 10px 30px;
+}
+
+.rules-list > ol > li > ul li {
+  margin-left: 100px;
 }
 
 .nav-drop-down-list {
