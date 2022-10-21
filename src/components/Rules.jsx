@@ -11,6 +11,9 @@ const Rules = () => {
         <div className="rules-list">
           <ol>
             <li>
+              Click the ADD-POOL menu option to begin creating all your entries.
+            </li>
+            <li>
               Select a total of 16 countries from the 32 countries participating
               in the World Cup. Each participant/entry must choose:
               <ul>
@@ -78,9 +81,6 @@ const Rules = () => {
               number of goals).
             </li>
             <li>
-              Click the ADD-POOL menu option to begin creating all your entries.
-            </li>
-            <li>
               ***All goals will count (goals in regulation time, goals in
               possible extra time, and goals in possible penalty shootouts after
               extra time).
@@ -114,6 +114,10 @@ const SpanishRules = () => {
         <ThickLine />
         <div className="rules-list">
           <ol>
+            <li>
+              Pincha en la opción ADD-POOL del menu para empezar a crear todas
+              tus apuestas.
+            </li>
             <li>
               Seleccione 16 países de los 32 países participando en la Copa
               Mundial. Cada participante/apuesta debe elegir:
@@ -182,10 +186,6 @@ const SpanishRules = () => {
               ganador será la apuesta que acertó correctament el número de
               goles*** anotados para la final (o la apuesta que más se acerque
               al número de goles).
-            </li>
-            <li>
-              Pincha en la opción ADD-POOL del menu para empezar a crear todas
-              tus apuestas.
             </li>
             <li>
               *** Se contabilizaran todos los goles (goles durante el tiempo de
