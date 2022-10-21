@@ -11,56 +11,13 @@ const Rules = () => {
         <div className="rules-list">
           <ol>
             <li>
-              Click the ADD-POOL menu option to begin creating all your entries.
-            </li>
-            <li>
-              Select a total of 16 countries from the 32 countries participating
-              in the World Cup. Each participant/entry must choose:
-              <ul>
-                <li>
-                  4 teams that are ranked #1 e.g. Brazil (1), Belgium (2),
-                  Argentina (3),...
-                </li>
-                <li>
-                  4 teams that are ranked #2 e.g. Denmark (10), Germany (11),
-                  Croatia (12),...
-                </li>
-                <li>
-                  4 teams that are ranked #3 e.g. Wales (19), Serbia (21),
-                  Morocco (22),...
-                </li>
-                <li>
-                  4 teams that are ranked #4 e.g. Iran (20), Costa Rica (31),
-                  Australia (38),...
-                </li>
-                <li>
-                  Note: The number in the parentheses is the FIFA global
-                  ranking.
-                </li>
-              </ul>
-            </li>
-            <li>
-              Select the Winner of the final match and Number of Goals scored in
-              the final match (e.g. a 3-2 score = 5). All goals will count
-              (goals in regulation time, goals in possible extra time, and goals
-              in possible penalty shootout after extra time MUST be factored
-              into your entry).
-            </li>
-            <li>
-              Note: You can make as many entries as you want using the same
-              email. Please remember to change the name on the form for each
-              separate entry you submit with the same email to indicate that it
-              is a new entry and not a change to an existing entry. Example:
-              <div style={{ marginLeft: "100px" }}>
-                entry1 -{">"} Email: Peter@gmail.com, Nombre: Peter
-              </div>
-              <div style={{ marginLeft: "100px" }}>
-                entry2 -&gt; Email: Peter@gmail.com, Nombre: Peter2
-              </div>
-            </li>
-            <li>
               Each selected country receives 3 points for each win, 1 point for
               each draw, and 1 point for each goal*** scored.
+            </li>
+            <li>
+              ***All goals will count (goals in regulation time, goals in
+              possible extra time, and goals in possible penalty shootouts after
+              extra time).
             </li>
             <li>
               All entries can be edited (make changes to selections) until{" "}
@@ -81,11 +38,6 @@ const Rules = () => {
               number of goals).
             </li>
             <li>
-              ***All goals will count (goals in regulation time, goals in
-              possible extra time, and goals in possible penalty shootouts after
-              extra time).
-            </li>
-            <li>
               All entries and changes must be submitted no later than{" "}
               <span style={{ color: "red" }}>
                 Saturday November 19th, 8 pm PST
@@ -98,6 +50,9 @@ const Rules = () => {
               selections until the deadline.
             </li>
             <li>Follow the pool and World Cup results here in our website.</li>
+            <li>
+              Click the ADD-POOL menu option to begin creating all your entries.
+            </li>
           </ol>
           <br />
           <div>Good luck.</div>
@@ -115,57 +70,13 @@ const SpanishRules = () => {
         <div className="rules-list">
           <ol>
             <li>
-              Pincha en la opción ADD-POOL del menu para empezar a crear todas
-              tus apuestas.
-            </li>
-            <li>
-              Seleccione 16 países de los 32 países participando en la Copa
-              Mundial. Cada participante/apuesta debe elegir:
-              <ul>
-                <li>
-                  4 países Primeros de Grupo. ej.: Brasil (1), Bélgica (2),
-                  Argentina (3),...
-                </li>
-                <li>
-                  4 países Segundos de Grupo. ej.: Dinamarca (10), Alemania
-                  (11), Croacia (12),...
-                </li>
-                <li>
-                  4 países Terceros de Grupo. ej.: Gales (19), Serbia (21),
-                  Marruecos (22),...
-                </li>
-                <li>
-                  4 países Cuartos de Grupo. ej.: Iran (20), Costa Rica (31),
-                  Australia (38),...
-                </li>
-                <li>
-                  Nota: El numero entre paréntesis es la clasificación del
-                  equipo en el ranking de la FIFA.
-                </li>
-              </ul>
-            </li>
-            <li>
-              Seleccione el Ganador de la final y el Numero de Goles anotados en
-              la final (ej.: un marcador 3-2 = 5 ). Se contabilizaran todos los
-              goles (goles durante el tiempo de partido, goles en la posible
-              prorroga y también goles en la posible tanda de penalties después
-              de la prorroga).
-            </li>
-            <li>
-              Nota: Se podrán hacer tantas apuestas como se deseen con el mismo
-              email. Cambia el Nombre en el formulario en las distintas apuestas
-              para indicarnos que se trata de una nueva apuesta y no de un
-              cambio de una apuesta existente. Ejemplo:
-              <div style={{ marginLeft: "100px" }}>
-                apuesta1 -{">"} Email: Antonio@gmail.com, Nombre: Antonio
-              </div>
-              <div style={{ marginLeft: "100px" }}>
-                apuesta2 -&gt; Email: Antonio@gmail.com, Nombre: Antonio2
-              </div>
-            </li>
-            <li>
               Cada país seleccionado recibe 3 puntos por cada victoria, 1 punto
               por cada empate y 1 punto por cada gol*** marcado.
+            </li>
+            <li>
+              *** Se contabilizaran todos los goles (goles durante el tiempo de
+              partido, goles en la posible prorroga y también goles en la
+              posible tanda de penalties después de la prorroga).
             </li>
             <li>
               Las apuestas se podrán editar (cambiar resultados) con fecha
@@ -188,11 +99,6 @@ const SpanishRules = () => {
               al número de goles).
             </li>
             <li>
-              *** Se contabilizaran todos los goles (goles durante el tiempo de
-              partido, goles en la posible prorroga y también goles en la
-              posible tanda de penalties después de la prorroga).
-            </li>
-            <li>
               Todas las apuestas deben ser enviadas no mas tarde de el{" "}
               <span style={{ color: "red" }}>
                 Sabado 19 de Noviembre, 8pm PST
@@ -208,6 +114,10 @@ const SpanishRules = () => {
             <li>
               Sigue el pool y los resultados del mundial aqui en nuestra pagina
               web.
+            </li>
+            <li>
+              Pincha en la opción ADD-POOL del menu para empezar a crear todas
+              tus apuestas.
             </li>
           </ol>
           <br />
