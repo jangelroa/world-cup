@@ -1,4 +1,4 @@
-import React from "react";
+import { useContext, useEffect } from "react";
 import background1 from "../../images/background1.png";
 // import whiteLogo from "../../images/white-logo.svg";
 import logo from "../../images/qatar-logo.jpg";
@@ -6,12 +6,11 @@ import styled from "styled-components";
 import { Flag } from "../smallComponents";
 
 import { allGroups } from "../../data/teams";
-import Rules from "../Rules";
+import { Rules, SpanishRules } from "../Rules";
 import RankingFifa from "../RankingFifa";
 import { ShortThinLine } from "../smallComponents";
 import LanguageSelector from "../../data/languages/LanguageSelector";
 import { Text } from "../../data/languages/Text";
-import { useContext } from "react";
 import { LanguageContext } from "../../data/languages/LanguageContext";
 
 const Quadrant = styled.div`
@@ -67,7 +66,7 @@ const TeamName = styled.div`
 const letters = "ABCDEFGH";
 
 const Group = ({ group, index }) => {
-  const { userLanguage, userLanguageChange } = useContext(LanguageContext);
+  const { userLanguage } = useContext(LanguageContext);
 
   return (
     <GroupContainer>
@@ -94,6 +93,13 @@ const Group = ({ group, index }) => {
 };
 
 const Home = () => {
+  const { userLanguage, userLanguageChange } = useContext(LanguageContext);
+
+  useEffect(() => {
+    const defaultLanguage = window.localStorage.getItem("wcp-lang");
+    userLanguageChange(defaultLanguage || "en");
+  }, []);
+
   return (
     <>
       <Quadrant>
@@ -108,10 +114,10 @@ const Home = () => {
           </div>
           <div>
             <h1 className="home-title">
-              <Text tid="mainTitle" />
+              <Text tid="WORLD CUP QATAR 2022" />
             </h1>
             <h2 className="home-subtitle">
-              <Text tid="mainSubtitle" />
+              <Text tid="GROUPS" />
             </h2>
           </div>
         </div>
@@ -122,7 +128,7 @@ const Home = () => {
             ))}
         </GroupsContainer>
       </Quadrant>
-      <Rules />
+      {userLanguage === "en" ? <Rules /> : <SpanishRules />}
       <ShortThinLine />
       <RankingFifa />
     </>

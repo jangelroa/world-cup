@@ -1,10 +1,10 @@
 {
-  "navHome": "HOME",
-  "navGames": "GAMES",
-  "navTeams": "TEAMS",
-  "navParticipants": "PARTICIPANTS",
-  "navAddPool": "ADD-POOL",
-  "mainTitle": "WORLD CUP QATAR 2022",
-  "mainSubtitle": "GROUPS",
+  "HOME": "HOME",
+  "GAMES": "GAMES",
+  "TEAMS": "TEAMS",
+  "PARTICIPANTS": "PARTICIPANTS",
+  "ADD-POOL": "ADD-POOL",
+  "WORLD CUP QATAR 2022": "WORLD CUP QATAR 2022",
+  "GROUPS": "GROUPS",
   "Group": "Group"
 }
