@@ -1,14 +1,10 @@
-import styled from "styled-components";
+import { useContext } from "react";
+import { LanguageContext } from "../data/languages/LanguageContext";
 import { matchesday1 } from "../data/matches";
 import { matchesday2 } from "../data/matches";
 import { matchesday3 } from "../data/matches";
-import {
-  ThickLine,
-  ThinLine,
-  Flag,
-  getTeam,
-  getTeamName,
-} from "./smallComponents";
+import { ThickLine, ThinLine, Flag, getTeam } from "./smallComponents";
+import { Text } from "../data/languages/Text";
 
 const MatchScore = ({ match }) => (
   <div>
@@ -42,17 +38,20 @@ const getScore = (match) => {
 const MatchesList = () => {
   return (
     <>
-      <MatchesDay matchesday={matchesday1} title="Match day 1" />
-      <MatchesDay matchesday={matchesday2} title="Match day 2" />
-      <MatchesDay matchesday={matchesday3} title="Match day 3" />
+      <MatchesDay matchesday={matchesday1} title="Match day 1" day="1" />
+      <MatchesDay matchesday={matchesday2} title="Match day 2" day="2" />
+      <MatchesDay matchesday={matchesday3} title="Match day 3" day="3" />
     </>
   );
 };
 
-const MatchesDay = ({ matchesday, title }) => {
+const MatchesDay = ({ matchesday, title, day }) => {
+  const { userLanguage } = useContext(LanguageContext);
   return (
     <div className="partidos">
-      <h2>{title}</h2>
+      <h2>
+        <Text tid="Match day" /> {day}
+      </h2>
       {/* <span
         style={{
           color: "red",
@@ -80,7 +79,7 @@ const MatchesDay = ({ matchesday, title }) => {
                 <div style={{ display: "flex", width: "40%" }}>
                   <Flag src={team1.flag} alt={team1.flagAlt} />
                   <div style={{ marginLeft: "10px" }}>
-                    {getTeamName(match.team1.fifa)}
+                    {userLanguage === "en" ? team1.name : team1.spanishName}
                   </div>
                 </div>
                 <div>{getScore(match)}</div>
@@ -92,7 +91,7 @@ const MatchesDay = ({ matchesday, title }) => {
                   }}
                 >
                   <div style={{ marginRight: "10px" }}>
-                    {getTeamName(match.team2.fifa)}
+                    {userLanguage === "en" ? team2.name : team2.spanishName}
                   </div>
                   <Flag src={team2.flag} alt={team2.flagAlt} />
                 </div>
