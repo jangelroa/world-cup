@@ -3,6 +3,6 @@ import { LanguageContext } from "./LanguageContext";
 
 // get text according to id & current language
 export function Text({ tid }) {
-  const { dictionary } = useContext(LanguageContext);
+  const { userLanguage, dictionary } = useContext(LanguageContext);
   return dictionary[tid] || tid;
 }

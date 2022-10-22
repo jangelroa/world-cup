@@ -1,11 +1,14 @@
+import { useContext } from "react";
+import { LanguageContext } from "../../data/languages/LanguageContext";
+import { Text } from "../../data/languages/Text";
 import styled from "styled-components";
-import { ThickLine } from "./smallComponents";
-import { ThinLine } from "./smallComponents";
-import { teamScoresList } from "../data/teams";
+import { ThickLine } from "../smallComponents";
+import { ThinLine } from "../smallComponents";
+import { teamScoresList } from "../../data/teams";
 
-console.log({
-  teamScoresList: teamScoresList(),
-});
+// console.log({
+//   teamScoresList: teamScoresList(),
+// });
 
 const Flag = styled.img`
   height: 20px;
@@ -13,10 +16,13 @@ const Flag = styled.img`
 `;
 
 const TeamScores = () => {
+  const { userLanguage } = useContext(LanguageContext);
   return (
     <>
       <div className="team-list">
-        <h2>Team Scores</h2>
+        <h2>
+          <Text tid="Team Scores" />
+        </h2>
         {/* <span
           style={{
             color: "red",
@@ -53,7 +59,9 @@ const TeamScores = () => {
                       <div>
                         <Flag src={team.flag} alt={team.flagAlt} />
                       </div>
-                      <div>{team.name}</div>
+                      <div>
+                        {userLanguage === "en" ? team.name : team.spanishName}{" "}
+                      </div>
                     </div>
                     <div>
                       {team.points}{" "}

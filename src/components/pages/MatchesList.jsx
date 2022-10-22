@@ -1,10 +1,10 @@
 import { useContext } from "react";
-import { LanguageContext } from "../data/languages/LanguageContext";
-import { matchesday1 } from "../data/matches";
-import { matchesday2 } from "../data/matches";
-import { matchesday3 } from "../data/matches";
-import { ThickLine, ThinLine, Flag, getTeam } from "./smallComponents";
-import { Text } from "../data/languages/Text";
+import { LanguageContext } from "../../data/languages/LanguageContext";
+import { matchesday1 } from "../../data/matches";
+import { matchesday2 } from "../../data/matches";
+import { matchesday3 } from "../../data/matches";
+import { ThickLine, ThinLine, Flag, getTeam } from "../smallComponents";
+import { Text } from "../../data/languages/Text";
 
 const MatchScore = ({ match }) => (
   <div>
@@ -46,7 +46,7 @@ const MatchesList = () => {
 };
 
 const MatchesDay = ({ matchesday, title, day }) => {
-  const { userLanguage } = useContext(LanguageContext);
+  const { userLanguage, userLanguageChange } = useContext(LanguageContext);
   return (
     <div className="partidos">
       <h2>
