@@ -1,4 +1,4 @@
-import React from "react";
+import { useContext } from "react";
 import background1 from "../../images/background1.png";
 // import whiteLogo from "../../images/white-logo.svg";
 import logo from "../../images/qatar-logo.jpg";
@@ -6,12 +6,11 @@ import styled from "styled-components";
 import { Flag } from "../smallComponents";
 
 import { allGroups } from "../../data/teams";
-import Rules from "../Rules";
+import { Rules, SpanishRules } from "../Rules";
 import RankingFifa from "../RankingFifa";
 import { ShortThinLine } from "../smallComponents";
 import LanguageSelector from "../../data/languages/LanguageSelector";
 import { Text } from "../../data/languages/Text";
-import { useContext } from "react";
 import { LanguageContext } from "../../data/languages/LanguageContext";
 
 const Quadrant = styled.div`
@@ -94,6 +93,8 @@ const Group = ({ group, index }) => {
 };
 
 const Home = () => {
+  const { userLanguage, userLanguageChange } = useContext(LanguageContext);
+
   return (
     <>
       <Quadrant>
@@ -122,7 +123,7 @@ const Home = () => {
             ))}
         </GroupsContainer>
       </Quadrant>
-      <Rules />
+      {userLanguage === "en" ? <Rules /> : <SpanishRules />}
       <ShortThinLine />
       <RankingFifa />
     </>

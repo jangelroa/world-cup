@@ -1,8 +1,7 @@
-import React from "react";
 import styled from "styled-components";
 import { ThickLine, ThinLine } from "./smallComponents";
 
-const Rules = () => {
+export const Rules = () => {
   return (
     <>
       <div className="rules-container">
@@ -61,7 +60,8 @@ const Rules = () => {
     </>
   );
 };
-const SpanishRules = () => {
+
+export const SpanishRules = () => {
   return (
     <>
       <div className="rules-container">

@@ -1,7 +1,8 @@
-import React from "react";
 import styled from "styled-components";
 import { ThickLine, ThinLine } from "./smallComponents";
 import { teamScoresList } from "../data/teams";
+import { useContext } from "react";
+import { LanguageContext } from "../data/languages/LanguageContext";
 
 console.log({
   teamScoresList: teamScoresList(),
@@ -13,6 +14,8 @@ const Flag = styled.img`
 `;
 
 const RankingFifa = () => {
+  const { userLanguage, userLanguageChange } = useContext(LanguageContext);
+
   return (
     <>
       <div className="ranking-list">
@@ -43,7 +46,9 @@ const RankingFifa = () => {
                       }}
                     >
                       <Flag src={team.flag} alt={team.flagAlt} />
-                      <div>{team.name}</div>
+                      <div>
+                        {userLanguage === "en" ? team.name : team.spanishName}
+                      </div>
                     </div>
                     <div>({team.fifa})</div>
                   </div>
