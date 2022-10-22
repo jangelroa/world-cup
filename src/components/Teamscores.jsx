@@ -37,7 +37,7 @@ const TeamScores = () => {
                       display: "flex",
                       justifyContent: "space-between",
                       alignItems: "center",
-                      height: "50px",
+                      height: "60px",
                     }}
                   >
                     <div
@@ -45,7 +45,7 @@ const TeamScores = () => {
                         display: "flex",
                         // justifyContent: "space-between",
                         alignItems: "center",
-                        height: "50px",
+                        height: "60px",
                         gap: "15px",
                       }}
                     >

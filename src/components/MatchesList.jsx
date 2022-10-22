@@ -74,7 +74,7 @@ const MatchesDay = ({ matchesday, title }) => {
                   display: "flex",
                   justifyContent: "space-between",
                   alignItems: "center",
-                  height: "50px",
+                  height: "60px",
                 }}
               >
                 <div style={{ display: "flex", width: "40%" }}>

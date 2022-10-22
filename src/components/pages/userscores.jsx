@@ -45,7 +45,7 @@ const FlagPointList = ({ user }) => {
           display: "flex",
           flexDirection: "column",
           // alignItems: "center",
-          minHeight: "50px",
+          minHeight: "60px",
           gap: "5px",
           flexWrap: "wrap",
         }}
@@ -81,7 +81,7 @@ const UserSccoreListRow = ({ user }) => {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          minHeight: "50px",
+          minHeight: "60px",
         }}
         onClick={(e) => setExpanded((exp) => !exp)}
       >
