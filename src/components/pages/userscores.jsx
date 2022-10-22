@@ -1,5 +1,6 @@
-import { useState } from "react";
-import styled from "styled-components";
+import { useState, useContext } from "react";
+import { LanguageContext } from "../../data/languages/LanguageContext";
+import { Text } from "../../data/languages/Text";
 import {
   ThickLine,
   ThinLine,
@@ -10,12 +11,17 @@ import {
 import { UserScoresList } from "../../data/users";
 
 const UserScores = () => {
+  const { userLanguage } = useContext(LanguageContext);
   return (
     <>
       <div className="user-list">
         <div style={{ display: "flex", justifyContent: "space-between" }}>
-          <h2>Participant Scores</h2>
-          <h5 style={{ textAlign: "right" }}>(click in a row for details)</h5>
+          <h2>
+            <Text tid="Participant Scores" />
+          </h2>
+          <h5 style={{ textAlign: "right" }}>
+            (<Text tid="click in a row for details" />)
+          </h5>
         </div>
         <ThickLine />
         <div>
@@ -45,7 +51,7 @@ const FlagPointList = ({ user }) => {
           display: "flex",
           flexDirection: "column",
           // alignItems: "center",
-          minHeight: "50px",
+          minHeight: "60px",
           gap: "5px",
           flexWrap: "wrap",
         }}
@@ -81,7 +87,7 @@ const UserSccoreListRow = ({ user }) => {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          minHeight: "50px",
+          minHeight: "60px",
         }}
         onClick={(e) => setExpanded((exp) => !exp)}
       >

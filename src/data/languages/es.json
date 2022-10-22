@@ -6,5 +6,9 @@
   "ADD-POOL": "ADD-POOL",
   "WORLD CUP QATAR 2022": "COPA DEL MUNDO QATAR 2022",
   "GROUPS": "GRUPOS",
-  "Group": "Grupo"
+  "Group": "Grupo",
+  "Match day": "Partidos dia",
+  "Team Scores": "Puntiación Equipos",
+  "Participant Scores": "Puntiación Participantes",
+  "click in a row for details": "pincha en una fila para detalles"
 }
