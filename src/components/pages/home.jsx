@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import background1 from "../../images/background1.png";
 // import whiteLogo from "../../images/white-logo.svg";
 import logo from "../../images/qatar-logo.jpg";
@@ -66,7 +66,7 @@ const TeamName = styled.div`
 const letters = "ABCDEFGH";
 
 const Group = ({ group, index }) => {
-  const { userLanguage, userLanguageChange } = useContext(LanguageContext);
+  const { userLanguage } = useContext(LanguageContext);
 
   return (
     <GroupContainer>
@@ -95,6 +95,11 @@ const Group = ({ group, index }) => {
 const Home = () => {
   const { userLanguage, userLanguageChange } = useContext(LanguageContext);
 
+  useEffect(() => {
+    const defaultLanguage = window.localStorage.getItem("wcp-lang");
+    userLanguageChange(defaultLanguage || "en");
+  }, []);
+
   return (
     <>
       <Quadrant>
@@ -109,10 +114,10 @@ const Home = () => {
           </div>
           <div>
             <h1 className="home-title">
-              <Text tid="mainTitle" />
+              <Text tid="WORLD CUP QATAR 2022" />
             </h1>
             <h2 className="home-subtitle">
-              <Text tid="mainSubtitle" />
+              <Text tid="GROUPS" />
             </h2>
           </div>
         </div>

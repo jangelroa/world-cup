@@ -1,9 +1,8 @@
-import { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/pages/Home";
-import { Spanish, English } from "./components/pages/Spanish";
+import { Spanish, English } from "./components/pages/SetLanguage";
 import MatchesList from "./components/MatchesList";
 import TeamScores from "./components/Teamscores";
 import UserScores from "./components/pages/UserScores";

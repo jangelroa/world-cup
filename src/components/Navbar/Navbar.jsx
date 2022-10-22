@@ -51,19 +51,19 @@ const Navbar = () => {
         <Bars onClick={() => setShowMobileMenu((show) => !show)} />
         <NavMenu>
           <NavLink to="/">
-            <Text tid="navHome" />
+            <Text tid="HOME" />
           </NavLink>
           <NavLink to="/matches">
-            <Text tid="navGames" />
+            <Text tid="GAMES" />
           </NavLink>
           <NavLink to="/team-scores" style={{ fontWeight: "bold" }}>
-            <Text tid="navTeams" />
+            <Text tid="TEAMS" />
           </NavLink>
           <NavLink to="/user-scores" style={{ fontWeight: "bold" }}>
-            <Text tid="navParticipants" />
+            <Text tid="PARTICIPANTS" />
           </NavLink>
           <NavLink to="/add-pool">
-            <Text tid="navAddPool" />
+            <Text tid="ADD-POOL" />
           </NavLink>
         </NavMenu>
       </Nav>
@@ -87,31 +87,31 @@ const NavDropDown = ({ showMobileMenu, setShowMobileMenu }) =>
       <ul>
         <li>
           <MobileNavLink to="/">
-            <Text tid="navHome" />
+            <Text tid="HOME" />
           </MobileNavLink>
           <MobileThinLine />
         </li>
         <li>
           <MobileNavLink to="/matches">
-            <Text tid="navGames" />
+            <Text tid="GAMES" />
           </MobileNavLink>
           <MobileThinLine />
         </li>
         <li>
           <MobileNavLink to="/team-scores" style={{ fontWeight: "bold" }}>
-            <Text tid="navTeams" />
+            <Text tid="TEAMS" />
           </MobileNavLink>
           <MobileThinLine />
         </li>
         <li>
           <MobileNavLink to="/user-scores" style={{ fontWeight: "bold" }}>
-            <Text tid="navParticipants" />
+            <Text tid="PARTICIPANTS" />
           </MobileNavLink>
           <MobileThinLine />
         </li>
         <li>
           <MobileNavLink to="/add-pool">
-            <Text tid="navAddPool" />
+            <Text tid="ADD-POOL" />
           </MobileNavLink>
           <MobileThinLine />
         </li>
