@@ -9,6 +9,10 @@ import { allGroups } from "../../data/teams";
 import Rules from "../Rules";
 import RankingFifa from "../RankingFifa";
 import { ShortThinLine } from "../smallComponents";
+import LanguageSelector from "../../data/languages/LanguageSelector";
+import { Text } from "../../data/languages/Text";
+import { useContext } from "react";
+import { LanguageContext } from "../../data/languages/LanguageContext";
 
 const Quadrant = styled.div`
   background-image: url(${background1});
@@ -63,19 +67,27 @@ const TeamName = styled.div`
 const letters = "ABCDEFGH";
 
 const Group = ({ group, index }) => {
+  const { userLanguage, userLanguageChange } = useContext(LanguageContext);
+
   return (
     <GroupContainer>
-      <GroupTitle>Group {letters.charAt(index)}</GroupTitle>
+      <GroupTitle>
+        <Text tid="Group" /> {letters.charAt(index)}
+      </GroupTitle>
       <Teams>
         {group &&
-          group.map((team, idx) => (
-            <Team key={team.fifa}>
-              <Flag src={team.flag} alt={team.flagAlt} />
-              <TeamName>
-                {idx + 1}. {team.name.toUpperCase()} ({team.fifa})
-              </TeamName>
-            </Team>
-          ))}
+          group.map((team, idx) => {
+            const teamName =
+              userLanguage === "en" ? team.name : team.spanishName;
+            return (
+              <Team key={team.fifa}>
+                <Flag src={team.flag} alt={team.flagAlt} />
+                <TeamName>
+                  {idx + 1}. {teamName.toUpperCase()} ({team.fifa})
+                </TeamName>
+              </Team>
+            );
+          })}
       </Teams>
     </GroupContainer>
   );
@@ -85,6 +97,7 @@ const Home = () => {
   return (
     <>
       <Quadrant>
+        <LanguageSelector />
         <div className="home-header">
           <div
             style={{
@@ -94,8 +107,12 @@ const Home = () => {
             <img src={logo} alt="white logo" style={{ height: "150px" }} />
           </div>
           <div>
-            <h1 className="home-title">WORLD CUP QATAR 2022</h1>
-            <h2 className="home-subtitle">GROUPS</h2>
+            <h1 className="home-title">
+              <Text tid="mainTitle" />
+            </h1>
+            <h2 className="home-subtitle">
+              <Text tid="mainSubtitle" />
+            </h2>
           </div>
         </div>
         <GroupsContainer>
