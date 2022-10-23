@@ -12,6 +12,8 @@ import { ShortThinLine } from "../smallComponents";
 import LanguageSelector from "../../data/languages/LanguageSelector";
 import { Text } from "../../data/languages/Text";
 import { LanguageContext } from "../../data/languages/LanguageContext";
+import { languageOptions } from "../../data/languages/languages";
+import { Select } from "../Select";
 
 const Quadrant = styled.div`
   background-image: url(${background1});
@@ -63,6 +65,10 @@ const TeamName = styled.div`
   margin-left: 7px;
 `;
 
+function getKeyByValue(object, value) {
+  return Object.keys(object).find((key) => object[key] === value);
+}
+
 const letters = "ABCDEFGH";
 
 const Group = ({ group, index }) => {
@@ -103,7 +109,16 @@ const Home = () => {
   return (
     <>
       <Quadrant>
-        <LanguageSelector />
+        {/* <LanguageSelector /> */}
+        <div style={{ display: "flex", justifyContent: "flex-end" }}>
+          <Select
+            label={languageOptions[userLanguage]}
+            values={Object.values(languageOptions)}
+            onChange={(v) =>
+              userLanguageChange(getKeyByValue(languageOptions, v))
+            }
+          />
+        </div>
         <div className="home-header">
           <div
             style={{
