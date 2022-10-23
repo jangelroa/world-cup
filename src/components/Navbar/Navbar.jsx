@@ -35,7 +35,7 @@ const Navbar = () => {
       if (dimentions.width > 768) {
         setShowMobileMenu(false);
       }
-      console.log({ dimentions });
+      // console.log({ dimentions });
     }
 
     window.addEventListener("resize", handleResize);
