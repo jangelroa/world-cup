@@ -14,6 +14,8 @@ import { Text } from "../../data/languages/Text";
 import { LanguageContext } from "../../data/languages/LanguageContext";
 import { languageOptions } from "../../data/languages/languages";
 import { Select } from "../Select";
+import spain from "../../images/flags/spain.webp";
+import usa from "../../images/flags/usa.webp";
 
 const Quadrant = styled.div`
   background-image: url(${background1});
@@ -101,6 +103,14 @@ const Group = ({ group, index }) => {
 const Home = () => {
   const { userLanguage, userLanguageChange } = useContext(LanguageContext);
 
+  const Label = ({ src, lang }) => {
+    return (
+      <div className="select-label">
+        <Flag src={src} alt="Spanish" /> {lang}
+      </div>
+    );
+  };
+
   useEffect(() => {
     const defaultLanguage = window.localStorage.getItem("wcp-lang");
     userLanguageChange(defaultLanguage || "en");
@@ -112,11 +122,28 @@ const Home = () => {
         {/* <LanguageSelector /> */}
         <div style={{ display: "flex", justifyContent: "flex-end" }}>
           <Select
-            label={languageOptions[userLanguage]}
+            initialValue={languageOptions[userLanguage]}
+            label={
+              <Label
+                src={userLanguage === "en" ? usa : spain}
+                lang={languageOptions[userLanguage]}
+              />
+            }
+            // label={languageOptions[userLanguage]}
             values={Object.values(languageOptions)}
             onChange={(v) =>
               userLanguageChange(getKeyByValue(languageOptions, v))
             }
+            options={[
+              {
+                value: languageOptions["en"],
+                item: <Label src={usa} lang={languageOptions["en"]} />,
+              },
+              {
+                value: languageOptions["es"],
+                item: <Label src={spain} lang={languageOptions["es"]} />,
+              },
+            ]}
           />
         </div>
         <div className="home-header">

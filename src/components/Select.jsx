@@ -32,7 +32,7 @@ const DropdownStyle = styled.div`
   top: 30px;
   left: 0;
   max-height: 40vmax;
-  min-width: 10rem;
+  min-width: 9rem;
   padding: 0.4rem;
   display: flex;
   flex-direction: column;
@@ -80,8 +80,8 @@ const DropdownItem = styled.div`
   }
 `;
 
-export const Select = ({ label, values, onChange }) => {
-  const [currentValue, setCurrentValue] = useState(label);
+export const Select = ({ label, initialValue, values, onChange, options }) => {
+  const [currentValue, setCurrentValue] = useState(initialValue);
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
@@ -109,13 +109,13 @@ export const Select = ({ label, values, onChange }) => {
       <SelectContainer>
         <SelectLabelButton onClick={handleOpen}>{label}</SelectLabelButton>
         <DropdownStyle isVisible={open}>
-          {values.map((value, index) => (
+          {options.map((option, index) => (
             <DropdownItem
-              onClick={() => handleChange(value)}
-              active={value === currentValue}
+              onClick={() => handleChange(option.value)}
+              active={option.value === currentValue}
               key={index}
             >
-              {value}
+              {option.item}
             </DropdownItem>
           ))}
         </DropdownStyle>
