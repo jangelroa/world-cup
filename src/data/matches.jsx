@@ -1137,14 +1137,14 @@ export const matchesday7 = [
     team1: {
       fifa: 0,
       name: "Semi-Final 1 Loser",
-      spanishName: "Perdedor Semifinal 1",
+      spanishName: "Perdedor Semi-Final 1",
       score: null,
       penalties: null,
     },
     team2: {
       fifa: 0,
       name: "Semi-Final 2 Loser",
-      spanishName: "Perdedor Semifinal 2",
+      spanishName: "Perdedor Semi-Final 2",
       score: null,
       penalties: null,
     },
@@ -1158,14 +1158,14 @@ export const matchesday8 = [
     team1: {
       fifa: 0,
       name: "Semi-Final 1 Winner",
-      spanishName: "Ganador Semifinal 1",
+      spanishName: "Ganador Semi-Final 1",
       score: null,
       penalties: null,
     },
     team2: {
       fifa: 0,
       name: "Semi-Final 2 Winner",
-      spanishName: "Ganador Semifinal 2",
+      spanishName: "Ganador Semi-Final 2",
       score: null,
       penalties: null,
     },
