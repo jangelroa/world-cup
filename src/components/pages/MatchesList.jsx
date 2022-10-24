@@ -3,8 +3,16 @@ import { LanguageContext } from "../../data/languages/LanguageContext";
 import { matchesday1 } from "../../data/matches";
 import { matchesday2 } from "../../data/matches";
 import { matchesday3 } from "../../data/matches";
+import { matchesday4 } from "../../data/matches";
+import { matchesday5 } from "../../data/matches";
+import { matchesday6 } from "../../data/matches";
+import { matchesday7 } from "../../data/matches";
+import { matchesday8 } from "../../data/matches";
 import { ThickLine, ThinLine, Flag, getTeam } from "../smallComponents";
 import { Text } from "../../data/languages/Text";
+// import defaultFlag from "../../images/flags/default.webp";
+// import logo from "../../images/flags/default.webp";
+import logo from "../../images/qatar-logo.jpg";
 
 const MatchScore = ({ match }) => (
   <div>
@@ -22,7 +30,7 @@ const PenaltiesScore = ({ match }) => {
   );
 };
 
-const getScore = (match) => {
+const GetScore = (match) => {
   if (!match.team1.score) {
     return match.date;
   }
@@ -41,17 +49,29 @@ const MatchesList = () => {
       <MatchesDay matchesday={matchesday1} title="Match day 1" day="1" />
       <MatchesDay matchesday={matchesday2} title="Match day 2" day="2" />
       <MatchesDay matchesday={matchesday3} title="Match day 3" day="3" />
+      <MatchesDay matchesday={matchesday4} subtitle="Round of 16" day="4" />
+      <MatchesDay matchesday={matchesday5} subtitle="Quarterfinals" day="5" />
+      <MatchesDay matchesday={matchesday6} subtitle="Semifinals" day="6" />
+      <MatchesDay matchesday={matchesday7} subtitle="3rd and 4th" day="7" />
+      <MatchesDay matchesday={matchesday8} subtitle="Final" day="8" />
     </>
   );
 };
 
-const MatchesDay = ({ matchesday, title, day }) => {
-  const { userLanguage, userLanguageChange } = useContext(LanguageContext);
+const MatchesDay = ({ matchesday, subtitle, day }) => {
+  const { userLanguage, userLanguageChange, dictionary } =
+    useContext(LanguageContext);
   return (
     <div className="partidos">
-      <h2>
-        <Text tid="Match day" /> {day}
-      </h2>
+      <div className="game-titles">
+        <h2>
+          <Text tid="Match day" /> {day}
+        </h2>
+        {subtitle && <span>-</span>}
+        <h4>
+          <Text tid={subtitle} />
+        </h4>
+      </div>
       {/* <span
         style={{
           color: "red",
@@ -63,8 +83,21 @@ const MatchesDay = ({ matchesday, title, day }) => {
       <ThickLine />
       <div>
         {matchesday.map((match, i) => {
-          const team1 = getTeam(match.team1.fifa);
-          const team2 = getTeam(match.team2.fifa);
+          const matchTeam1 = {
+            name: match.team1.name,
+            spanishName: match.team1.spanishName,
+            flag: logo,
+            flagAlt: "Default flag",
+          };
+          const matchTeam2 = {
+            name: match.team2.name,
+            spanishName: match.team2.spanishName,
+            flag: logo,
+            flagAlt: "Default flag",
+          };
+          const team1 = getTeam(match.team1.fifa) || matchTeam1;
+          const team2 = getTeam(match.team2.fifa) || matchTeam2;
+
           return (
             <div key={i}>
               <div
@@ -73,27 +106,38 @@ const MatchesDay = ({ matchesday, title, day }) => {
                   display: "flex",
                   justifyContent: "space-between",
                   alignItems: "center",
-                  height: "60px",
+                  minHeight: "60px",
                 }}
               >
-                <div style={{ display: "flex", width: "40%" }}>
-                  <Flag src={team1.flag} alt={team1.flagAlt} />
+                <div
+                  style={{
+                    display: "flex",
+                    width: "40%",
+                    alignItems: "center",
+                  }}
+                >
+                  <div>
+                    <Flag src={team1.flag} alt={team1.flagAlt} />
+                  </div>
                   <div style={{ marginLeft: "10px" }}>
                     {userLanguage === "en" ? team1.name : team1.spanishName}
                   </div>
                 </div>
-                <div>{getScore(match)}</div>
+                <div>{GetScore(match)}</div>
                 <div
                   style={{
                     display: "flex",
                     width: "40%",
                     justifyContent: "flex-end",
+                    alignItems: "center",
                   }}
                 >
                   <div style={{ marginRight: "10px" }}>
                     {userLanguage === "en" ? team2.name : team2.spanishName}
                   </div>
-                  <Flag src={team2.flag} alt={team2.flagAlt} />
+                  <div>
+                    <Flag src={team2.flag} alt={team2.flagAlt} />
+                  </div>
                 </div>
               </div>
               <ThinLine />

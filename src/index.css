@@ -120,6 +120,11 @@ h1 {
   gap: 10px;
 }
 
+.game-titles {
+  display: flex;
+  gap: 10px;
+}
+
 
 
 /* 
