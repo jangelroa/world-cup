@@ -11,7 +11,6 @@ import {
 import { UserScoresList } from "../../data/users";
 
 const UserScores = () => {
-  const { userLanguage } = useContext(LanguageContext);
   return (
     <>
       <div className="user-list">
@@ -43,36 +42,95 @@ const UserScores = () => {
 
 export default UserScores;
 
-const FlagPointList = ({ user }) => {
+const UserEntryDetails = ({ user }) => {
+  const { userLanguage } = useContext(LanguageContext);
+  const winnerTeam = getTeam(user.poolWinner);
   return (
     <div>
       <div
         style={{
           display: "flex",
-          flexDirection: "column",
-          // alignItems: "center",
           minHeight: "60px",
-          gap: "5px",
+          gap: "5px 25px",
           flexWrap: "wrap",
         }}
       >
         {user.poolTeams.map((teamFifa, i) => {
           const team = getTeam(teamFifa);
+          const teamName = userLanguage === "en" ? team.name : team.spanishName;
           return (
             <div
               key={i}
               style={{
                 display: "flex",
                 gap: "4px",
+                margin: "0 auto",
               }}
             >
               <div>
                 <Flag src={team.flag} alt={team.flagAlt} title={team.name} />
               </div>
-              <div>{user.poolTeamsScore[i]}</div>
+              <div
+                style={{
+                  minWidth: "150px",
+                }}
+              >
+                {teamName}
+              </div>
+              <div>{user.poolTeamsScore[i]} pts</div>
             </div>
           );
         })}
+      </div>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            maxWidth: "50%",
+            margin: "20px auto",
+            gap: "5px",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              margin: "0 auto",
+              gap: "5px",
+            }}
+          >
+            <span>Winner:</span>
+            <Flag
+              src={winnerTeam.flag}
+              alt={winnerTeam.flagAlt}
+              title={winnerTeam.name}
+            />
+            <span>{winnerTeam.name}</span>
+          </div>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            width: "50%",
+            margin: "20px auto",
+            gap: "5px",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              margin: "0 auto",
+              gap: "5px",
+            }}
+          >
+            <span>Goals:</span>
+            <span>{user.poolGoals}</span>
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -81,7 +139,7 @@ const FlagPointList = ({ user }) => {
 const UserSccoreListRow = ({ user }) => {
   const [expanded, setExpanded] = useState(false);
   return (
-    <div>
+    <div onClick={(e) => setExpanded((exp) => !exp)}>
       <div
         style={{
           display: "flex",
@@ -89,12 +147,8 @@ const UserSccoreListRow = ({ user }) => {
           alignItems: "center",
           minHeight: "60px",
         }}
-        onClick={(e) => setExpanded((exp) => !exp)}
       >
-        <div>
-          {expanded ? truncate(user.name, 10) : truncate(user.name, 15)}
-        </div>
-        {expanded && <FlagPointList user={user} />}
+        <div>{truncate(user.name, 30)}</div>
         <div>
           {user.totalPoint}{" "}
           <span
@@ -107,6 +161,7 @@ const UserSccoreListRow = ({ user }) => {
           </span>
         </div>
       </div>
+      {expanded && <UserEntryDetails user={user} />}
       <ThinLine />
     </div>
   );
