@@ -4,16 +4,13 @@ import background1 from "../../images/background1.png";
 import logo from "../../images/qatar-logo.jpg";
 import styled from "styled-components";
 import { Flag } from "../smallComponents";
-
 import { allGroups } from "../../data/teams";
 import { Rules, SpanishRules } from "../Rules";
 import RankingFifa from "../RankingFifa";
 import { ShortThinLine } from "../smallComponents";
-import LanguageSelector from "../../data/languages/LanguageSelector";
 import { Text } from "../../data/languages/Text";
 import { LanguageContext } from "../../data/languages/LanguageContext";
-import { languageOptions } from "../../data/languages/languages";
-import { Select } from "../Select";
+import LanguageSelector from "../../data/languages/LanguageSelector";
 
 const Quadrant = styled.div`
   background-image: url(${background1});
@@ -32,11 +29,6 @@ const GroupsContainer = styled.div`
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-`;
-
-const GroupContainer = styled.div`
-  // padding: 30px;
-  // display: flex;
 `;
 
 const GroupTitle = styled.div`
@@ -65,17 +57,13 @@ const TeamName = styled.div`
   margin-left: 7px;
 `;
 
-function getKeyByValue(object, value) {
-  return Object.keys(object).find((key) => object[key] === value);
-}
-
 const letters = "ABCDEFGH";
 
 const Group = ({ group, index }) => {
   const { userLanguage } = useContext(LanguageContext);
 
   return (
-    <GroupContainer>
+    <div>
       <GroupTitle>
         <Text tid="Group" /> {letters.charAt(index)}
       </GroupTitle>
@@ -94,12 +82,20 @@ const Group = ({ group, index }) => {
             );
           })}
       </Teams>
-    </GroupContainer>
+    </div>
   );
 };
 
 const Home = () => {
   const { userLanguage, userLanguageChange } = useContext(LanguageContext);
+
+  const Label = ({ src, lang }) => {
+    return (
+      <div className="select-label">
+        <Flag src={src} alt="Spanish" /> {lang}
+      </div>
+    );
+  };
 
   useEffect(() => {
     const defaultLanguage = window.localStorage.getItem("wcp-lang");
@@ -109,15 +105,8 @@ const Home = () => {
   return (
     <>
       <Quadrant>
-        {/* <LanguageSelector /> */}
         <div style={{ display: "flex", justifyContent: "flex-end" }}>
-          <Select
-            label={languageOptions[userLanguage]}
-            values={Object.values(languageOptions)}
-            onChange={(v) =>
-              userLanguageChange(getKeyByValue(languageOptions, v))
-            }
-          />
+          <LanguageSelector />
         </div>
         <div className="home-header">
           <div

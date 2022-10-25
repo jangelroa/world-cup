@@ -13,40 +13,40 @@ import { Parser } from "json2csv";
 
 (async () => {
 
-    // Load the users
-    const users = await csv().fromFile("inputResponses.csv");
+    // Load the responses
+    const responses = await csv().fromFile("inputResponses.csv");
 
-    // Show the users
-    // console.log(users);
+    // Show the responses
+    console.log({responses});
 
-    // Modify the users
-    // users[0].PAGADO = "YES";
+    // Modify the responses
+    // responses[0].PAGADO = "YES";
 
-    const constructedUser = users.map((user,index) => {
+    const constructedUser = responses.map((response,index) => {
         console.log(" ");
 
-        const userFirsts = user["firstsOfGroup"];
-        const strFirsts = userFirsts.split("(");
+        const responseFirsts = response["firstsOfGroup"];
+        const strFirsts = responseFirsts.split("(");
         strFirsts.shift();
-        console.log(userFirsts)
+        console.log(responseFirsts)
         const fifaFirsts = strFirsts.map(ele => Number(ele.split(")")[0]));
         
-        const userSeconds = user["secondsOfGroup"];
-        const strSeconds = userSeconds.split("(");
+        const responseSeconds = response["secondsOfGroup"];
+        const strSeconds = responseSeconds.split("(");
         strSeconds.shift();
-        console.log(userSeconds)
+        console.log(responseSeconds)
         const fifaSeconds = strSeconds.map(ele => Number(ele.split(")")[0]));
         
-        const userThirds = user["thirdsOfGroup"];
-        const strThirds = userThirds.split("(");
+        const responseThirds = response["thirdsOfGroup"];
+        const strThirds = responseThirds.split("(");
         strThirds.shift();
-        console.log(userThirds)
+        console.log(responseThirds)
         const fifaThirds = strThirds.map(ele => Number(ele.split(")")[0]));
         
-        const userFourths = user["fourthsOfGroup"];
-        const strFourths = userFourths.split("(");
+        const responseFourths = response["fourthsOfGroup"];
+        const strFourths = responseFourths.split("(");
         strFourths.shift();
-        console.log(userFourths)
+        console.log(responseFourths)
         const fifaFourths = strFourths.map(ele => Number(ele.split(")")[0]));
         
         const fifas = [
@@ -57,40 +57,40 @@ import { Parser } from "json2csv";
         ];
         // console.log({fifas})
         
-        const rawPoolWinner = user["rawPoolWinner"];
+        const rawPoolWinner = response["rawPoolWinner"];
         const poolWinner = Number(rawPoolWinner.split("(")[1].split(")")[0]);
         console.log({rawPoolWinner})
         console.log({poolWinner: Number(rawPoolWinner.split("(")[1].split(")")[0])})
 
         console.log("OUTPUT", {
             id: index,
-            name: user["userName"],
-            email: user["useEmail"],
+            name: response["userName"],
+            email: response["userEmail"],
             poolTeams: fifas,
             poolWinner,
-            poolGoals: Number(user["poolGoals"]),
-            paid: user["paid"]
+            poolGoals: Number(response["poolGoals"]),
+            paid: response["paid"]
         });
         console.log(" ");
 
         return {
             id: index,
-            name: user["userName"],
-            email: user["useEmail"],
+            name: response["userName"],
+            email: response["userEmail"],
             poolTeams: fifas,
             poolWinner,
-            poolGoals: Number(user["poolGoals"]),
-            paid: user["paid"]
+            poolGoals: Number(response["poolGoals"]),
+            paid: response["paid"]
         };
 
 
     });
 
-    // Saved the users
-    // const usersInCsv = new Parser({ fields: ["Timestamp","email","name","firstsOfGroup","secondsOfGroup","thirdsOfGroup","fourthsOfGroup","poolWinner","poolGoals","paid"] }).parse(users);
-    // fs.writeFileSync("users.csv", usersInCsv);
+    // Saved the responses
+    // const responsesInCsv = new Parser({ fields: ["Timestamp","email","name","firstsOfGroup","secondsOfGroup","thirdsOfGroup","fourthsOfGroup","poolWinner","poolGoals","paid"] }).parse(responses);
+    // fs.writeFileSync("responses.csv", responsesInCsv);
 
-    // fs.writeFile ("users.json", JSON.stringify(users), function(err) {
+    // fs.writeFile ("responses.json", JSON.stringify(responses), function(err) {
     //     if (err) throw err;
     //     console.log('complete');
     //     }
