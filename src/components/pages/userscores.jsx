@@ -103,7 +103,9 @@ const UserEntryDetails = ({ user }) => {
               gap: "5px",
             }}
           >
-            <span>Winner:</span>
+            <span>
+              <Text tid="Winner" />:
+            </span>
             <Flag
               src={winnerTeam.flag}
               alt={winnerTeam.flagAlt}
@@ -127,7 +129,9 @@ const UserEntryDetails = ({ user }) => {
               gap: "5px",
             }}
           >
-            <span>Goals:</span>
+            <span>
+              <Text tid="Goals" />:
+            </span>
             <span>{user.poolGoals}</span>
           </div>
         </div>
