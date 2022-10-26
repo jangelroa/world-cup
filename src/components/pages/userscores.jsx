@@ -51,6 +51,7 @@ const UserEntryDetails = ({ user }) => {
         padding: "20px 20px 0 20px",
         border: "1px dashed black",
         marginBottom: "7px",
+        cursor: "pointer",
       }}
     >
       <div
@@ -156,6 +157,7 @@ const UserSccoreListRow = ({ user }) => {
           justifyContent: "space-between",
           alignItems: "center",
           minHeight: "60px",
+          cursor: "pointer",
         }}
       >
         <div>{truncate(user.name, 30)}</div>
