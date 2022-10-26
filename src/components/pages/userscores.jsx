@@ -48,9 +48,9 @@ const UserEntryDetails = ({ user }) => {
   return (
     <div
       style={{
-        padding: "20px",
-        border: "1px solid black",
-        borderBottom: "none",
+        padding: "20px 20px 0 20px",
+        border: "1px dashed black",
+        marginBottom: "7px",
       }}
     >
       <div
