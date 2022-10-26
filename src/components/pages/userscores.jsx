@@ -46,7 +46,13 @@ const UserEntryDetails = ({ user }) => {
   const { userLanguage } = useContext(LanguageContext);
   const winnerTeam = getTeam(user.poolWinner);
   return (
-    <div>
+    <div
+      style={{
+        padding: "20px 20px 0 20px",
+        border: "1px dashed black",
+        marginBottom: "7px",
+      }}
+    >
       <div
         style={{
           display: "flex",
