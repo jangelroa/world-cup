@@ -91,6 +91,16 @@ RE-DEPLOY WITH SURGE:
     echo worldcuppoolsf.surge.sh > CNAME // creates a CNAME file with that url (this is only done once  )
     surge
 
+/_ ----------------------------------------------- _/
+/_ ----- Good tutorial about working getting ----- _/
+/_ -------- a json file from a csv files --------- _/
+/_ ----------------------------------------------- _/
+
+    Working with CSV in JavaScript -
+    https://www.youtube.com/watch?v=95wAbrQAm5g
+
+    files in: https://github.com/VLabStudio/Tutorials/tree/master/Working%20with%20data%20in%20JavaScript/Working%20with%20CSV%20in%20JavaScript
+
 /_ ----------------------------------------- _/
 /_ ----- How add pool data from google ----- _/
 /_ ------ form to the users.jsx file ------- _/
