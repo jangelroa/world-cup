@@ -93,7 +93,7 @@ RE-DEPLOY WITH SURGE:
 
 /_ ----------------------------------------- _/
 /_ ----- How add pool data from google ----- _/
-/_ ----- form to the users.jsx file ----- _/
+/_ ------ form to the users.jsx file ------- _/
 /_ ----------------------------------------- _/
 
 COPY THE PARTICIPANTS POOL TO THE WEBSITE:
@@ -103,7 +103,7 @@ COPY THE PARTICIPANTS POOL TO THE WEBSITE:
     2) In the All Responses tab, go to File > Download > Comma Separated Values (.csv). That prompt you to save the csv file. Store the file with the name inputResponses.csv in the following folder:
     /Users/oslolisboa/Documents/PROJECTS/Roque - World Cup/world-cup/src/data/responses
 
-    3) In a vscode terminal tab cd to that folder and run:
+    3) In a vscode terminal tab, cd to that folder and run:
         cd '/Users/oslolisboa/Documents/PROJECTS/Roque - World Cup/world-cup/src/data/responses'
 
         node createUsersPool.js
@@ -113,3 +113,26 @@ COPY THE PARTICIPANTS POOL TO THE WEBSITE:
     4) Copy the content (format first) of the outputConstructedUser.json in the users array variable in src > data > users.jsx file.
 
     5) That's all. Push the changes and the website should do all the calculations directtly.
+
+/_ ------------------------------------------------------ _/
+/_ ------------ How add matches days to the ------------ _/
+/_ ------ RealMatches.jsx or TestMatches.jsx files ------ _/
+/_ ------------------------------------------------------ _/
+
+// In a faster way than building manually the matches objects
+
+    1) In the excel responses file (called World Cup Pool 2022) create a new tab and add data that descibe the matchday (take a look at matchday3 to matchday8 tabs).
+
+    2) In the new ceated tab, go to File > Download > Comma Separated Values (.csv). That prompt you to save the csv file. Store the file with the name inputMatches.csv in the following folder:
+    /Users/oslolisboa/Documents/PROJECTS/Roque - World Cup/world-cup/src/data/createMatches
+
+    3) In a vscode terminal tab, cd to that folder and run:
+        cd '/Users/oslolisboa/Documents/PROJECTS/Roque - World Cup/world-cup/src/data/createMatches'
+
+        node createMatches.js
+
+    That will read the inputMatches.csv file and create/overwrite the outputConstructedMatches.json file.
+
+    4) Copy the content (format first) of the outputConstructedMatches.json in the correspondent matchday array variable in src > data > RealMatches.jsx and/or TestMatches.jsx file/s.
+
+    5) That's all. Push the changes and the website should reflect the new matches in the GAMES page.
