@@ -83,20 +83,21 @@ h1 {
 }
 
 .partidos, .team-list, .user-list, .ranking-list, .rules-container {
-  padding: 60px;
+  padding: 30px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .home-header {
   display: flex;
+  justify-content: space-between;
   margin: 50px;
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
 }
 
 @media screen and (max-width: 900px) {
-  .home-header {
+  .home-title {
     display: none;
   }
   .home-title {
@@ -107,7 +108,7 @@ h1 {
   }
 
   .partidos, .team-list, .user-list, .ranking-list, .rules-container {
-    padding: 60px 5px;
+    padding: 30px 5px;
   }
 }
 

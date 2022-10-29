@@ -52,6 +52,8 @@ const UserEntryDetails = ({ user }) => {
         border: "1px dashed black",
         marginBottom: "7px",
         cursor: "pointer",
+        background: "#e5dcdc",
+        borderRadius: "50px",
       }}
     >
       <div

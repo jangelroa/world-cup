@@ -106,7 +106,7 @@ const Home = () => {
     <>
       <Quadrant>
         <div style={{ display: "flex", justifyContent: "flex-end" }}>
-          <LanguageSelector />
+          {/* <LanguageSelector /> */}
         </div>
         <div className="home-header">
           <div
@@ -123,6 +123,9 @@ const Home = () => {
             <h2 className="home-subtitle">
               <Text tid="GROUPS" />
             </h2>
+          </div>
+          <div style={{ display: "flex", justifyContent: "flex-end" }}>
+            <LanguageSelector />
           </div>
         </div>
         <GroupsContainer>
