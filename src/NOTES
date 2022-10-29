@@ -91,19 +91,29 @@ RE-DEPLOY WITH SURGE:
     echo worldcuppoolsf.surge.sh > CNAME // creates a CNAME file with that url (this is only done once  )
     surge
 
+/_ ----------------------------------------------- _/
+/_ ----- Good tutorial about working getting ----- _/
+/_ -------- a json file from a csv files --------- _/
+/_ ----------------------------------------------- _/
+
+    Working with CSV in JavaScript -
+    https://www.youtube.com/watch?v=95wAbrQAm5g
+
+    files in: https://github.com/VLabStudio/Tutorials/tree/master/Working%20with%20data%20in%20JavaScript/Working%20with%20CSV%20in%20JavaScript
+
 /_ ----------------------------------------- _/
 /_ ----- How add pool data from google ----- _/
-/_ ----- form to the users.jsx file ----- _/
+/_ ------ form to the users.jsx file ------- _/
 /_ ----------------------------------------- _/
 
 COPY THE PARTICIPANTS POOL TO THE WEBSITE:
 
-    1) In the excel responses file (called World Cup Pool 2022) copy all rows from Form Responses 1 and Form Responses 2 tabs to the All Responses tab.
+    1) In the excel responses file (called World Cup Pool 2022) copy all rows from Form Responses 1 and Form Responses 2 tabs to the All Responses tab in the file called World Cup - Responses and Matchdays.
 
     2) In the All Responses tab, go to File > Download > Comma Separated Values (.csv). That prompt you to save the csv file. Store the file with the name inputResponses.csv in the following folder:
     /Users/oslolisboa/Documents/PROJECTS/Roque - World Cup/world-cup/src/data/responses
 
-    3) In a vscode terminal tab cd to that folder and run:
+    3) In a vscode terminal tab, cd to that folder and run:
         cd '/Users/oslolisboa/Documents/PROJECTS/Roque - World Cup/world-cup/src/data/responses'
 
         node createUsersPool.js
@@ -113,3 +123,28 @@ COPY THE PARTICIPANTS POOL TO THE WEBSITE:
     4) Copy the content (format first) of the outputConstructedUser.json in the users array variable in src > data > users.jsx file.
 
     5) That's all. Push the changes and the website should do all the calculations directtly.
+
+/_ ------------------------------------------------------ _/
+/_ ------------ How add matches days to the ------------ _/
+/_ ------ RealMatches.jsx or TestMatches.jsx files ------ _/
+/_ ------------------------------------------------------ _/
+
+// In a faster way than building manually the matches objects
+// I'll need to do these steps to replace the place holders in
+// matchdays 4 to 8 when the qualifying teams are knonw.
+
+    1) In the excel file called World Cup - Responses and Matchdays create a new tab and add data that descibe the matchday (take a look at matchday3 to matchday8 tabs).
+
+    2) In the new ceated or modified tab, go to File > Download > Comma Separated Values (.csv). That prompt you to save the csv file. Store the file with the name inputMatches.csv in the following folder:
+    /Users/oslolisboa/Documents/PROJECTS/Roque - World Cup/world-cup/src/data/createMatches
+
+    3) In a vscode terminal tab, cd to that folder and run:
+        cd '/Users/oslolisboa/Documents/PROJECTS/Roque - World Cup/world-cup/src/data/createMatches'
+
+        node createMatches.js
+
+    That will read the inputMatches.csv file and create/overwrite the outputConstructedMatches.json file.
+
+    4) Copy the content (format first) of the outputConstructedMatches.json in the correspondent matchday array variable in src > data > RealMatches.jsx and/or TestMatches.jsx file/s.
+
+    5) That's all. Push the changes and the website should reflect the new matches in the GAMES page.

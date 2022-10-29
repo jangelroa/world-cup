@@ -31,7 +31,7 @@ const PenaltiesScore = ({ match }) => {
 };
 
 const GetScore = (match) => {
-  if (!match.team1.score) {
+  if (typeof match.team1.score !== "number") {
     return match.date;
   }
 
@@ -132,7 +132,7 @@ const MatchesDay = ({ matchesday, subtitle, day }) => {
                     alignItems: "center",
                   }}
                 >
-                  <div style={{ marginRight: "10px" }}>
+                  <div style={{ marginRight: "10px", textAlign: "right" }}>
                     {userLanguage === "en" ? team2.name : team2.spanishName}
                   </div>
                   <div>

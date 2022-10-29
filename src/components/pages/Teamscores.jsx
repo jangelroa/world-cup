@@ -21,7 +21,7 @@ const TeamScores = () => {
     <>
       <div className="team-list">
         <h2>
-          <Text tid="Team Scores" />
+          <Text tid="Team Points per rules" />
         </h2>
         {/* <span
           style={{
