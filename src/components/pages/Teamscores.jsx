@@ -7,6 +7,7 @@ import { ThinLine } from "../smallComponents";
 import { teamScoresList } from "../../data/teams";
 import { MatchesDay } from "./MatchesList";
 import { allMatches } from "../../data/matches";
+import { BiChevronDown, BiChevronRight } from "react-icons/bi";
 // console.log({
 //   teamScoresList: teamScoresList(),
 // });
@@ -90,6 +91,11 @@ const TeamScoreListRow = ({ team, index }) => {
           >
             puntos
           </span>
+          {expanded ? (
+            <BiChevronRight style={{ fontSize: "1.5rem" }} />
+          ) : (
+            <BiChevronDown style={{ fontSize: "1.5rem" }} />
+          )}
         </div>
       </div>
       {expanded && <TeamMatchesDetails team={team} />}

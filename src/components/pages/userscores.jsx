@@ -9,6 +9,7 @@ import {
   truncate,
 } from "../smallComponents";
 import { UserScoresList } from "../../data/users";
+import { BiChevronDown, BiChevronRight } from "react-icons/bi";
 
 const UserScores = () => {
   return (
@@ -173,6 +174,11 @@ const UserSccoreListRow = ({ user }) => {
           >
             puntos
           </span>
+          {expanded ? (
+            <BiChevronRight style={{ fontSize: "1.5rem" }} />
+          ) : (
+            <BiChevronDown style={{ fontSize: "1.5rem" }} />
+          )}
         </div>
       </div>
       {expanded && <UserEntryDetails user={user} />}
