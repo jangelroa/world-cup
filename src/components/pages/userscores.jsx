@@ -172,7 +172,7 @@ const UserSccoreListRow = ({ user }) => {
               fontSize: ".8rem",
             }}
           >
-            puntos
+            <Text tid="points" />
           </span>
           {expanded ? (
             <BiChevronRight style={{ fontSize: "1.5rem" }} />

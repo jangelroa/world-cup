@@ -58,6 +58,7 @@ h1 {
   /* text-align: right; */
   position: sticky;
   top: 80px;
+  z-index: 99;
 }
 
 @media screen and (min-width: 900px) {
@@ -126,7 +127,9 @@ h1 {
   gap: 10px;
 }
 
-
+.select-dropdown img, .select-label img {
+  border-radius: 50%;
+}
 
 /* 
 button {

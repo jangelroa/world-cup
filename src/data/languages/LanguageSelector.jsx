@@ -13,7 +13,7 @@ function getKeyByValue(object, value) {
 const Label = ({ src, lang }) => {
   return (
     <div className="select-label">
-      <Flag src={src} alt="Spanish" /> {lang}
+      <Flag src={src} alt={lang} /> {lang}
     </div>
   );
 };

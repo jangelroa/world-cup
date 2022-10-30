@@ -89,14 +89,6 @@ const Group = ({ group, index }) => {
 const Home = () => {
   const { userLanguage, userLanguageChange } = useContext(LanguageContext);
 
-  const Label = ({ src, lang }) => {
-    return (
-      <div className="select-label">
-        <Flag src={src} alt="Spanish" /> {lang}
-      </div>
-    );
-  };
-
   useEffect(() => {
     const defaultLanguage = window.localStorage.getItem("wcp-lang");
     userLanguageChange(defaultLanguage || "en");
@@ -105,9 +97,6 @@ const Home = () => {
   return (
     <>
       <Quadrant>
-        <div style={{ display: "flex", justifyContent: "flex-end" }}>
-          {/* <LanguageSelector /> */}
-        </div>
         <div className="home-header">
           <div
             style={{
