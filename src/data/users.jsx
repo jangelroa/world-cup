@@ -181,6 +181,15 @@ export const users = [
     poolGoals: 4,
     paid: "",
   },
+  {
+    id: 20,
+    name: "Cormac",
+    email: "cormact@gmail.com",
+    poolTeams: [1, 3, 4, 8, 10, 11, 12, 14, 19, 21, 26, 44, 20, 31, 43, 61],
+    poolWinner: 1,
+    poolGoals: 1,
+    paid: "",
+  },
 ];
 
 export const UserScoresList = () => {
