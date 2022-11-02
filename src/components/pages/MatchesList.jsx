@@ -46,26 +46,51 @@ const GetScore = (match) => {
 const MatchesList = () => {
   return (
     <>
-      <MatchesDay matchesday={matchesday1} title="Match day 1" day="1" />
-      <MatchesDay matchesday={matchesday2} title="Match day 2" day="2" />
-      <MatchesDay matchesday={matchesday3} title="Match day 3" day="3" />
-      <MatchesDay matchesday={matchesday4} subtitle="Round of 16" day="4" />
-      <MatchesDay matchesday={matchesday5} subtitle="Quarterfinals" day="5" />
-      <MatchesDay matchesday={matchesday6} subtitle="Semifinals" day="6" />
-      <MatchesDay matchesday={matchesday7} subtitle="3rd and 4th" day="7" />
-      <MatchesDay matchesday={matchesday8} subtitle="Final" day="8" />
+      <MatchesDay matchesday={matchesday1} title="Match day" day="1" />
+      <MatchesDay matchesday={matchesday2} title="Match day" day="2" />
+      <MatchesDay matchesday={matchesday3} title="Match day" day="3" />
+      <MatchesDay
+        matchesday={matchesday4}
+        title="Match day"
+        subtitle="Round of 16"
+        day="4"
+      />
+      <MatchesDay
+        matchesday={matchesday5}
+        title="Match day"
+        subtitle="Quarterfinals"
+        day="5"
+      />
+      <MatchesDay
+        matchesday={matchesday6}
+        title="Match day"
+        subtitle="Semifinals"
+        day="6"
+      />
+      <MatchesDay
+        matchesday={matchesday7}
+        title="Match day"
+        subtitle="3rd and 4th"
+        day="7"
+      />
+      <MatchesDay
+        matchesday={matchesday8}
+        title="Match day"
+        subtitle="Final"
+        day="8"
+      />
     </>
   );
 };
 
-const MatchesDay = ({ matchesday, subtitle, day }) => {
+export const MatchesDay = ({ matchesday, title, subtitle, day }) => {
   const { userLanguage, userLanguageChange, dictionary } =
     useContext(LanguageContext);
   return (
     <div className="partidos">
       <div className="game-titles">
         <h2>
-          <Text tid="Match day" /> {day}
+          <Text tid={title} /> {day}
         </h2>
         {subtitle && <span>-</span>}
         <h4>

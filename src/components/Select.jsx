@@ -111,6 +111,7 @@ export const Select = ({ label, initialValue, values, onChange, options }) => {
         <DropdownStyle isVisible={open}>
           {options.map((option, index) => (
             <DropdownItem
+              className="select-dropdown"
               onClick={() => handleChange(option.value)}
               active={option.value === currentValue}
               key={index}
