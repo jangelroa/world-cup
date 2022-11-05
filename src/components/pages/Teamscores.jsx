@@ -121,11 +121,7 @@ const TeamMatchesDetails = ({ team }) => {
       }}
     >
       {/* <div>{team.name}</div> */}
-      <MatchesDay
-        matchesday={teamMatches}
-        title={teamName}
-        subtitle="Matches"
-      />
+      <MatchesDay matchesday={teamMatches} title={teamName} subtitle="Games" />
     </div>
   );
 };
