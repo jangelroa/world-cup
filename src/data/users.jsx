@@ -298,6 +298,33 @@ export const users = [
     poolGoals: 6,
     paid: "",
   },
+  {
+    id: 33,
+    name: "Maria Peña",
+    email: "espimaria0271@gmail.com",
+    poolTeams: [1, 3, 8, 9, 11, 12, 13, 15, 19, 24, 26, 28, 38, 43, 51, 61],
+    poolWinner: 11,
+    poolGoals: 3,
+    paid: "",
+  },
+  {
+    id: 34,
+    name: "Victor Peña",
+    email: "carajure@gmail.com",
+    poolTeams: [1, 3, 5, 7, 10, 11, 13, 15, 21, 24, 28, 44, 20, 43, 50, 61],
+    poolWinner: 1,
+    poolGoals: 3,
+    paid: "",
+  },
+  {
+    id: 35,
+    name: "Victor Jr.",
+    email: "victorapena2005@gmail.com",
+    poolTeams: [1, 3, 5, 9, 11, 13, 14, 15, 19, 22, 26, 44, 31, 38, 41, 51],
+    poolWinner: 1,
+    poolGoals: 4,
+    paid: "",
+  },
 ];
 
 export const UserScoresList = () => {
