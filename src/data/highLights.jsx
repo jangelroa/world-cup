@@ -39,6 +39,16 @@ const highLights = {
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     ></iframe>
   ),
+  "Semi-Final 1 Winner-Semi-Final 2 Winner": (
+    <iframe
+      width="100%"
+      height="100%"
+      src="https://www.youtube.com/embed/8F9jXYOH2c0"
+      title="YouTube video player"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    ></iframe>
+  ),
 };
 
 export default highLights;
