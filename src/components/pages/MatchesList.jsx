@@ -32,7 +32,12 @@ const PenaltiesScore = ({ match }) => {
 
 const GetScore = (match) => {
   if (typeof match.team1.score !== "number") {
-    return match.date;
+    return (
+      <div>
+        <div style={{ fontSize: "0.9rem" }}>{match.date}</div>
+        <div style={{ fontSize: "0.7rem" }}>{match.time}</div>
+      </div>
+    );
   }
 
   return (
@@ -169,6 +174,9 @@ export const MatchesDay = ({ matchesday, title, subtitle, day }) => {
             </div>
           );
         })}
+      </div>
+      <div style={{ textAlign: "right", fontSize: "0.7rem" }}>
+        * California Time
       </div>
     </div>
   );

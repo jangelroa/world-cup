@@ -15,7 +15,7 @@ export const realMatchesday1 = [
       penalties: null,
     },
     date: "11/20",
-    time: "",
+    time: "8:00 AM*",
   },
   {
     team1: {
@@ -33,7 +33,7 @@ export const realMatchesday1 = [
       penalties: null,
     },
     date: "11/21",
-    time: "",
+    time: "5:00 AM*",
   },
   {
     team1: {
@@ -51,7 +51,7 @@ export const realMatchesday1 = [
       penalties: null,
     },
     date: "11/21",
-    time: "",
+    time: "8:00 AM*",
   },
   {
     team1: {
@@ -69,7 +69,7 @@ export const realMatchesday1 = [
       penalties: null,
     },
     date: "11/21",
-    time: "",
+    time: "11:00 AM*",
   },
   {
     team1: {
@@ -87,7 +87,7 @@ export const realMatchesday1 = [
       penalties: null,
     },
     date: "11/22",
-    time: "5:00",
+    time: "2:00 AM*",
   },
   {
     team1: {
@@ -105,7 +105,7 @@ export const realMatchesday1 = [
       penalties: null,
     },
     date: "11/22",
-    time: "",
+    time: "5:00 AM*",
   },
   {
     team1: {
@@ -123,7 +123,7 @@ export const realMatchesday1 = [
       penalties: null,
     },
     date: "11/22",
-    time: "",
+    time: "8:00 AM*",
   },
   {
     team1: {
@@ -141,7 +141,7 @@ export const realMatchesday1 = [
       penalties: null,
     },
     date: "11/22",
-    time: "",
+    time: "11:00 AM*",
   },
   {
     team1: {
@@ -159,7 +159,7 @@ export const realMatchesday1 = [
       penalties: null,
     },
     date: "11/23",
-    time: "",
+    time: "2:00 AM*",
   },
   {
     team1: {
@@ -177,7 +177,7 @@ export const realMatchesday1 = [
       penalties: null,
     },
     date: "11/23",
-    time: "",
+    time: "5:00 AM*",
   },
   {
     team1: {
@@ -195,7 +195,7 @@ export const realMatchesday1 = [
       penalties: null,
     },
     date: "11/23",
-    time: "",
+    time: "8:00 AM*",
   },
   {
     team1: {
@@ -213,7 +213,7 @@ export const realMatchesday1 = [
       penalties: null,
     },
     date: "11/23",
-    time: "",
+    time: "11:00 AM*",
   },
   {
     team1: {
@@ -231,7 +231,7 @@ export const realMatchesday1 = [
       penalties: null,
     },
     date: "11/24",
-    time: "",
+    time: "2:00 AM*",
   },
   {
     team1: {
@@ -249,7 +249,7 @@ export const realMatchesday1 = [
       penalties: null,
     },
     date: "11/24",
-    time: "",
+    time: "5:00 AM*",
   },
   {
     team1: {
@@ -267,7 +267,7 @@ export const realMatchesday1 = [
       penalties: null,
     },
     date: "11/24",
-    time: "",
+    time: "8:00 AM*",
   },
   {
     team1: {
@@ -285,7 +285,7 @@ export const realMatchesday1 = [
       penalties: null,
     },
     date: "11/24",
-    time: "",
+    time: "11:00 AM*",
   },
 ];
 
@@ -306,7 +306,7 @@ export const realMatchesday2 = [
       penalties: null,
     },
     date: "11/25",
-    time: "",
+    time: "2:00 AM*",
   },
   {
     team1: {
@@ -324,7 +324,7 @@ export const realMatchesday2 = [
       penalties: null,
     },
     date: "11/25",
-    time: "",
+    time: "5:00 AM*",
   },
   {
     team1: {
@@ -342,7 +342,7 @@ export const realMatchesday2 = [
       penalties: null,
     },
     date: "11/25",
-    time: "",
+    time: "8:00 AM*",
   },
   {
     team1: {
@@ -360,7 +360,7 @@ export const realMatchesday2 = [
       penalties: null,
     },
     date: "11/25",
-    time: "",
+    time: "11:00 AM*",
   },
   {
     team1: {
@@ -378,7 +378,7 @@ export const realMatchesday2 = [
       penalties: null,
     },
     date: "11/26",
-    time: "",
+    time: "2:00 AM*",
   },
   {
     team1: {
@@ -396,7 +396,7 @@ export const realMatchesday2 = [
       penalties: null,
     },
     date: "11/26",
-    time: "",
+    time: "5:00 AM*",
   },
   {
     team1: {
@@ -414,7 +414,7 @@ export const realMatchesday2 = [
       penalties: null,
     },
     date: "11/26",
-    time: "",
+    time: "8:00 AM*",
   },
   {
     team1: {
@@ -432,7 +432,7 @@ export const realMatchesday2 = [
       penalties: null,
     },
     date: "11/26",
-    time: "",
+    time: "11:00 AM*",
   },
   {
     team1: {
@@ -450,7 +450,7 @@ export const realMatchesday2 = [
       penalties: null,
     },
     date: "11/27",
-    time: "",
+    time: "2:00 AM*",
   },
   {
     team1: {
@@ -468,7 +468,7 @@ export const realMatchesday2 = [
       penalties: null,
     },
     date: "11/27",
-    time: "",
+    time: "5:00 AM*",
   },
   {
     team1: {
@@ -486,7 +486,7 @@ export const realMatchesday2 = [
       penalties: null,
     },
     date: "11/27",
-    time: "",
+    time: "8:00 AM*",
   },
   {
     team1: {
@@ -504,7 +504,7 @@ export const realMatchesday2 = [
       penalties: null,
     },
     date: "11/27",
-    time: "",
+    time: "11:00 AM*",
   },
   {
     team1: {
@@ -522,7 +522,7 @@ export const realMatchesday2 = [
       penalties: null,
     },
     date: "11/28",
-    time: "",
+    time: "2:00 AM*",
   },
   {
     team1: {
@@ -540,7 +540,7 @@ export const realMatchesday2 = [
       penalties: null,
     },
     date: "11/28",
-    time: "",
+    time: "5:00 AM*",
   },
   {
     team1: {
@@ -558,7 +558,7 @@ export const realMatchesday2 = [
       penalties: null,
     },
     date: "11/28",
-    time: "",
+    time: "8:00 AM*",
   },
   {
     team1: {
@@ -576,7 +576,7 @@ export const realMatchesday2 = [
       penalties: null,
     },
     date: "11/28",
-    time: "",
+    time: "11:00 AM*",
   },
 ];
 
@@ -597,7 +597,7 @@ export const realMatchesday3 = [
       penalties: null,
     },
     date: "11/29",
-    time: "",
+    time: "7:00 AM*",
   },
   {
     team1: {
@@ -615,7 +615,7 @@ export const realMatchesday3 = [
       penalties: null,
     },
     date: "11/29",
-    time: "",
+    time: "7:00 AM*",
   },
   {
     team1: {
@@ -633,7 +633,7 @@ export const realMatchesday3 = [
       penalties: null,
     },
     date: "11/29",
-    time: "",
+    time: "11:00 AM*",
   },
   {
     team1: {
@@ -651,7 +651,7 @@ export const realMatchesday3 = [
       penalties: null,
     },
     date: "11/29",
-    time: "",
+    time: "11:00 AM*",
   },
   {
     team1: {
@@ -669,7 +669,7 @@ export const realMatchesday3 = [
       penalties: null,
     },
     date: "11/30",
-    time: "",
+    time: "7:00 AM*",
   },
   {
     team1: {
@@ -687,7 +687,7 @@ export const realMatchesday3 = [
       penalties: null,
     },
     date: "11/30",
-    time: "",
+    time: "7:00 AM*",
   },
   {
     team1: {
@@ -705,7 +705,7 @@ export const realMatchesday3 = [
       penalties: null,
     },
     date: "11/30",
-    time: "",
+    time: "11:00 AM*",
   },
   {
     team1: {
@@ -723,7 +723,7 @@ export const realMatchesday3 = [
       penalties: null,
     },
     date: "11/30",
-    time: "",
+    time: "11:00 AM*",
   },
   {
     team1: {
@@ -741,7 +741,7 @@ export const realMatchesday3 = [
       penalties: null,
     },
     date: "12/1",
-    time: "",
+    time: "7:00 AM*",
   },
   {
     team1: {
@@ -759,7 +759,7 @@ export const realMatchesday3 = [
       penalties: null,
     },
     date: "12/1",
-    time: "",
+    time: "7:00 AM*",
   },
   {
     team1: {
@@ -777,7 +777,7 @@ export const realMatchesday3 = [
       penalties: null,
     },
     date: "12/1",
-    time: "",
+    time: "11:00 AM*",
   },
   {
     team1: {
@@ -795,7 +795,7 @@ export const realMatchesday3 = [
       penalties: null,
     },
     date: "12/1",
-    time: "",
+    time: "11:00 AM*",
   },
   {
     team1: {
@@ -813,7 +813,7 @@ export const realMatchesday3 = [
       penalties: null,
     },
     date: "12/2",
-    time: "",
+    time: "7:00 AM*",
   },
   {
     team1: {
@@ -831,7 +831,7 @@ export const realMatchesday3 = [
       penalties: null,
     },
     date: "12/2",
-    time: "",
+    time: "7:00 AM*",
   },
   {
     team1: {
@@ -849,7 +849,7 @@ export const realMatchesday3 = [
       penalties: null,
     },
     date: "12/2",
-    time: "",
+    time: "11:00 AM*",
   },
   {
     team1: {
@@ -867,7 +867,7 @@ export const realMatchesday3 = [
       penalties: null,
     },
     date: "12/2",
-    time: "",
+    time: "11:00 AM*",
   },
 ];
 
@@ -888,7 +888,7 @@ export const realMatchesday4 = [
       penalties: null,
     },
     date: "12/3",
-    time: "",
+    time: "7:00 AM*",
   },
   {
     team1: {
@@ -906,7 +906,7 @@ export const realMatchesday4 = [
       penalties: null,
     },
     date: "12/3",
-    time: "",
+    time: "11:00 AM*",
   },
   {
     team1: {
@@ -924,7 +924,7 @@ export const realMatchesday4 = [
       penalties: null,
     },
     date: "12/4",
-    time: "",
+    time: "7:00 AM*",
   },
   {
     team1: {
@@ -942,7 +942,7 @@ export const realMatchesday4 = [
       penalties: null,
     },
     date: "12/4",
-    time: "",
+    time: "11:00 AM*",
   },
   {
     team1: {
@@ -960,7 +960,7 @@ export const realMatchesday4 = [
       penalties: null,
     },
     date: "12/5",
-    time: "",
+    time: "7:00 AM*",
   },
   {
     team1: {
@@ -978,7 +978,7 @@ export const realMatchesday4 = [
       penalties: null,
     },
     date: "12/5",
-    time: "",
+    time: "11:00 AM*",
   },
   {
     team1: {
@@ -996,7 +996,7 @@ export const realMatchesday4 = [
       penalties: null,
     },
     date: "12/6",
-    time: "",
+    time: "7:00 AM*",
   },
   {
     team1: {
@@ -1014,7 +1014,7 @@ export const realMatchesday4 = [
       penalties: null,
     },
     date: "12/6",
-    time: "",
+    time: "11:00 AM*",
   },
 ];
 
@@ -1035,7 +1035,7 @@ export const realMatchesday5 = [
       penalties: null,
     },
     date: "12/9",
-    time: "",
+    time: "7:00 AM*",
   },
   {
     team1: {
@@ -1053,7 +1053,7 @@ export const realMatchesday5 = [
       penalties: null,
     },
     date: "12/9",
-    time: "",
+    time: "11:00 AM*",
   },
   {
     team1: {
@@ -1071,7 +1071,7 @@ export const realMatchesday5 = [
       penalties: null,
     },
     date: "12/10",
-    time: "",
+    time: "7:00 AM*",
   },
   {
     team1: {
@@ -1089,7 +1089,7 @@ export const realMatchesday5 = [
       penalties: null,
     },
     date: "12/10",
-    time: "",
+    time: "11:00 AM*",
   },
 ];
 
@@ -1110,7 +1110,7 @@ export const realMatchesday6 = [
       penalties: null,
     },
     date: "12/13",
-    time: "",
+    time: "11:00 AM*",
   },
   {
     team1: {
@@ -1128,7 +1128,7 @@ export const realMatchesday6 = [
       penalties: null,
     },
     date: "12/14",
-    time: "",
+    time: "11:00 AM*",
   },
 ];
 
@@ -1149,7 +1149,7 @@ export const realMatchesday7 = [
       penalties: null,
     },
     date: "12/17",
-    time: "",
+    time: "7:00 AM*",
   },
 ];
 
@@ -1170,7 +1170,7 @@ export const realMatchesday8 = [
       penalties: null,
     },
     date: "12/18",
-    time: "",
+    time: "7:00 AM*",
   },
 ];
 
