@@ -5,9 +5,9 @@ export const users = [
     id: 0,
     name: "Angel Roa",
     email: "jangelroa@gmail.com",
-    poolTeams: [1, 3, 7, 9, 11, 12, 13, 14, 22, 24, 28, 30, 38, 43, 50, 51],
+    poolTeams: [1, 3, 4, 5, 11, 12, 16, 18, 21, 26, 28, 44, 20, 31, 38, 41],
     poolWinner: 3,
-    poolGoals: 6,
+    poolGoals: 4,
     paid: "",
   },
   {
@@ -39,10 +39,10 @@ export const users = [
   },
   {
     id: 4,
-    name: "Tito",
+    name: "TITO",
     email: "jangelroa@gmail.com",
-    poolTeams: [3, 4, 5, 8, 11, 12, 13, 14, 24, 26, 28, 30, 43, 50, 51, 61],
-    poolWinner: 9,
+    poolTeams: [1, 3, 4, 7, 11, 12, 14, 18, 19, 21, 26, 44, 38, 41, 50, 61],
+    poolWinner: 3,
     poolGoals: 2,
     paid: "",
   },
@@ -129,6 +129,24 @@ export const users = [
   },
   {
     id: 14,
+    name: "Connie Rivera",
+    email: "rconnie2090@gmail.com",
+    poolTeams: [1, 2, 3, 8, 10, 11, 12, 14, 19, 24, 26, 44, 20, 31, 43, 61],
+    poolWinner: 3,
+    poolGoals: 3,
+    paid: "",
+  },
+  {
+    id: 15,
+    name: "Ricardo Pena",
+    email: "rconnie2090@gmail.com",
+    poolTeams: [1, 2, 3, 5, 10, 11, 13, 14, 21, 24, 26, 44, 20, 31, 43, 61],
+    poolWinner: 1,
+    poolGoals: 2,
+    paid: "",
+  },
+  {
+    id: 16,
     name: "Ramon Moreno",
     email: "nomar98@yahoo.com",
     poolTeams: [1, 2, 4, 7, 11, 12, 13, 15, 21, 24, 26, 28, 20, 31, 41, 43],
@@ -137,7 +155,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 15,
+    id: 17,
     name: "Mr. Director007",
     email: "davgalvez8@gmail.com",
     poolTeams: [1, 2, 3, 4, 10, 11, 12, 13, 19, 21, 24, 28, 20, 31, 38, 43],
@@ -146,7 +164,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 16,
+    id: 18,
     name: "Cormac",
     email: "cormact@gmail.com",
     poolTeams: [1, 3, 4, 8, 10, 11, 12, 14, 19, 21, 26, 44, 20, 31, 43, 61],
@@ -155,7 +173,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 17,
+    id: 19,
     name: "Lazaro",
     email: "lazblanco@gmail.com",
     poolTeams: [1, 3, 4, 8, 11, 13, 14, 16, 21, 24, 26, 28, 31, 41, 43, 61],
@@ -164,7 +182,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 18,
+    id: 20,
     name: "Greg",
     email: "greghoops22@yahoo.com",
     poolTeams: [2, 3, 4, 5, 10, 11, 12, 13, 21, 24, 28, 44, 20, 31, 41, 61],
@@ -173,7 +191,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 19,
+    id: 21,
     name: "Fatai",
     email: "fadewusi@gmail.com",
     poolTeams: [1, 2, 3, 8, 10, 11, 14, 18, 24, 26, 28, 44, 38, 41, 43, 61],
@@ -182,7 +200,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 20,
+    id: 22,
     name: "Pina Correa",
     email: "pinacorrea@hotmail.com",
     poolTeams: [1, 3, 4, 8, 10, 11, 12, 14, 19, 21, 26, 44, 20, 31, 43, 50],
@@ -191,7 +209,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 21,
+    id: 23,
     name: "Roque@11",
     email: "dreamsourcefilms@gmail.com",
     poolTeams: [1, 2, 4, 8, 10, 11, 12, 14, 19, 22, 24, 28, 31, 41, 43, 61],
@@ -200,7 +218,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 22,
+    id: 24,
     name: "Ian Weeks",
     email: "ian@tobeover.com",
     poolTeams: [1, 4, 5, 8, 11, 13, 14, 16, 19, 24, 26, 44, 20, 38, 43, 61],
@@ -209,7 +227,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 23,
+    id: 25,
     name: "Ariel",
     email: "ariel_opez@yahoo.com",
     poolTeams: [1, 2, 3, 5, 10, 11, 14, 15, 19, 22, 24, 26, 31, 41, 43, 61],
@@ -218,7 +236,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 24,
+    id: 26,
     name: "Russell Stangeland",
     email: "rrstangeland@att.net",
     poolTeams: [1, 2, 3, 8, 10, 11, 12, 14, 19, 21, 28, 30, 20, 31, 38, 43],
@@ -227,7 +245,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 25,
+    id: 27,
     name: "Jonathan Jenkins",
     email: "jonathanjenkins182@gmail.com",
     poolTeams: [1, 3, 5, 8, 10, 11, 12, 18, 19, 21, 26, 44, 31, 41, 43, 61],
@@ -236,7 +254,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 26,
+    id: 28,
     name: "Leo",
     email: "lrea0019@gmail.com",
     poolTeams: [1, 3, 7, 9, 11, 12, 13, 16, 19, 21, 24, 44, 20, 31, 43, 61],
@@ -245,7 +263,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 27,
+    id: 29,
     name: "Declan",
     email: "declan_wyrick@yahoo.com",
     poolTeams: [1, 2, 5, 8, 11, 12, 13, 16, 19, 24, 26, 28, 20, 31, 41, 61],
@@ -254,7 +272,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 28,
+    id: 30,
     name: "AAA",
     email: "atkinsgroup@juno.com",
     poolTeams: [1, 2, 4, 5, 10, 11, 12, 16, 19, 21, 22, 26, 20, 31, 38, 41],
@@ -263,7 +281,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 29,
+    id: 31,
     name: "Alex (Hernandez) McAuley",
     email: "alexandramcauley1@gmail.com",
     poolTeams: [1, 2, 3, 8, 10, 13, 14, 18, 19, 21, 24, 44, 31, 41, 43, 61],
@@ -272,7 +290,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 30,
+    id: 32,
     name: "jeff",
     email: "jlblackburn@gmail.com",
     poolTeams: [1, 2, 3, 8, 10, 11, 15, 18, 22, 24, 26, 44, 31, 41, 50, 61],
@@ -281,7 +299,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 31,
+    id: 33,
     name: "Cesar L",
     email: "castafran7@gmail.com",
     poolTeams: [1, 3, 4, 5, 10, 11, 12, 14, 19, 21, 26, 44, 38, 43, 50, 61],
@@ -290,7 +308,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 32,
+    id: 34,
     name: "Sunil Vora",
     email: "sunilvora@gmail.com",
     poolTeams: [1, 3, 4, 7, 11, 12, 14, 16, 21, 24, 28, 44, 31, 38, 43, 61],
@@ -299,7 +317,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 33,
+    id: 35,
     name: "Martha",
     email: "carrascomartha@sbcglobal.net",
     poolTeams: [1, 3, 4, 9, 10, 11, 12, 13, 19, 21, 24, 26, 20, 31, 43, 50],
@@ -308,7 +326,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 34,
+    id: 36,
     name: "Jack Solano",
     email: "jamesrobertsolano@gmail.com",
     poolTeams: [1, 2, 7, 9, 11, 12, 13, 16, 19, 21, 24, 28, 31, 38, 41, 50],
@@ -317,7 +335,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 35,
+    id: 37,
     name: "Eric",
     email: "copello11@gmail.com",
     poolTeams: [1, 2, 3, 4, 11, 14, 16, 18, 21, 26, 28, 44, 20, 31, 41, 43],
@@ -326,7 +344,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 36,
+    id: 38,
     name: "Yoli",
     email: "yoli.aceves@gmail.com",
     poolTeams: [1, 3, 4, 9, 11, 13, 14, 18, 21, 22, 28, 44, 31, 41, 43, 61],
@@ -335,7 +353,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 37,
+    id: 39,
     name: "Gabriela Colmenares",
     email: "gicolmen@gmail.com",
     poolTeams: [1, 2, 3, 4, 11, 12, 13, 14, 19, 21, 24, 44, 20, 31, 41, 43],
@@ -344,7 +362,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 38,
+    id: 40,
     name: "Jacob Micheletti",
     email: "michelettijacob@gmail.com",
     poolTeams: [1, 3, 4, 8, 10, 11, 13, 15, 22, 24, 26, 28, 20, 31, 41, 43],
@@ -353,7 +371,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 39,
+    id: 41,
     name: "Maria Peña",
     email: "espimaria0271@gmail.com",
     poolTeams: [1, 3, 8, 9, 11, 12, 13, 15, 19, 24, 26, 28, 38, 43, 51, 61],
@@ -362,7 +380,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 40,
+    id: 42,
     name: "Victor Peña",
     email: "carajure@gmail.com",
     poolTeams: [1, 3, 5, 7, 10, 11, 13, 15, 21, 24, 28, 44, 20, 43, 50, 61],
@@ -371,7 +389,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 41,
+    id: 43,
     name: "Victor Jr.",
     email: "victorapena2005@gmail.com",
     poolTeams: [1, 3, 5, 9, 11, 13, 14, 15, 19, 22, 26, 44, 31, 38, 41, 51],
@@ -380,7 +398,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 42,
+    id: 44,
     name: "Monica Bryan",
     email: "momoreira@gmail.com",
     poolTeams: [1, 3, 4, 9, 12, 13, 16, 18, 22, 24, 26, 44, 31, 38, 41, 61],
@@ -389,7 +407,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 43,
+    id: 45,
     name: "Esteban",
     email: "ba.maga@gmail.com",
     poolTeams: [2, 3, 5, 8, 12, 13, 14, 18, 19, 21, 22, 30, 31, 38, 43, 61],
@@ -398,7 +416,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 44,
+    id: 46,
     name: "Special K",
     email: "karltonenglishjr@yahoo.com",
     poolTeams: [2, 3, 8, 9, 10, 11, 14, 16, 19, 22, 24, 26, 38, 41, 43, 61],
@@ -407,7 +425,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 45,
+    id: 47,
     name: "Pollo",
     email: "pollitrescu2@hotmail.com",
     poolTeams: [1, 3, 4, 7, 10, 11, 12, 13, 21, 22, 26, 44, 31, 38, 43, 50],
@@ -416,7 +434,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 46,
+    id: 48,
     name: "Toshi",
     email: "toshih26@gmail.com",
     poolTeams: [1, 4, 8, 9, 11, 12, 14, 16, 21, 24, 26, 44, 20, 43, 51, 61],
@@ -425,7 +443,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 47,
+    id: 49,
     name: "Caleb Olvera",
     email: "calebolvera@gmail.com",
     poolTeams: [1, 4, 5, 8, 10, 11, 12, 15, 19, 24, 26, 44, 41, 43, 50, 61],
@@ -434,7 +452,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 48,
+    id: 50,
     name: "frankram001",
     email: "frankramirezz@icloud.com",
     poolTeams: [1, 2, 4, 5, 10, 11, 14, 16, 19, 24, 28, 44, 20, 31, 41, 50],
@@ -443,7 +461,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 49,
+    id: 51,
     name: "Griffen",
     email: "xgriffenx@yahoo.com",
     poolTeams: [1, 3, 8, 9, 11, 12, 13, 16, 22, 24, 28, 30, 31, 38, 43, 51],
@@ -452,7 +470,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 50,
+    id: 52,
     name: "MadMax",
     email: "visionpromax@gmail.com",
     poolTeams: [1, 3, 4, 9, 11, 12, 14, 16, 21, 24, 26, 30, 20, 38, 41, 50],
@@ -461,7 +479,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 51,
+    id: 53,
     name: "George weeks",
     email: "gweeks2287@icloud.com",
     poolTeams: [1, 3, 5, 9, 10, 14, 15, 18, 21, 24, 28, 30, 31, 50, 51, 61],
@@ -470,7 +488,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 52,
+    id: 54,
     name: "Suiiiiiiii",
     email: "wweekstb12@icoud.com",
     poolTeams: [1, 3, 5, 8, 10, 11, 12, 18, 19, 24, 26, 28, 38, 43, 51, 61],
@@ -479,7 +497,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 53,
+    id: 55,
     name: "Joe",
     email: "garrottej@gmail.com",
     poolTeams: [1, 3, 7, 9, 11, 13, 14, 16, 22, 24, 28, 44, 31, 38, 43, 50],
@@ -488,7 +506,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 54,
+    id: 56,
     name: "Holly Weeks",
     email: "hpespisa@aol.com",
     poolTeams: [1, 4, 5, 8, 10, 11, 12, 13, 19, 24, 26, 28, 41, 43, 50, 61],
@@ -497,7 +515,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 55,
+    id: 57,
     name: "Rosaura Rojas Ramos",
     email: "rojasramos9@gmail.com",
     poolTeams: [1, 3, 4, 7, 11, 13, 14, 16, 19, 24, 26, 44, 31, 41, 43, 51],
@@ -506,7 +524,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 56,
+    id: 58,
     name: "Gman",
     email: "gerson.contact@gmail.com",
     poolTeams: [1, 3, 4, 7, 10, 11, 14, 15, 19, 21, 22, 26, 20, 38, 41, 50],
@@ -515,7 +533,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 57,
+    id: 59,
     name: "Sandra",
     email: "sgindart@gmail.com",
     poolTeams: [1, 3, 4, 7, 12, 13, 14, 18, 19, 21, 22, 44, 20, 31, 38, 61],
@@ -524,7 +542,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 58,
+    id: 60,
     name: "GW01",
     email: "gerwatson@gmail.com",
     poolTeams: [1, 4, 7, 8, 10, 11, 14, 15, 19, 21, 26, 44, 38, 41, 43, 61],
@@ -533,7 +551,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 59,
+    id: 61,
     name: "GW02",
     email: "gerwatson@gmail.com",
     poolTeams: [1, 2, 4, 8, 10, 14, 15, 18, 19, 21, 22, 26, 20, 31, 43, 51],
@@ -542,7 +560,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 60,
+    id: 62,
     name: "GW03",
     email: "gerwatson@gmail.com",
     poolTeams: [1, 2, 3, 8, 11, 12, 15, 16, 21, 22, 26, 44, 20, 41, 51, 61],
@@ -551,7 +569,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 61,
+    id: 63,
     name: "Gabriel",
     email: "garodri7@gmail.com",
     poolTeams: [1, 2, 4, 8, 10, 12, 13, 15, 21, 22, 26, 28, 31, 38, 50, 51],
@@ -560,7 +578,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 62,
+    id: 64,
     name: "Sandro",
     email: "sandropalpra@hotmail.com",
     poolTeams: [1, 3, 4, 8, 11, 12, 13, 18, 19, 24, 26, 44, 38, 41, 43, 61],
@@ -569,7 +587,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 63,
+    id: 65,
     name: "Michael",
     email: "michaelindart@hotmail.com",
     poolTeams: [1, 2, 4, 8, 10, 11, 12, 15, 19, 24, 28, 44, 20, 31, 38, 50],
@@ -578,7 +596,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 64,
+    id: 66,
     name: "Sandro 2",
     email: "sandropalpra@hotmail.com",
     poolTeams: [3, 4, 5, 8, 11, 12, 13, 18, 19, 26, 28, 44, 38, 41, 43, 61],
@@ -587,7 +605,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 65,
+    id: 67,
     name: "Haley Fiske",
     email: "hfiske17@gmail.com",
     poolTeams: [1, 3, 5, 8, 12, 13, 15, 16, 19, 22, 24, 26, 20, 31, 50, 51],
@@ -596,7 +614,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 66,
+    id: 68,
     name: "Heather",
     email: "heather.easley@gmail.com",
     poolTeams: [1, 3, 4, 7, 11, 12, 16, 18, 19, 24, 28, 44, 31, 41, 43, 61],
@@ -605,7 +623,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 67,
+    id: 69,
     name: "Auguste",
     email: "augusteindart@sbcglobal.net",
     poolTeams: [1, 4, 5, 7, 12, 13, 14, 16, 21, 22, 26, 44, 31, 38, 41, 50],
@@ -614,7 +632,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 68,
+    id: 70,
     name: "frankram002",
     email: "frankramirezz@univision.net",
     poolTeams: [1, 3, 4, 5, 11, 12, 14, 15, 19, 22, 26, 28, 20, 31, 38, 41],
@@ -623,7 +641,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 69,
+    id: 71,
     name: "MrDirector_DO7",
     email: "davgalvez8@gmail.com",
     poolTeams: [1, 2, 4, 8, 10, 11, 14, 15, 19, 22, 28, 44, 20, 41, 43, 51],
@@ -632,7 +650,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 70,
+    id: 72,
     name: "Garret Hernandez",
     email: "garreth92@gmail.com",
     poolTeams: [1, 3, 4, 5, 11, 13, 14, 16, 19, 24, 26, 30, 31, 41, 43, 61],
@@ -641,7 +659,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 71,
+    id: 73,
     name: "Ruth",
     email: "rbmicheletti@gmail.com",
     poolTeams: [2, 3, 5, 7, 11, 12, 13, 16, 21, 24, 28, 44, 31, 38, 41, 43],
@@ -650,7 +668,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 72,
+    id: 74,
     name: "Claudia Ramos",
     email: "6.guerrera.10@gmail.com",
     poolTeams: [1, 3, 4, 7, 10, 11, 13, 14, 19, 22, 24, 28, 31, 38, 41, 43],
@@ -659,7 +677,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 73,
+    id: 75,
     name: "Gabriel 2",
     email: "garodri7@gmail.com",
     poolTeams: [1, 3, 5, 9, 10, 14, 15, 18, 19, 26, 28, 30, 20, 41, 43, 61],
@@ -668,7 +686,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 74,
+    id: 76,
     name: "frankram003",
     email: "frankramirezz@icloud.com",
     poolTeams: [1, 3, 5, 7, 10, 11, 13, 18, 19, 21, 24, 26, 20, 38, 41, 50],
@@ -677,7 +695,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 75,
+    id: 77,
     name: "Yuri",
     email: "meiaginga@gmail.com",
     poolTeams: [1, 3, 7, 8, 11, 13, 15, 18, 21, 24, 26, 44, 31, 38, 41, 61],
@@ -686,7 +704,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 76,
+    id: 78,
     name: "Carrillo",
     email: "rsc.carrillo@gmail.com",
     poolTeams: [1, 4, 5, 8, 11, 12, 13, 16, 19, 21, 22, 28, 41, 50, 51, 61],
@@ -695,7 +713,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 77,
+    id: 79,
     name: "Dylan",
     email: "monaghandylan2017@gmail.com",
     poolTeams: [1, 3, 7, 9, 10, 11, 12, 16, 21, 24, 26, 28, 31, 41, 43, 61],
@@ -704,7 +722,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 78,
+    id: 80,
     name: "Derek Michael Martinez",
     email: "derek.martinez91@yahoo.com",
     poolTeams: [3, 4, 7, 8, 11, 13, 15, 16, 19, 24, 26, 44, 31, 38, 43, 61],
@@ -713,7 +731,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 79,
+    id: 81,
     name: "Vladimir cuevas",
     email: "artbyvladimir@gmail.com",
     poolTeams: [1, 3, 8, 9, 11, 13, 14, 16, 24, 26, 28, 44, 31, 41, 43, 61],
@@ -722,7 +740,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 80,
+    id: 82,
     name: "Egardo Campos",
     email: "jjjeweler@gmail.com",
     poolTeams: [1, 3, 4, 5, 11, 12, 13, 16, 22, 24, 28, 44, 20, 43, 50, 61],
@@ -731,7 +749,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 81,
+    id: 83,
     name: "Adam Hume",
     email: "adamhume714@gmail.com",
     poolTeams: [1, 3, 5, 8, 10, 11, 12, 14, 19, 22, 24, 26, 20, 31, 38, 43],
@@ -740,7 +758,7 @@ export const users = [
     paid: "",
   },
   {
-    id: 82,
+    id: 84,
     name: "Natalia Díaz Amabilis",
     email: "nataliadiaz500@gmail.com",
     poolTeams: [1, 3, 5, 9, 10, 11, 12, 14, 19, 24, 26, 28, 31, 41, 43, 61],
@@ -749,12 +767,75 @@ export const users = [
     paid: "",
   },
   {
-    id: 83,
+    id: 85,
     name: "Roque@12",
     email: "dreamsourcefilms@gmail.com",
     poolTeams: [1, 3, 4, 8, 11, 12, 15, 18, 19, 22, 28, 30, 31, 43, 51, 61],
     poolWinner: 7,
     poolGoals: 3,
+    paid: "",
+  },
+  {
+    id: 86,
+    name: "Vladimir",
+    email: "cuevasvladimir@gmail.com",
+    poolTeams: [1, 3, 8, 9, 11, 13, 14, 16, 24, 26, 28, 44, 31, 41, 43, 50],
+    poolWinner: 3,
+    poolGoals: 3,
+    paid: "",
+  },
+  {
+    id: 87,
+    name: "Javier",
+    email: "blueranchtrail@yahoo.com",
+    poolTeams: [1, 3, 5, 7, 10, 11, 14, 16, 19, 24, 28, 44, 20, 31, 38, 41],
+    poolWinner: 3,
+    poolGoals: 5,
+    paid: "",
+  },
+  {
+    id: 88,
+    name: "Rivera.Adrian",
+    email: "rconnie2090@gmail.com",
+    poolTeams: [1, 3, 5, 8, 10, 11, 14, 16, 22, 24, 26, 28, 31, 38, 41, 43],
+    poolWinner: 5,
+    poolGoals: 2,
+    paid: "",
+  },
+  {
+    id: 89,
+    name: "michael collantes",
+    email: "dirtymac@outlook.com",
+    poolTeams: [1, 3, 4, 5, 10, 11, 12, 13, 22, 26, 28, 44, 31, 41, 43, 61],
+    poolWinner: 3,
+    poolGoals: 6,
+    paid: "",
+  },
+  {
+    id: 90,
+    name: "Gilles Combrisson",
+    email: "combrisson@gmail.com",
+    poolTeams: [1, 2, 4, 8, 10, 11, 16, 18, 19, 21, 24, 26, 38, 43, 51, 61],
+    poolWinner: 4,
+    poolGoals: 3,
+    paid: "",
+  },
+  {
+    id: 91,
+    name: "Mike D",
+    email: "mbd2@pacbell.net",
+    poolTeams: [1, 4, 5, 8, 11, 12, 14, 16, 21, 26, 28, 44, 38, 41, 43, 61],
+    poolWinner: 4,
+    poolGoals: 3,
+    paid: "",
+  },
+  {
+    id: 92,
+    name: "Mike D2",
+    email: "mbd2@pacbell.net",
+    poolTeams: [1, 3, 4, 5, 10, 12, 14, 15, 19, 21, 26, 44, 38, 41, 43, 61],
+    poolWinner: 1,
+    poolGoals: 5,
     paid: "",
   },
 ];
