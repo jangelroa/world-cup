@@ -13,7 +13,6 @@ import { Text } from "../../data/languages/Text";
 // import defaultFlag from "../../images/flags/default.webp";
 // import logo from "../../images/flags/default.webp";
 import logo from "../../images/qatar-logo.jpg";
-import highLights from "../../data/highLights";
 import { BiChevronDown, BiChevronRight } from "react-icons/bi";
 
 const MatchScore = ({ match }) => (
@@ -205,22 +204,27 @@ const MatchDetails = ({ match }) => {
       }}
     >
       <div className="game-highlight">
-        <Iframe match={match} />
+        <Iframe highlights={match.highlights} />
       </div>
     </div>
   );
 };
 
-const Iframe = ({ match }) => {
-  const matchId = `${match.team1.name}-${match.team2.name}`;
-  let renderHighLights;
-  if (highLights[matchId]) {
-    renderHighLights = highLights[matchId];
-  } else {
-    renderHighLights = <div>highlights coming soon</div>;
+const Iframe = ({ highlights }) => {
+  if (highlights) {
+    return (
+      <iframe
+        width="100%"
+        height="100%"
+        src={highlights}
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      ></iframe>
+    );
   }
 
-  return renderHighLights;
+  return <div>highlights coming soon</div>;
 };
 
 export default MatchesList;
