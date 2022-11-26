@@ -15,7 +15,8 @@ export const realMatchesday1 = [
       penalties: null,
     },
     date: "11/20",
-    time: "",
+    time: "8:00 AM*",
+    highlights: "https://www.youtube-nocookie.com/embed/KokKw1esPL8",
   },
   {
     team1: {
@@ -33,7 +34,8 @@ export const realMatchesday1 = [
       penalties: null,
     },
     date: "11/21",
-    time: "",
+    time: "5:00 AM*",
+    highlights: "https://www.youtube-nocookie.com/embed/wpFEwMVKdsU",
   },
   {
     team1: {
@@ -51,7 +53,8 @@ export const realMatchesday1 = [
       penalties: null,
     },
     date: "11/21",
-    time: "",
+    time: "8:00 AM*",
+    highlights: "https://www.youtube-nocookie.com/embed/S79XCmeTUPM",
   },
   {
     team1: {
@@ -69,223 +72,236 @@ export const realMatchesday1 = [
       penalties: null,
     },
     date: "11/21",
-    time: "",
+    time: "11:00 AM*",
+    highlights: "https://www.youtube-nocookie.com/embed/7VH-rrPw6BY",
   },
   {
     team1: {
       fifa: 3,
       name: "Argentina",
       spanishName: "Argentina",
-      score: null,
+      score: 1,
       penalties: null,
     },
     team2: {
       fifa: 51,
       name: "Saudi Arabia",
       spanishName: "Arabia Saudi",
-      score: null,
+      score: 2,
       penalties: null,
     },
     date: "11/22",
-    time: "5:00",
+    time: "2:00 AM*",
+    highlights: "https://www.youtube-nocookie.com/embed/H6zHbVQjeaw",
   },
   {
     team1: {
       fifa: 10,
       name: "Denmark",
       spanishName: "Dinamarca",
-      score: null,
+      score: 0,
       penalties: null,
     },
     team2: {
       fifa: 30,
       name: "Tunisia",
       spanishName: "Túnez",
-      score: null,
+      score: 0,
       penalties: null,
     },
     date: "11/22",
-    time: "",
+    time: "5:00 AM*",
+    highlights: "https://www.youtube-nocookie.com/embed/ppaZH3uURqk",
   },
   {
     team1: {
       fifa: 13,
       name: "Mexico",
       spanishName: "Mexico",
-      score: null,
+      score: 0,
       penalties: null,
     },
     team2: {
       fifa: 26,
       name: "Poland",
       spanishName: "Polonia",
-      score: null,
+      score: 0,
       penalties: null,
     },
     date: "11/22",
-    time: "",
+    time: "8:00 AM*",
+    highlights: "https://www.youtube-nocookie.com/embed/xO2iHpGuPbg",
   },
   {
     team1: {
       fifa: 4,
       name: "France",
       spanishName: "Francia",
-      score: null,
+      score: 4,
       penalties: null,
     },
     team2: {
       fifa: 38,
       name: "Australia",
       spanishName: "Australia",
-      score: null,
+      score: 1,
       penalties: null,
     },
     date: "11/22",
-    time: "",
+    time: "11:00 AM*",
+    highlights: "https://www.youtube-nocookie.com/embed/D0kVR0s7p7g",
   },
   {
     team1: {
       fifa: 22,
       name: "Morocco",
       spanishName: "Marruecos",
-      score: null,
+      score: 0,
       penalties: null,
     },
     team2: {
       fifa: 12,
       name: "Croatia",
       spanishName: "Croacia",
-      score: null,
+      score: 0,
       penalties: null,
     },
     date: "11/23",
-    time: "",
+    time: "2:00 AM*",
+    highlights: "https://www.youtube-nocookie.com/embed/ZAQRRU79vEE",
   },
   {
     team1: {
       fifa: 11,
       name: "Germany",
       spanishName: "Alemania",
-      score: null,
+      score: 1,
       penalties: null,
     },
     team2: {
       fifa: 24,
       name: "Japan",
       spanishName: "Japón",
-      score: null,
+      score: 2,
       penalties: null,
     },
     date: "11/23",
-    time: "",
+    time: "5:00 AM*",
+    highlights: "https://www.youtube-nocookie.com/embed/PvZoSogBCzs",
   },
   {
     team1: {
       fifa: 7,
       name: "Spain",
       spanishName: "España",
-      score: null,
+      score: 7,
       penalties: null,
     },
     team2: {
       fifa: 31,
       name: "Costa Rica",
       spanishName: "Costa Rica",
-      score: null,
+      score: 0,
       penalties: null,
     },
     date: "11/23",
-    time: "",
+    time: "8:00 AM*",
+    highlights: "https://www.youtube-nocookie.com/embed/2hSVDLPWeKA",
   },
   {
     team1: {
       fifa: 2,
       name: "Belgium",
       spanishName: "Bélgica",
-      score: null,
+      score: 1,
       penalties: null,
     },
     team2: {
       fifa: 41,
       name: "Canada",
       spanishName: "Canada",
-      score: null,
+      score: 0,
       penalties: null,
     },
     date: "11/23",
-    time: "",
+    time: "11:00 AM*",
+    highlights: "https://www.youtube-nocookie.com/embed/NdlcBO6tTZM",
   },
   {
     team1: {
       fifa: 15,
       name: "Switzerland",
       spanishName: "Suiza",
-      score: null,
+      score: 1,
       penalties: null,
     },
     team2: {
       fifa: 43,
       name: "Cameroon",
       spanishName: "Camerún",
-      score: null,
+      score: 0,
       penalties: null,
     },
     date: "11/24",
-    time: "",
+    time: "2:00 AM*",
+    highlights: "https://www.youtube-nocookie.com/embed/32RyT05OpVE",
   },
   {
     team1: {
       fifa: 14,
       name: "Uruguay",
       spanishName: "Uruguay",
-      score: null,
+      score: 0,
       penalties: null,
     },
     team2: {
       fifa: 28,
       name: "South Korea",
       spanishName: "Korea Sur",
-      score: null,
+      score: 0,
       penalties: null,
     },
     date: "11/24",
-    time: "",
+    time: "5:00 AM*",
+    highlights: "https://www.youtube-nocookie.com/embed/2Z305OHe03k",
   },
   {
     team1: {
       fifa: 9,
       name: "Portugal",
       spanishName: "Portugal",
-      score: null,
+      score: 3,
       penalties: null,
     },
     team2: {
       fifa: 61,
       name: "Ghana",
       spanishName: "Ghana",
-      score: null,
+      score: 2,
       penalties: null,
     },
     date: "11/24",
-    time: "",
+    time: "8:00 AM*",
+    highlights: "https://www.youtube-nocookie.com/embed/LRH-4Sq4dOQ",
   },
   {
     team1: {
       fifa: 1,
       name: "Brazil",
       spanishName: "Brasil",
-      score: null,
+      score: 2,
       penalties: null,
     },
     team2: {
       fifa: 21,
       name: "Serbia",
       spanishName: "Serbia",
-      score: null,
+      score: 0,
       penalties: null,
     },
     date: "11/24",
-    time: "",
+    time: "11:00 AM*",
+    highlights: "https://www.youtube-nocookie.com/embed/j0s8GFVTwGc",
   },
 ];
 
@@ -295,72 +311,76 @@ export const realMatchesday2 = [
       fifa: 19,
       name: "Wales",
       spanishName: "Gales",
-      score: null,
+      score: 0,
       penalties: null,
     },
     team2: {
       fifa: 20,
       name: "Iran",
       spanishName: "Iran",
-      score: null,
+      score: 2,
       penalties: null,
     },
     date: "11/25",
-    time: "",
+    time: "2:00 AM*",
+    highlights: "https://www.youtube-nocookie.com/embed/0wG42eh8bKc",
   },
   {
     team1: {
       fifa: 50,
       name: "Qatar",
       spanishName: "Qatar",
-      score: null,
+      score: 1,
       penalties: null,
     },
     team2: {
       fifa: 18,
       name: "Senegal",
       spanishName: "Senegal",
-      score: null,
+      score: 3,
       penalties: null,
     },
     date: "11/25",
-    time: "",
+    time: "5:00 AM*",
+    highlights: "https://www.youtube-nocookie.com/embed/Vzd1uv1dVLQ",
   },
   {
     team1: {
       fifa: 8,
       name: "Netherlands",
       spanishName: "Holanda",
-      score: null,
+      score: 1,
       penalties: null,
     },
     team2: {
       fifa: 44,
       name: "Ecuador",
       spanishName: "Ecuador",
-      score: null,
+      score: 1,
       penalties: null,
     },
     date: "11/25",
-    time: "",
+    time: "8:00 AM*",
+    highlights: "https://www.youtube-nocookie.com/embed/ysBE1mLjyJY",
   },
   {
     team1: {
       fifa: 5,
       name: "England",
       spanishName: "Inglaterra",
-      score: null,
+      score: 0,
       penalties: null,
     },
     team2: {
       fifa: 16,
       name: "USA",
       spanishName: "USA",
-      score: null,
+      score: 0,
       penalties: null,
     },
     date: "11/25",
-    time: "",
+    time: "11:00 AM*",
+    highlights: "https://www.youtube-nocookie.com/embed/H99a2DYyRAo",
   },
   {
     team1: {
@@ -378,7 +398,8 @@ export const realMatchesday2 = [
       penalties: null,
     },
     date: "11/26",
-    time: "",
+    time: "2:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -396,7 +417,8 @@ export const realMatchesday2 = [
       penalties: null,
     },
     date: "11/26",
-    time: "",
+    time: "5:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -414,7 +436,8 @@ export const realMatchesday2 = [
       penalties: null,
     },
     date: "11/26",
-    time: "",
+    time: "8:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -432,7 +455,8 @@ export const realMatchesday2 = [
       penalties: null,
     },
     date: "11/26",
-    time: "",
+    time: "11:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -450,7 +474,8 @@ export const realMatchesday2 = [
       penalties: null,
     },
     date: "11/27",
-    time: "",
+    time: "2:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -468,7 +493,8 @@ export const realMatchesday2 = [
       penalties: null,
     },
     date: "11/27",
-    time: "",
+    time: "5:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -486,7 +512,8 @@ export const realMatchesday2 = [
       penalties: null,
     },
     date: "11/27",
-    time: "",
+    time: "8:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -504,7 +531,8 @@ export const realMatchesday2 = [
       penalties: null,
     },
     date: "11/27",
-    time: "",
+    time: "11:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -522,7 +550,8 @@ export const realMatchesday2 = [
       penalties: null,
     },
     date: "11/28",
-    time: "",
+    time: "2:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -540,7 +569,8 @@ export const realMatchesday2 = [
       penalties: null,
     },
     date: "11/28",
-    time: "",
+    time: "5:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -558,7 +588,8 @@ export const realMatchesday2 = [
       penalties: null,
     },
     date: "11/28",
-    time: "",
+    time: "8:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -576,7 +607,8 @@ export const realMatchesday2 = [
       penalties: null,
     },
     date: "11/28",
-    time: "",
+    time: "11:00 AM*",
+    highlights: "",
   },
 ];
 
@@ -597,7 +629,8 @@ export const realMatchesday3 = [
       penalties: null,
     },
     date: "11/29",
-    time: "",
+    time: "7:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -615,7 +648,8 @@ export const realMatchesday3 = [
       penalties: null,
     },
     date: "11/29",
-    time: "",
+    time: "7:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -633,7 +667,8 @@ export const realMatchesday3 = [
       penalties: null,
     },
     date: "11/29",
-    time: "",
+    time: "11:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -651,7 +686,8 @@ export const realMatchesday3 = [
       penalties: null,
     },
     date: "11/29",
-    time: "",
+    time: "11:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -669,7 +705,8 @@ export const realMatchesday3 = [
       penalties: null,
     },
     date: "11/30",
-    time: "",
+    time: "7:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -687,7 +724,8 @@ export const realMatchesday3 = [
       penalties: null,
     },
     date: "11/30",
-    time: "",
+    time: "7:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -705,7 +743,8 @@ export const realMatchesday3 = [
       penalties: null,
     },
     date: "11/30",
-    time: "",
+    time: "11:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -723,7 +762,8 @@ export const realMatchesday3 = [
       penalties: null,
     },
     date: "11/30",
-    time: "",
+    time: "11:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -741,7 +781,8 @@ export const realMatchesday3 = [
       penalties: null,
     },
     date: "12/1",
-    time: "",
+    time: "7:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -759,7 +800,8 @@ export const realMatchesday3 = [
       penalties: null,
     },
     date: "12/1",
-    time: "",
+    time: "7:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -777,7 +819,8 @@ export const realMatchesday3 = [
       penalties: null,
     },
     date: "12/1",
-    time: "",
+    time: "11:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -795,7 +838,8 @@ export const realMatchesday3 = [
       penalties: null,
     },
     date: "12/1",
-    time: "",
+    time: "11:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -813,7 +857,8 @@ export const realMatchesday3 = [
       penalties: null,
     },
     date: "12/2",
-    time: "",
+    time: "7:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -831,7 +876,8 @@ export const realMatchesday3 = [
       penalties: null,
     },
     date: "12/2",
-    time: "",
+    time: "7:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -849,7 +895,8 @@ export const realMatchesday3 = [
       penalties: null,
     },
     date: "12/2",
-    time: "",
+    time: "11:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -867,7 +914,8 @@ export const realMatchesday3 = [
       penalties: null,
     },
     date: "12/2",
-    time: "",
+    time: "11:00 AM*",
+    highlights: "",
   },
 ];
 
@@ -888,7 +936,8 @@ export const realMatchesday4 = [
       penalties: null,
     },
     date: "12/3",
-    time: "",
+    time: "7:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -906,7 +955,8 @@ export const realMatchesday4 = [
       penalties: null,
     },
     date: "12/3",
-    time: "",
+    time: "11:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -924,7 +974,8 @@ export const realMatchesday4 = [
       penalties: null,
     },
     date: "12/4",
-    time: "",
+    time: "7:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -942,7 +993,8 @@ export const realMatchesday4 = [
       penalties: null,
     },
     date: "12/4",
-    time: "",
+    time: "11:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -960,7 +1012,8 @@ export const realMatchesday4 = [
       penalties: null,
     },
     date: "12/5",
-    time: "",
+    time: "7:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -978,7 +1031,8 @@ export const realMatchesday4 = [
       penalties: null,
     },
     date: "12/5",
-    time: "",
+    time: "11:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -996,7 +1050,8 @@ export const realMatchesday4 = [
       penalties: null,
     },
     date: "12/6",
-    time: "",
+    time: "7:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -1014,7 +1069,8 @@ export const realMatchesday4 = [
       penalties: null,
     },
     date: "12/6",
-    time: "",
+    time: "11:00 AM*",
+    highlights: "",
   },
 ];
 
@@ -1035,7 +1091,8 @@ export const realMatchesday5 = [
       penalties: null,
     },
     date: "12/9",
-    time: "",
+    time: "7:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -1053,7 +1110,8 @@ export const realMatchesday5 = [
       penalties: null,
     },
     date: "12/9",
-    time: "",
+    time: "11:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -1071,7 +1129,8 @@ export const realMatchesday5 = [
       penalties: null,
     },
     date: "12/10",
-    time: "",
+    time: "7:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -1089,7 +1148,8 @@ export const realMatchesday5 = [
       penalties: null,
     },
     date: "12/10",
-    time: "",
+    time: "11:00 AM*",
+    highlights: "",
   },
 ];
 
@@ -1110,7 +1170,8 @@ export const realMatchesday6 = [
       penalties: null,
     },
     date: "12/13",
-    time: "",
+    time: "11:00 AM*",
+    highlights: "",
   },
   {
     team1: {
@@ -1128,7 +1189,8 @@ export const realMatchesday6 = [
       penalties: null,
     },
     date: "12/14",
-    time: "",
+    time: "11:00 AM*",
+    highlights: "",
   },
 ];
 
@@ -1149,7 +1211,8 @@ export const realMatchesday7 = [
       penalties: null,
     },
     date: "12/17",
-    time: "",
+    time: "7:00 AM*",
+    highlights: "",
   },
 ];
 
@@ -1170,7 +1233,8 @@ export const realMatchesday8 = [
       penalties: null,
     },
     date: "12/18",
-    time: "",
+    time: "7:00 AM*",
+    highlights: "",
   },
 ];
 

@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useState, useContext } from "react";
 import { LanguageContext } from "../../data/languages/LanguageContext";
 import { matchesday1 } from "../../data/matches";
 import { matchesday2 } from "../../data/matches";
@@ -13,6 +13,7 @@ import { Text } from "../../data/languages/Text";
 // import defaultFlag from "../../images/flags/default.webp";
 // import logo from "../../images/flags/default.webp";
 import logo from "../../images/qatar-logo.jpg";
+import { BiChevronDown, BiChevronRight } from "react-icons/bi";
 
 const MatchScore = ({ match }) => (
   <div>
@@ -32,7 +33,12 @@ const PenaltiesScore = ({ match }) => {
 
 const GetScore = (match) => {
   if (typeof match.team1.score !== "number") {
-    return match.date;
+    return (
+      <div>
+        <div style={{ fontSize: "0.9rem" }}>{match.date}</div>
+        <div style={{ fontSize: "0.7rem" }}>{match.time}</div>
+      </div>
+    );
   }
 
   return (
@@ -108,6 +114,8 @@ export const MatchesDay = ({ matchesday, title, subtitle, day }) => {
       <ThickLine />
       <div>
         {matchesday.map((match, i) => {
+          const [expanded, setExpanded] = useState(false);
+
           const matchTeam1 = {
             name: match.team1.name,
             spanishName: match.team1.spanishName,
@@ -124,9 +132,8 @@ export const MatchesDay = ({ matchesday, title, subtitle, day }) => {
           const team2 = getTeam(match.team2.fifa) || matchTeam2;
 
           return (
-            <div key={i}>
+            <div key={i} onClick={(e) => setExpanded((exp) => !exp)}>
               <div
-                // key={i}
                 style={{
                   display: "flex",
                   justifyContent: "space-between",
@@ -137,7 +144,7 @@ export const MatchesDay = ({ matchesday, title, subtitle, day }) => {
                 <div
                   style={{
                     display: "flex",
-                    width: "40%",
+                    width: "38%",
                     alignItems: "center",
                   }}
                 >
@@ -152,7 +159,7 @@ export const MatchesDay = ({ matchesday, title, subtitle, day }) => {
                 <div
                   style={{
                     display: "flex",
-                    width: "40%",
+                    width: "38%",
                     justifyContent: "flex-end",
                     alignItems: "center",
                   }}
@@ -164,14 +171,60 @@ export const MatchesDay = ({ matchesday, title, subtitle, day }) => {
                     <Flag src={team2.flag} alt={team2.flagAlt} />
                   </div>
                 </div>
+                {expanded ? (
+                  <BiChevronRight style={{ fontSize: "1.5rem" }} />
+                ) : (
+                  <BiChevronDown style={{ fontSize: "1.5rem" }} />
+                )}
               </div>
+              {expanded && <MatchDetails match={match} />}
               <ThinLine />
             </div>
           );
         })}
       </div>
+      <div style={{ textAlign: "right", fontSize: "0.7rem" }}>
+        * California Time
+      </div>
     </div>
   );
+};
+
+const MatchDetails = ({ match }) => {
+  return (
+    <div
+      style={{
+        border: "1px dashed black",
+        marginBottom: "7px",
+        cursor: "pointer",
+        background: "#e5dcdc",
+        borderRadius: "50px",
+        display: "flex",
+        justifyContent: "center",
+      }}
+    >
+      <div className="game-highlight">
+        <Iframe highlights={match.highlights} />
+      </div>
+    </div>
+  );
+};
+
+const Iframe = ({ highlights }) => {
+  if (highlights) {
+    return (
+      <iframe
+        width="100%"
+        height="100%"
+        src={highlights}
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      ></iframe>
+    );
+  }
+
+  return <div>highlights coming soon</div>;
 };
 
 export default MatchesList;

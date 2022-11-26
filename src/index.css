@@ -97,6 +97,14 @@ h1 {
   margin: 0 auto;
 }
 
+.game-highlight {
+  width: 80%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 900px) {
   .home-title {
     display: none;
@@ -107,6 +115,11 @@ h1 {
 
   .partidos, .team-list, .user-list, .ranking-list, .rules-container {
     padding: 30px 5px;
+  }
+
+  .game-highlight {
+    width: 100%;
+    height: 300px;
   }
 }
 
