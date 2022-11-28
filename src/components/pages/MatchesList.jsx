@@ -170,12 +170,12 @@ export const MatchesDay = ({ matchesday, title, subtitle, day }) => {
                   <div>
                     <Flag src={team2.flag} alt={team2.flagAlt} />
                   </div>
+                  {expanded ? (
+                    <BiChevronRight style={{ fontSize: "1.5rem" }} />
+                  ) : (
+                    <BiChevronDown style={{ fontSize: "1.5rem" }} />
+                  )}
                 </div>
-                {expanded ? (
-                  <BiChevronRight style={{ fontSize: "1.5rem" }} />
-                ) : (
-                  <BiChevronDown style={{ fontSize: "1.5rem" }} />
-                )}
               </div>
               {expanded && <MatchDetails match={match} />}
               <ThinLine />
