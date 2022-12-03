@@ -21,7 +21,7 @@ const TeamScores = () => {
   const { userLanguage } = useContext(LanguageContext);
   return (
     <>
-      <AnnouncementPool2 />
+      {/* <AnnouncementPool2 /> */}
       <div className="team-list">
         <h2>
           <Text tid="Team Points per rules" />

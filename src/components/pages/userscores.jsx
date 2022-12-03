@@ -16,7 +16,7 @@ const UserScores = ({ userScoreListData }) => {
   const { pageTitle } = userScoreListData;
   return (
     <>
-      <AnnouncementPool2 />
+      {/* <AnnouncementPool2 /> */}
       <div className="user-list">
         <div style={{ display: "flex", justifyContent: "space-between" }}>
           <h2>
