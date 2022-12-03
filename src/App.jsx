@@ -6,7 +6,8 @@ import { Spanish, English } from "./components/pages/SetLanguage";
 import MatchesList from "./components/pages/MatchesList";
 import TeamScores from "./components/pages/Teamscores";
 import UserScores from "./components/pages/UserScores";
-import AddPool from "./components/pages/AddPool";
+// import AddPool from "./components/pages/AddPool";
+import AddPool from "./components/pages/AddPool2";
 import { LanguageProvider } from "./data/languages/LanguageProvider";
 
 function App() {
