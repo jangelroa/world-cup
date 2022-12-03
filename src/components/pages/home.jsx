@@ -96,7 +96,7 @@ const Home = () => {
 
   return (
     <>
-      <AnnouncementPool2 />
+      {/* <AnnouncementPool2 /> */}
       <Quadrant>
         <div className="home-header">
           <div

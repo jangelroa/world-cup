@@ -56,7 +56,7 @@ const GetScore = (match) => {
 const MatchesList = () => {
   return (
     <>
-      <AnnouncementPool2 />
+      {/* <AnnouncementPool2 /> */}
       <MatchesDay matchesday={matchesday1} title="Match day" day="1" />
       <MatchesDay matchesday={matchesday2} title="Match day" day="2" />
       <MatchesDay matchesday={matchesday3} title="Match day" day="3" />
