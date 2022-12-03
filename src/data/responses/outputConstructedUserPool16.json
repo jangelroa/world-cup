@@ -183,7 +183,7 @@
     "id": 20,
     "name": "Fatai",
     "email": "fadewusi@gmail.com",
-    "poolTeams": [8, 3, 4, 5, 12, 1, 7, 15],
+    "poolTeams": [16, 3, 4, 5, 12, 1, 7, 15],
     "poolWinner": 3,
     "poolGoals": 5,
     "paid": ""
@@ -239,6 +239,78 @@
     "email": "garodri7@gmail.com",
     "poolTeams": [8, 3, 4, 5, 24, 1, 7, 9],
     "poolWinner": 8,
+    "poolGoals": 3,
+    "paid": ""
+  },
+  {
+    "id": 27,
+    "name": "ruben@carrillodigital.com",
+    "email": "ruben@carrillodigital.com",
+    "poolTeams": [16, 38, 4, 5, 24, 1, 7, 9],
+    "poolWinner": 4,
+    "poolGoals": 3,
+    "paid": ""
+  },
+  {
+    "id": 28,
+    "name": "DG007",
+    "email": "davgalvez8@gmail.com",
+    "poolTeams": [8, 3, 4, 5, 24, 1, 7, 9],
+    "poolWinner": 1,
+    "poolGoals": 4,
+    "paid": ""
+  },
+  {
+    "id": 29,
+    "name": "Gman",
+    "email": "gerson.contact@gmail.com",
+    "poolTeams": [8, 3, 4, 5, 24, 1, 7, 9],
+    "poolWinner": 1,
+    "poolGoals": 6,
+    "paid": ""
+  },
+  {
+    "id": 30,
+    "name": "Football, not soccer",
+    "email": "wweekstb12@icloud.com",
+    "poolTeams": [16, 3, 4, 5, 24, 1, 22, 9],
+    "poolWinner": 5,
+    "poolGoals": 6,
+    "paid": ""
+  },
+  {
+    "id": 31,
+    "name": "Lazaro Blanco",
+    "email": "lazblanco@gmail.com",
+    "poolTeams": [16, 3, 4, 5, 24, 1, 22, 15],
+    "poolWinner": 3,
+    "poolGoals": 3,
+    "paid": ""
+  },
+  {
+    "id": 32,
+    "name": "Sergio Diaz",
+    "email": "sergiodiaz013@gmail.com",
+    "poolTeams": [8, 3, 4, 5, 24, 1, 22, 15],
+    "poolWinner": 3,
+    "poolGoals": 2,
+    "paid": ""
+  },
+  {
+    "id": 33,
+    "name": "Ruben carrillo",
+    "email": "rsc.carrillo@gmail.com",
+    "poolTeams": [16, 38, 4, 5, 24, 1, 7, 9],
+    "poolWinner": 7,
+    "poolGoals": 3,
+    "paid": ""
+  },
+  {
+    "id": 34,
+    "name": "MadMax",
+    "email": "visionpromax@gmail.com",
+    "poolTeams": [16, 3, 4, 5, 12, 1, 7, 9],
+    "poolWinner": 1,
     "poolGoals": 3,
     "paid": ""
   }
