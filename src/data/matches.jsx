@@ -41,3 +41,11 @@ export const allMatches = [
   ...matchesday7,
   ...matchesday8,
 ];
+
+export const round16AndBeyondMatches = [
+  ...matchesday4,
+  ...matchesday5,
+  ...matchesday6,
+  ...matchesday7,
+  ...matchesday8,
+];

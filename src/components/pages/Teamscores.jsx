@@ -2,7 +2,7 @@ import { useState, useContext } from "react";
 import { LanguageContext } from "../../data/languages/LanguageContext";
 import { Text } from "../../data/languages/Text";
 import styled from "styled-components";
-import { ThickLine } from "../smallComponents";
+import { ThickLine, AnnouncementPool2 } from "../smallComponents";
 import { ThinLine } from "../smallComponents";
 import { teamScoresList } from "../../data/teams";
 import { MatchesDay } from "./MatchesList";
@@ -21,6 +21,7 @@ const TeamScores = () => {
   const { userLanguage } = useContext(LanguageContext);
   return (
     <>
+      <AnnouncementPool2 />
       <div className="team-list">
         <h2>
           <Text tid="Team Points per rules" />

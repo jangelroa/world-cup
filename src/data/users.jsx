@@ -1,4 +1,5 @@
 import { teamScoresList } from "./teams";
+import { teamScoresList16 } from "./teams";
 
 export const users = [
   {
@@ -867,6 +868,251 @@ export const users = [
   },
 ];
 
+const users16 = [
+  {
+    id: 0,
+    name: "frankram001",
+    email: "frankramirezz@icloud.com",
+    poolTeams: [8, 3, 4, 5, 12, 1, 7, 15],
+    poolWinner: 4,
+    poolGoals: 3,
+    paid: "",
+  },
+  {
+    id: 1,
+    name: "frankram002",
+    email: "frankramirezz@icloud.com",
+    poolTeams: [8, 3, 4, 5, 24, 1, 22, 9],
+    poolWinner: 1,
+    poolGoals: 5,
+    paid: "",
+  },
+  {
+    id: 2,
+    name: "frankram003",
+    email: "frankramirezz@icloud.com",
+    poolTeams: [8, 3, 4, 5, 12, 1, 7, 9],
+    poolWinner: 3,
+    poolGoals: 3,
+    paid: "",
+  },
+  {
+    id: 3,
+    name: "Analia Mora",
+    email: "analiamora@icloud.com",
+    poolTeams: [16, 3, 4, 18, 24, 1, 22, 9],
+    poolWinner: 3,
+    poolGoals: 3,
+    paid: "",
+  },
+  {
+    id: 4,
+    name: "Dennis Max",
+    email: "tachoca@gmail.com",
+    poolTeams: [8, 3, 4, 5, 24, 1, 7, 9],
+    poolWinner: 1,
+    poolGoals: 3,
+    paid: "",
+  },
+  {
+    id: 5,
+    name: "AAA",
+    email: "atkinsgroup@juno.com",
+    poolTeams: [16, 3, 4, 5, 12, 1, 7, 9],
+    poolWinner: 5,
+    poolGoals: 4,
+    paid: "",
+  },
+  {
+    id: 6,
+    name: "Sophia Micheletti",
+    email: "michelettisophia@gmail.com",
+    poolTeams: [16, 3, 4, 5, 12, 1, 7, 9],
+    poolWinner: 1,
+    poolGoals: 7,
+    paid: "",
+  },
+  {
+    id: 7,
+    name: "Javier G",
+    email: "blueranchtrail@yahoo.com",
+    poolTeams: [8, 38, 4, 5, 24, 1, 22, 15],
+    poolWinner: 4,
+    poolGoals: 3,
+    paid: "",
+  },
+  {
+    id: 8,
+    name: "Eric",
+    email: "copello11@gmail.com",
+    poolTeams: [8, 3, 4, 5, 24, 1, 7, 15],
+    poolWinner: 1,
+    poolGoals: 5,
+    paid: "",
+  },
+  {
+    id: 9,
+    name: "Wyatt",
+    email: "wyattdeshane@gmail.com",
+    poolTeams: [16, 3, 38, 18, 24, 12, 28, 22],
+    poolWinner: 3,
+    poolGoals: 4,
+    paid: "yes",
+  },
+  {
+    id: 10,
+    name: "Ruth Micheletti",
+    email: "rbmicheletti@gmail.com",
+    poolTeams: [16, 3, 4, 5, 24, 1, 7, 15],
+    poolWinner: 7,
+    poolGoals: 6,
+    paid: "",
+  },
+  {
+    id: 11,
+    name: "Michael Collantes",
+    email: "dirtymac@outlook.com",
+    poolTeams: [8, 3, 4, 5, 24, 1, 7, 9],
+    poolWinner: 4,
+    poolGoals: 3,
+    paid: "",
+  },
+  {
+    id: 12,
+    name: "Michael Collantes 2",
+    email: "dirtymac@outlook.com",
+    poolTeams: [8, 3, 4, 5, 24, 1, 7, 9],
+    poolWinner: 5,
+    poolGoals: 4,
+    paid: "",
+  },
+  {
+    id: 13,
+    name: "Sandro 3",
+    email: "sandropalpra@hotmail.com",
+    poolTeams: [8, 3, 4, 5, 24, 1, 7, 9],
+    poolWinner: 4,
+    poolGoals: 3,
+    paid: "",
+  },
+  {
+    id: 14,
+    name: "Victor torres",
+    email: "torres_victor1899@yahoo.com",
+    poolTeams: [8, 3, 4, 18, 24, 1, 7, 15],
+    poolWinner: 3,
+    poolGoals: 3,
+    paid: "",
+  },
+  {
+    id: 15,
+    name: "Deji",
+    email: "djagunbiade@gmail.com",
+    poolTeams: [16, 3, 4, 5, 12, 1, 7, 9],
+    poolWinner: 3,
+    poolGoals: 3,
+    paid: "",
+  },
+  {
+    id: 16,
+    name: "Adam Hume",
+    email: "adamhume714@gmail.com",
+    poolTeams: [8, 3, 4, 5, 24, 1, 7, 9],
+    poolWinner: 5,
+    poolGoals: 3,
+    paid: "",
+  },
+  {
+    id: 17,
+    name: "GW08",
+    email: "gerwatson@gmail.com",
+    poolTeams: [16, 3, 4, 18, 12, 1, 22, 9],
+    poolWinner: 4,
+    poolGoals: 4,
+    paid: "",
+  },
+  {
+    id: 18,
+    name: "Jacob Micheletti",
+    email: "michelettijacob@gmail.com",
+    poolTeams: [16, 3, 4, 18, 12, 1, 22, 9],
+    poolWinner: 1,
+    poolGoals: 5,
+    paid: "",
+  },
+  {
+    id: 19,
+    name: "Ryan",
+    email: "rcarew18@gmail.com",
+    poolTeams: [16, 3, 4, 18, 24, 1, 7, 15],
+    poolWinner: 1,
+    poolGoals: 5,
+    paid: "",
+  },
+  {
+    id: 20,
+    name: "Fatai",
+    email: "fadewusi@gmail.com",
+    poolTeams: [8, 3, 4, 5, 12, 1, 7, 15],
+    poolWinner: 3,
+    poolGoals: 5,
+    paid: "",
+  },
+  {
+    id: 21,
+    name: "Abraham",
+    email: "abraham110789@gmail.com",
+    poolTeams: [16, 3, 4, 18, 12, 1, 7, 9],
+    poolWinner: 3,
+    poolGoals: 3,
+    paid: "",
+  },
+  {
+    id: 22,
+    name: "Jose Garrotte",
+    email: "garrottej@gmail.com",
+    poolTeams: [16, 3, 4, 5, 24, 1, 7, 9],
+    poolWinner: 24,
+    poolGoals: 7,
+    paid: "",
+  },
+  {
+    id: 23,
+    name: "Pato",
+    email: "abraham110789@gmail.com",
+    poolTeams: [8, 3, 4, 5, 24, 1, 22, 9],
+    poolWinner: 1,
+    poolGoals: 5,
+    paid: "",
+  },
+  {
+    id: 24,
+    name: "Roque@PK",
+    email: "dreamsourcefilms@gmail.com",
+    poolTeams: [16, 3, 4, 5, 12, 1, 7, 15],
+    poolWinner: 4,
+    poolGoals: 5,
+    paid: "",
+  },
+  {
+    id: 25,
+    name: "Angel Roa",
+    email: "jangelroa@gmail.com",
+    poolTeams: [8, 3, 4, 5, 12, 1, 7, 15],
+    poolWinner: 7,
+    poolGoals: 12,
+    paid: "",
+  },
+  {
+    id: 26,
+    name: "Gabriel",
+    email: "garodri7@gmail.com",
+    poolTeams: [8, 3, 4, 5, 24, 1, 7, 9],
+    poolWinner: 8,
+    poolGoals: 3,
+    paid: "",
+  },
+];
 export const UserScoresList = () => {
   const teamScores = teamScoresList();
   return users.map((user, index) => {
@@ -885,4 +1131,22 @@ export const UserScoresList = () => {
   });
 };
 
-console.log({ UserScoresList: UserScoresList() });
+export const UserScoresList16 = () => {
+  const teamScores = teamScoresList16();
+  return users16.map((user, index) => {
+    // add totalPoint key to every user obj
+    user.totalPoint = 0;
+    // add poolTeamsScore key to every user obj
+    user.poolTeamsScore = user.poolTeams.map((teamFifa) => {
+      const teamwithScoreFound = teamScores.find(
+        (team) => team.fifa === teamFifa
+      );
+      const teamScore = teamwithScoreFound?.points || 0;
+      user.totalPoint += teamScore;
+      return teamScore;
+    });
+    return user;
+  });
+};
+
+// console.log({ UserScoresList: UserScoresList() });
