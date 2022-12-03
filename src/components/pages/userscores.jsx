@@ -7,17 +7,20 @@ import {
   getTeam,
   Flag,
   truncate,
+  AnnouncementPool2,
 } from "../smallComponents";
-import { UserScoresList } from "../../data/users";
 import { BiChevronDown, BiChevronRight } from "react-icons/bi";
 
-const UserScores = () => {
+const UserScores = ({ userScoreListData }) => {
+  const UserScoresList = userScoreListData.userScoresList;
+  const { pageTitle } = userScoreListData;
   return (
     <>
+      <AnnouncementPool2 />
       <div className="user-list">
         <div style={{ display: "flex", justifyContent: "space-between" }}>
           <h2>
-            <Text tid="Participant Scores" />
+            <Text tid={pageTitle} />
           </h2>
           <h5 style={{ textAlign: "right" }}>
             (<Text tid="click in a row for details" />)

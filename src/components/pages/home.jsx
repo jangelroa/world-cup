@@ -7,7 +7,7 @@ import { Flag } from "../smallComponents";
 import { allGroups } from "../../data/teams";
 import { Rules, SpanishRules } from "../Rules";
 import RankingFifa from "../RankingFifa";
-import { ShortThinLine } from "../smallComponents";
+import { ShortThinLine, AnnouncementPool2 } from "../smallComponents";
 import { Text } from "../../data/languages/Text";
 import { LanguageContext } from "../../data/languages/LanguageContext";
 import LanguageSelector from "../../data/languages/LanguageSelector";
@@ -96,6 +96,7 @@ const Home = () => {
 
   return (
     <>
+      <AnnouncementPool2 />
       <Quadrant>
         <div className="home-header">
           <div

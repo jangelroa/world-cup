@@ -38,6 +38,7 @@ import uruguay from "../images/flags/uruguay.webp";
 import southKorea from "../images/flags/southKorea.webp";
 import ghana from "../images/flags/ghana.webp";
 import { allMatches } from "./matches";
+import { round16AndBeyondMatches } from "./matches";
 
 export const rankingFifa =
   "https://www.fifa.com/fifa-world-ranking/men?dateId=id13792";
@@ -376,14 +377,15 @@ export const allGroups = [
   teamsGroupH,
 ];
 
-export const calculateTeamScores = (team) => {
+export const calculateTeamScores = (team, round) => {
   let points = 0;
   let scoringTeam;
   let rivalTeam;
-  // loop through the matches
+  let matches = round === "round16" ? round16AndBeyondMatches : allMatches;
 
-  for (let game = 0; game < allMatches.length; game++) {
-    const match = allMatches[game];
+  // loop through the matches
+  for (let game = 0; game < matches.length; game++) {
+    const match = matches[game];
     if (match.team1.score === null) {
       break;
     }
@@ -443,3 +445,158 @@ export const teamScoresList = () => {
 // });
 
 // teamScoresList();
+
+const teamsInRound16 = [
+  {
+    fifa: 8,
+    name: "Netherlands",
+    spanishName: "Holanda",
+    flag: netherlands,
+    points: 0,
+    group: "A",
+    flagAlt: "Netherlands flag",
+  },
+  {
+    fifa: 16,
+    name: "USA",
+    spanishName: "USA",
+    flag: usa,
+    points: 0,
+    group: "B",
+    flagAlt: "USA flag",
+  },
+  {
+    fifa: 3,
+    name: "Argentina",
+    spanishName: "Argentina",
+    flag: argentina,
+    points: 0,
+    group: "C",
+    flagAlt: "Argentina flag",
+  },
+  {
+    fifa: 38,
+    name: "Australia",
+    spanishName: "Australia",
+    flag: australia,
+    points: 0,
+    group: "D",
+    flagAlt: "Australia flag",
+  },
+  {
+    fifa: 4,
+    name: "France",
+    spanishName: "Francia",
+    flag: france,
+    points: 0,
+    group: "D",
+    flagAlt: "France flag",
+  },
+  {
+    fifa: 26,
+    name: "Poland",
+    spanishName: "Polonia",
+    flag: poland,
+    points: 0,
+    group: "C",
+    flagAlt: "Poland flag",
+  },
+  {
+    fifa: 5,
+    name: "England",
+    spanishName: "Inglaterra",
+    flag: england,
+    points: 0,
+    group: "B",
+    flagAlt: "England flag",
+  },
+  {
+    fifa: 18,
+    name: "Senegal",
+    flag: senegal,
+    spanishName: "Senegal",
+    points: 0,
+    group: "A",
+    flagAlt: "Senegal flag",
+  },
+  {
+    fifa: 24,
+    name: "Japan",
+    spanishName: "Japón",
+    flag: japan,
+    points: 0,
+    group: "E",
+    flagAlt: "Japan flag",
+  },
+  {
+    fifa: 12,
+    name: "Croatia",
+    spanishName: "Croacia",
+    flag: croatia,
+    points: 0,
+    group: "F",
+    flagAlt: "Croatia flag",
+  },
+  {
+    fifa: 1,
+    name: "Brazil",
+    spanishName: "Brasil",
+    flag: brazil,
+    points: 0,
+    group: "G",
+    flagAlt: "Brazil flag",
+  },
+  {
+    fifa: 28,
+    name: "South Korea",
+    spanishName: "Korea Sur",
+    flag: southKorea,
+    points: 0,
+    group: "H",
+    flagAlt: "South Korea flag",
+  },
+  {
+    fifa: 22,
+    name: "Morocco",
+    spanishName: "Marruecos",
+    flag: morocco,
+    points: 0,
+    group: "F",
+    flagAlt: "Morocco flag",
+  },
+  {
+    fifa: 7,
+    name: "Spain",
+    spanishName: "España",
+    flag: spain,
+    points: 0,
+    group: "E",
+    flagAlt: "Spain flag",
+  },
+  {
+    fifa: 9,
+    name: "Portugal",
+    spanishName: "Portugal",
+    flag: portugal,
+    points: 0,
+    group: "H",
+    flagAlt: "Portugal flag",
+  },
+  {
+    fifa: 15,
+    name: "Switzerland",
+    spanishName: "Suiza",
+    flag: switzerland,
+    points: 0,
+    group: "G",
+    flagAlt: "Switzerland flag",
+  },
+];
+
+export const teamScoresList16 = () => {
+  return teamsInRound16.map((team) => {
+    const teamScore = calculateTeamScores(team, "round16");
+    return { ...team, points: teamScore };
+  });
+};
+// export const

@@ -8,10 +8,14 @@ import { matchesday5 } from "../../data/matches";
 import { matchesday6 } from "../../data/matches";
 import { matchesday7 } from "../../data/matches";
 import { matchesday8 } from "../../data/matches";
-import { ThickLine, ThinLine, Flag, getTeam } from "../smallComponents";
+import {
+  ThickLine,
+  ThinLine,
+  Flag,
+  getTeam,
+  AnnouncementPool2,
+} from "../smallComponents";
 import { Text } from "../../data/languages/Text";
-// import defaultFlag from "../../images/flags/default.webp";
-// import logo from "../../images/flags/default.webp";
 import logo from "../../images/qatar-logo.jpg";
 import { BiChevronDown, BiChevronRight } from "react-icons/bi";
 
@@ -52,6 +56,7 @@ const GetScore = (match) => {
 const MatchesList = () => {
   return (
     <>
+      <AnnouncementPool2 />
       <MatchesDay matchesday={matchesday1} title="Match day" day="1" />
       <MatchesDay matchesday={matchesday2} title="Match day" day="2" />
       <MatchesDay matchesday={matchesday3} title="Match day" day="3" />
