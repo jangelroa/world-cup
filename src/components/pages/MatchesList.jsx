@@ -20,7 +20,7 @@ import logo from "../../images/qatar-logo.jpg";
 import { BiChevronDown, BiChevronRight } from "react-icons/bi";
 
 const MatchScore = ({ match }) => (
-  <div>
+  <div style={{ fontSize: "1.3rem" }}>
     {match.team1.score}-{match.team2.score}
   </div>
 );
