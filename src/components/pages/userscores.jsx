@@ -10,6 +10,7 @@ import {
   AnnouncementPool2,
 } from "../smallComponents";
 import { BiChevronDown, BiChevronRight } from "react-icons/bi";
+import { teamsInCompetition } from "../../data/RealMatches";
 
 const UserScores = ({ userScoreListData }) => {
   const UserScoresList = userScoreListData.userScoresList;
@@ -89,7 +90,15 @@ const UserEntryDetails = ({ user }) => {
                   minWidth: "150px",
                 }}
               >
-                {teamName}
+                <span
+                  className={
+                    teamsInCompetition.includes(team.name)
+                      ? "in-competition"
+                      : "out-competition"
+                  }
+                >
+                  {teamName}
+                </span>
               </div>
               <div>{user.poolTeamsScore[i]} pts</div>
             </div>
@@ -125,7 +134,15 @@ const UserEntryDetails = ({ user }) => {
               alt={winnerTeam.flagAlt}
               title={winnerTeam.name}
             />
-            <span>{winnerTeam.name}</span>
+            <span
+              className={
+                teamsInCompetition.includes(winnerTeam.name)
+                  ? "in-competition"
+                  : "out-competition"
+              }
+            >
+              {winnerTeam.name}
+            </span>
           </div>
         </div>
         <div
