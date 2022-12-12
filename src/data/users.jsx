@@ -1119,7 +1119,7 @@ const users16 = [
     poolTeams: [16, 38, 4, 5, 24, 1, 7, 9],
     poolWinner: 4,
     poolGoals: 3,
-    paid: "",
+    paid: "delete",
   },
   {
     id: 28,
