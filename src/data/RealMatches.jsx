@@ -1159,19 +1159,19 @@ export const realMatchesday6 = [
       fifa: 12,
       name: "Croatia",
       spanishName: "Croacia",
-      score: null,
+      score: 0,
       penalties: null,
     },
     team2: {
       fifa: 3,
       name: "Argentina",
       spanishName: "Argentina",
-      score: null,
+      score: 3,
       penalties: null,
     },
     date: "12/13",
     time: "11:00 AM*",
-    highlights: "",
+    highlights: "https://www.youtube-nocookie.com/embed/k2xz9J1OqN0",
   },
   {
     team1: {
@@ -1197,9 +1197,9 @@ export const realMatchesday6 = [
 export const realMatchesday7 = [
   {
     team1: {
-      fifa: 0,
-      name: "Semi-Final 1 Loser",
-      spanishName: "Perdedor Semi-Final 1",
+      fifa: 12,
+      name: "Croatia",
+      spanishName: "Croacia",
       score: null,
       penalties: null,
     },
@@ -1219,9 +1219,9 @@ export const realMatchesday7 = [
 export const realMatchesday8 = [
   {
     team1: {
-      fifa: 0,
-      name: "Semi-Final 1 Winner",
-      spanishName: "Ganador Semi-Final 1",
+      fifa: 3,
+      name: "Argentina",
+      spanishName: "Argentina",
       score: null,
       penalties: null,
     },
